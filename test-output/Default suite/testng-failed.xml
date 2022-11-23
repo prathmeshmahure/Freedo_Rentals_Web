@@ -5,7 +5,9 @@
     <classes>
       <class name="Merlin_domain.TC_0001">
         <methods>
+          <include name="browser"/>
           <include name="ts"/>
+          <include name="teardown"/>
           <include name="BS"/>
         </methods>
       </class> <!-- Merlin_domain.TC_0001 -->

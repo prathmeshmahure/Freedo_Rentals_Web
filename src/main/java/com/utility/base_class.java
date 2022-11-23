@@ -17,7 +17,7 @@ public class base_class {
 	public static excel_data_provider excel;
 	
 	@BeforeSuite
-	public void  BS() {
+	public void  BS() throws Exception {
 		config=new config_data_provider();
 		excel=new excel_data_provider();
 				
@@ -40,7 +40,7 @@ public class base_class {
 				driver=new FirefoxDriver();
 			}
 			
-			driver.get("https://www.facebook.com/");
+			driver.get(config.getstageurl());
 			driver.manage().window().maximize();
 			
 		}
