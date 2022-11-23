@@ -1,6 +1,7 @@
 package Merlin_domain;
 
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.page_object.login_page;
@@ -16,6 +17,7 @@ public class TC_0001 extends base_class{
 		library.custom_sendkeys(login.getEmail(), config.getusername(), "Email");
 		library.custom_sendkeys(login.getPass(), config.getpassword(), "Password");
 		library.Custom_click(login.getButton(), "Login_Button");
+		Assert.assertTrue(false);
 		
 		
 	}
