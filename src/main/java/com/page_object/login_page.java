@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class login_page {
-	WebDriver driver;
+	public WebDriver driver;
 	
 	@FindBy(how=How.XPATH,using="//input[@id='email']")
 	private WebElement Email;

@@ -1,80 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-23T20:30:58 IST" name="Suite" finished-at="2022-11-23T20:30:58 IST" duration-ms="52">
+  <suite started-at="2022-11-23T22:17:59 IST" name="Suite" finished-at="2022-11-23T22:18:06 IST" duration-ms="7125">
     <groups>
     </groups>
-    <test started-at="2022-11-23T20:30:58 IST" name="Test" finished-at="2022-11-23T20:30:58 IST" duration-ms="52">
+    <test started-at="2022-11-23T22:17:59 IST" name="Test" finished-at="2022-11-23T22:18:06 IST" duration-ms="7125">
       <class name="Merlin_domain.TC_0001">
-        <test-method is-config="true" signature="BS()[pri:0, instance:Merlin_domain.TC_0001@72e5a8e]" started-at="2022-11-23T20:30:58 IST" name="BS" finished-at="2022-11-23T20:30:58 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="BS()[pri:0, instance:Merlin_domain.TC_0001@506ae4d4]" started-at="2022-11-23T22:17:58 IST" name="BS" finished-at="2022-11-23T22:17:59 IST" duration-ms="965" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BS -->
-        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:Merlin_domain.TC_0001@72e5a8e]" started-at="2022-11-23T20:30:58 IST" name="browser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1669215658807" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser_name' is required by BeforeMethod on method browser but has not been marked @Optional or defined
-in C:\Users\PM\eclipse-workspace\My_life\TC_0001.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser_name' is required by BeforeMethod on method browser but has not been marked @Optional or defined
-in C:\Users\PM\eclipse-workspace\My_life\TC_0001.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:Merlin_domain.TC_0001@506ae4d4]" started-at="2022-11-23T22:17:59 IST" name="browser" finished-at="2022-11-23T22:18:05 IST" duration-ms="6625" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method signature="ts()[pri:0, instance:Merlin_domain.TC_0001@72e5a8e]" started-at="2022-11-23T20:30:58 IST" name="ts" finished-at="2022-11-23T20:30:58 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
+        <test-method signature="Login_FB()[pri:0, instance:Merlin_domain.TC_0001@506ae4d4]" started-at="2022-11-23T22:18:05 IST" name="Login_FB" finished-at="2022-11-23T22:18:05 IST" duration-ms="166" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[
-Parameter 'browser_name' is required by BeforeMethod on method browser but has not been marked @Optional or defined
-in C:\Users\PM\eclipse-workspace\My_life\TC_0001.xml]]>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "com.utility.library.test" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser_name' is required by BeforeMethod on method browser but has not been marked @Optional or defined
-in C:\Users\PM\eclipse-workspace\My_life\TC_0001.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "com.utility.library.test" is null
+at com.utility.library.custom_sendkeys(library.java:20)
+at Merlin_domain.TC_0001.Login_FB(TC_0001.java:16)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -99,11 +61,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ts -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Merlin_domain.TC_0001@72e5a8e]" started-at="2022-11-23T20:30:58 IST" name="teardown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1669215658823" status="SKIP">
+        </test-method> <!-- Login_FB -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Merlin_domain.TC_0001@506ae4d4]" started-at="2022-11-23T22:18:05 IST" name="teardown" finished-at="2022-11-23T22:18:06 IST" duration-ms="304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

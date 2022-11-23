@@ -9,20 +9,14 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">52</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">7,125</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Merlin_domain.TC_0001</td><td><a href="#m0">browser</a></td><td rowspan="1">1669215658807</td><td rowspan="1">-1669215658807</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">Merlin_domain.TC_0001</td><td><a href="#m1">teardown</a></td><td rowspan="1">1669215658823</td><td rowspan="1">-1669215658823</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">Merlin_domain.TC_0001</td><td><a href="#m2">ts</a></td><td rowspan="1">1669215658818</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Merlin_domain.TC_0001</td><td><a href="#m0">Login_FB</a></td><td rowspan="1">1669222085771</td><td rowspan="1">166</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">Merlin_domain.TC_0001#browser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;browser_name&apos; is required by BeforeMethod on method browser but has not been marked @Optional or defined
-in C:\Users\PM\eclipse-workspace\My_life\TC_0001.xml
+<h2>Test</h2><h3 id="m0">Merlin_domain.TC_0001#Login_FB</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)&quot; because &quot;com.utility.library.test&quot; is null
+	at com.utility.library.custom_sendkeys(library.java:20)
+	at Merlin_domain.TC_0001.Login_FB(TC_0001.java:16)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Merlin_domain.TC_0001#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Merlin_domain.TC_0001#ts</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Parameter &apos;browser_name&apos; is required by BeforeMethod on method browser but has not been marked @Optional or defined
-in C:\Users\PM\eclipse-workspace\My_life\TC_0001.xml
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
