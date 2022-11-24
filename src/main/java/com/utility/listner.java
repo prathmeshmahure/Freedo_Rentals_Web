@@ -11,11 +11,12 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 public class listner extends base_class implements ITestListener {
+	
 	ExtentReports extent=extent_reports_generator.getreports();
 	ThreadLocal<ExtentTest> extent_test=new ThreadLocal<ExtentTest>();
 
 		public void onTestStart(ITestResult result) {
-			library.test=extent.createTest(result.getTestClass().getName()+ "" +result.getMethod().getMethodName());
+			library.test=extent.createTest(result.getTestClass().getName()+ "== " +result.getMethod().getMethodName());
 			extent_test.set(library.test);
 		}
 	

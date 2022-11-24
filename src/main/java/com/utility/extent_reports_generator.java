@@ -12,10 +12,11 @@ public class extent_reports_generator {
 		
 		String path="C:\\Users\\PM\\eclipse-workspace\\My_life\\Report\\index.html";
 		report=new ExtentSparkReporter(path);
+		
 		report.config().setDocumentTitle("Automation Test Report");
 		report.config().setReportName("Merlin.net");
 		report.config().setTheme(Theme.DARK);
-		report.config().setTimelineEnabled(true);
+		
 		
 		extent=new ExtentReports();
 		extent.attachReporter(report);
