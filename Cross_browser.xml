@@ -4,25 +4,17 @@
 <listeners>
 <listener class-name="com.utility.listner"></listener>
 </listeners>
-
-  <test thread-count="5" name="chrome">
-  <parameter name="browser_name" value="chrome"></parameter>
-    <classes>
-      <class name="Merlin_domain.TC_0001"/>
-    </classes>
-  </test> <!-- Test -->
+	 <parameter name="browser_name" value="chrome"></parameter>
+	 <parameter name="browser_name" value="edge"></parameter>
+	 <parameter name="browser_name" value="firefox"></parameter>
+		 
+		  <test thread-count="5" name="chrome">
+		 
+		    <classes>
+		      <class name="Merlin_domain.TC_0001"/>
+		      <class name="Merlin_domain.TC_0002"/>
+		    </classes>
+		  </test> <!-- Test -->
   
-  <test thread-count="5" name="edge">
-  <parameter name="browser_name" value="edge"></parameter>
-    <classes>
-      <class name="Merlin_domain.TC_0001"/>
-    </classes>
-  </test> <!-- Test -->
-  
-  <test thread-count="5" name="firefox">
-  <parameter name="browser_name" value="firefox"></parameter>
-    <classes>
-      <class name="Merlin_domain.TC_0001"/>
-    </classes>
-  </test> <!-- Test -->
+ 
 </suite> <!-- Suite -->

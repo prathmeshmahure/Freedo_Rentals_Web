@@ -39,7 +39,7 @@ public class base_class {
 				WebDriverManager.firefoxdriver().setup();
 				driver=new FirefoxDriver();
 			}
-			
+		
 			driver.get(config.getstageurl());
 			driver.manage().window().maximize();
 			
