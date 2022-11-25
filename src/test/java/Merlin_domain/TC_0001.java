@@ -21,6 +21,8 @@ public class TC_0001 extends base_class{
 		library.Custom_click(login.getButton(), "Login_Button");
 		Assert.assertTrue(true);
 		
+		library.Dropdown_handle("", "india", "dropdown");
+		
 //		login.getPass().sendKeys("Mahure@123");
 //		login.getButton().click();
 		
