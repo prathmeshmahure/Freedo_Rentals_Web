@@ -16,12 +16,14 @@ public class TC_0001 extends base_class{
 //		login.getEmail().sendKeys("7385820122");
 		
 		
-		library.custom_sendkeys(login.getEmail(), config.getusername(), "Email");
-		library.custom_sendkeys(login.getPass(), config.getpassword(), "Password");
-		library.Custom_click(login.getButton(), "Login_Button");
-		Assert.assertTrue(true);
+//		library.custom_sendkeys(login.getEmail(), config.getusername(), "Email");
+//		library.custom_sendkeys(login.getPass(), config.getpassword(), "Password");
+//		library.Custom_click(login.getButton(), "Login_Button");
+//		Assert.assertTrue(true);
 		
-		library.Dropdown_handle("", "india", "dropdown");
+		library.Dropdown_handle(login.getDropdown(), "INDIA", "Dropdown");
+		
+		
 		
 //		login.getPass().sendKeys("Mahure@123");
 //		login.getButton().click();

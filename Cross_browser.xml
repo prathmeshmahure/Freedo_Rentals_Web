@@ -4,15 +4,12 @@
 <listeners>
 <listener class-name="com.utility.listner"></listener>
 </listeners>
-	 <parameter name="browser_name" value="chrome"></parameter>
-	 <parameter name="browser_name" value="edge"></parameter>
-	 <parameter name="browser_name" value="firefox"></parameter>
-		 
+	  		 
 		  <test thread-count="5" name="chrome">
-		 
+			<parameter name="browser_name" value="chrome"></parameter>	 
 		    <classes>
 		      <class name="Merlin_domain.TC_0001"/>
-		      <class name="Merlin_domain.TC_0002"/>
+		     
 		    </classes>
 		  </test> <!-- Test -->
   

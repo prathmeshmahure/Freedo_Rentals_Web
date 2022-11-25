@@ -5,6 +5,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -38,22 +39,22 @@ public class library {
 								}
 		}
 	////////////////////////////////////////////////////////////////////////////////////////////////	
-		public static void Dropdown_handle(String xpath ,String DROP_down_value,String field) {
+		public static void Dropdown_handle(WebElement element,String DROP_down_value,String field) {
 			try{
-				List<WebElement> list = driver.findElements(By.xpath(xpath));
-				//System.out.println("Total list = "+list.size());
-				for(WebElement element:list) {
-					//System.out.println(el.getText());
-						if(element.getText().equals(DROP_down_value)){
-							element.click();
+				if(element.isDisplayed() && element.isEnabled()==true) {
+						Select sel=new Select(element);
+					
+						if(sel.equals(DROP_down_value)) {
+							
 							test.log(Status.PASS, "==Successfully click Dropdown=="+field);
-						}
+							}
 					}
-			}
+			   }
 				catch (Exception e ){
 							test.log(Status.FAIL, "==Unable to find dropDown element++"+ e);
 					}
 			}
 	////////////////////////////////////////////////////////////////////////////////////////////////////		
+	
 		
 }
