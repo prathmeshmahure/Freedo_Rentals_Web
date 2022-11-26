@@ -16,6 +16,9 @@ public class login_page {
 	
 	@FindBy(how=How.XPATH,using="//button[@name='login']")
 	private WebElement Button;
+	
+	@FindBy(how=How.XPATH,using="//select[@name='country']")
+	private WebElement Dropdown;
 
 		public login_page(WebDriver driver) 
 		{
@@ -36,6 +39,10 @@ public class login_page {
 			
 					public WebElement getButton() {
 						return Button;
+					}
+					
+					public WebElement getDropdown() {
+						return Dropdown;
 					}
 
 		
