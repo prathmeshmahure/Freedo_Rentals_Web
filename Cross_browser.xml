@@ -8,7 +8,7 @@
 		  <test thread-count="5" name="chrome">
 			<parameter name="browser_name" value="chrome"></parameter>	 
 		    <classes>
-		      <class name="Merlin_domain.TC_0001"/>
+		      <class name="Freedo_domain.TC_0001"/>
 		     
 		    </classes>
 		  </test> <!-- Test -->

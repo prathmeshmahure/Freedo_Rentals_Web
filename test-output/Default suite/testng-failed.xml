@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Merlin_domain.TC_0001">
+      <class name="Merlin_domain.TS_002">
         <methods>
+          <include name="TC001"/>
           <include name="browser"/>
           <include name="teardown"/>
           <include name="BS"/>
-          <include name="Login_FB"/>
         </methods>
-      </class> <!-- Merlin_domain.TC_0001 -->
+      </class> <!-- Merlin_domain.TS_002 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -10,19 +10,19 @@ public class extent_reports_generator {
 	
 	public static ExtentReports getreports() {
 		
-		String path="C:\\Users\\PM\\eclipse-workspace\\My_life\\Report\\index.html";
+		String path="C:\\Users\\P M\\Documents\\GitHub\\My_life\\Report\\index.html";
 		report=new ExtentSparkReporter(path);
 		
-		report.config().setDocumentTitle("Automation Test Report");
-		report.config().setReportName("Merlin.net");
+		report.config().setDocumentTitle("Freedo-Automation Test Report");
+		report.config().setReportName("Freedo");
 		report.config().setTheme(Theme.DARK);
 		
 		
 		extent=new ExtentReports();
 		extent.attachReporter(report);
-		extent.setSystemInfo("Lenovo", "Hospital Domain");
-		extent.setSystemInfo("QA", "Prathmesh");
-		extent.setSystemInfo("Operating system", "Windows 10");
+		extent.setSystemInfo("Laptop-Dell", "Freedo");
+		extent.setSystemInfo("QA", "Prathmesh Mahure");
+		extent.setSystemInfo("Operating system", "Windows 11");
 		return extent;
 	}
 
