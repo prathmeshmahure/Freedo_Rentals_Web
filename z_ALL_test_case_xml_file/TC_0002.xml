@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+<listeners>
+<listener class-name="com.utility.listner"></listener>
+</listeners>
+<parameter name="browser_name" value="chrome"></parameter>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="personnel_execution.TEST_NG_26"/>
-      <class name="personnel_execution.Current_Ac_Test1"/>
-      <class name="personnel_execution.Current_Ac_Test2"/>
+      <class name="Freedo_domain.TC_0002"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
