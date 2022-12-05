@@ -13,15 +13,15 @@ public class TC_0001 extends base_class{
 	@Test
 	public void Login_FB()  {
 		login_page login = PageFactory.initElements(driver, login_page.class);
-//		login.getEmail().sendKeys("7385820122");
+	//	login.getEmail().sendKeys("7385820122");
 		
 		
-//		library.custom_sendkeys(login.getEmail(), config.getusername(), "Email");
-//		library.custom_sendkeys(login.getPass(), config.getpassword(), "Password");
-//		library.Custom_click(login.getButton(), "Login_Button");
+		library.custom_sendkeys(login.getEmail(), config.getusername(), "Email");
+		library.custom_sendkeys(login.getPass(), config.getpassword(), "Password");
+		library.Custom_click(login.getButton(), "Login_Button");
 //		Assert.assertTrue(true);
 		
-		library.Dropdown_handle(login.getDropdown(), "INDIA", "Dropdown");
+//		library.Dropdown_handle(login.getDropdown(), "INDIA", "Dropdown");
 		
 		
 		

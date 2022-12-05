@@ -40,7 +40,7 @@ public class base_class {
 				driver=new FirefoxDriver();
 			}
 		
-			driver.get(config.getstageurl());
+			driver.get(config.getliveurl());
 			driver.manage().window().maximize();
 			
 		}
