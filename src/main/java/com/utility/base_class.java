@@ -1,5 +1,7 @@
 package com.utility;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -42,10 +44,12 @@ public class base_class {
 		
 			driver.get(config.getliveurl());
 			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			
 		}
 	@AfterMethod
 	public void teardown() {
 		driver.close();
+		driver.quit();
 	}
 }
