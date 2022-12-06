@@ -8,7 +8,7 @@ public class TC_0002 extends base_class {
 	
 	
 	@Test
-	public void TC001 ()
+	public void Justcheck ()
 	{
 		
 		System.out.println("hello prathamesh");

@@ -26,6 +26,7 @@ public class base_class {
 	}
 	
 	@Parameters({"browser_name"})
+	
 	@BeforeMethod
 	public void browser(String browser_name) 
 		{

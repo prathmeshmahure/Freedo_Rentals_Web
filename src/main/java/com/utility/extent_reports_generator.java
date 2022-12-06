@@ -1,3 +1,4 @@
+
 package com.utility;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -10,7 +11,7 @@ public class extent_reports_generator {
 	
 	public static ExtentReports getreports() {
 		
-		String path="C:\\Users\\P M\\Documents\\GitHub\\My_life\\Report\\index.html";
+		String path=System.getProperty("user.dir")+"\\Report\\index.html";
 		report=new ExtentSparkReporter(path);
 		
 		report.config().setDocumentTitle("Freedo-Automation Test Report");
@@ -23,6 +24,7 @@ public class extent_reports_generator {
 		extent.setSystemInfo("Laptop-Dell", "Freedo");
 		extent.setSystemInfo("QA", "Prathmesh Mahure");
 		extent.setSystemInfo("Operating system", "Windows 11");
+		extent.setSystemInfo("BrowserName", path);
 		return extent;
 	}
 

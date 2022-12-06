@@ -1,3 +1,4 @@
+
 package com.utility;
 
 import java.io.FileInputStream;
@@ -8,7 +9,9 @@ public class excel_data_provider {
 	public static XSSFWorkbook wb;
 	
 	public excel_data_provider() throws Exception {
-		String path="C:\\Users\\P M\\Documents\\GitHub\\My_life\\data\\data1.xlsx";
+//		String path="C:\\Users\\P M\\Documents\\GitHub\\My_life\\data\\data1.xlsx";
+	
+		String path=System.getProperty("user.dir")+"\\data\\data1.xlsx";
 		FileInputStream fis=new FileInputStream(path); 
 		wb=new XSSFWorkbook(fis);
 	}

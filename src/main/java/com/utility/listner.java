@@ -9,6 +9,8 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
 
 public class listner extends base_class implements ITestListener {
 	
@@ -27,6 +29,7 @@ public class listner extends base_class implements ITestListener {
 	
 		public void onTestFailure(ITestResult result) {
 			library.test.log(Status.FAIL, "Test Case Fail");
+			library.test.addScreenCaptureFromBase64String(getcapcture());
 		}
 	
 		public void onTestSkipped(ITestResult result) {

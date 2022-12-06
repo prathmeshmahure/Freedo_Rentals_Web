@@ -7,7 +7,7 @@ public class config_data_provider {
 	Properties pro;
 	
 		public config_data_provider() throws Exception {
-			String path="C:\\Users\\P M\\Documents\\GitHub\\My_life\\config_data\\config.properties";
+			String path=System.getProperty("user.dir")+"\\config_data\\config.properties";
 			
 			FileInputStream fis=new FileInputStream(path); 
 			pro=new Properties();
@@ -26,5 +26,6 @@ public class config_data_provider {
 				public  String getpassword() {
 					return pro.getProperty("password");
 				}
+				
 
 }
