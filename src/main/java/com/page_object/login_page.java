@@ -17,6 +17,9 @@ public class login_page {
 	@FindBy(how=How.XPATH,using="//button[@name='login']")
 	private WebElement Button;
 	
+	@FindBy(id="email")
+	WebElement email;
+	
 	
 
 		public login_page(WebDriver driver) 
