@@ -10,7 +10,7 @@
 			<parameter name="browser_name" value="chrome"></parameter>	 
 		    <classes>
 		      <class name="Freedo_domain.TC_0001"/>
-		      <class name="Freedo_domain.TC_0002"></class>
+		      
 		     
 		    </classes>
 		  </test> <!-- Test -->

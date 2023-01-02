@@ -7,42 +7,42 @@ import org.openqa.selenium.support.How;
 
 public class login_page {
 	public WebDriver driver;
+
+//==================================== admin login ========================================
+	@FindBy(how=How.XPATH,using="//input[@id='userName']")
+	private WebElement username;
 	
-	@FindBy(how=How.XPATH,using="//input[@id='email']")
-	private WebElement Email;
+	@FindBy(how=How.XPATH,using="//input[@id='password']")
+	private WebElement Password;
 	
-	@FindBy(how=How.XPATH,using="//input[@id='pass']")
-	private WebElement Pass;
-	
-	@FindBy(how=How.XPATH,using="//button[@name='login']")
+	@FindBy(how=How.XPATH,using="//button[@title='SUBMIT']")
 	private WebElement Button;
-	
+//=========================================================================================	
 	@FindBy(id="email")
 	WebElement email;
 	
 	
-
+//===========================================================================================
 		public login_page(WebDriver driver) 
 		{
 			this.driver=driver;
 		}
-
 					public WebDriver getDriver() {
 						return driver;
 					}
-					
-					public WebElement getEmail() {
-						return Email;
+//==================================== Admin Login ==========================================					
+					public WebElement getusername() {
+						return username;
 					}
 			
-					public WebElement getPass() {
-						return Pass;
+					public WebElement getPassword() {
+						return Password;
 					}
 			
-					public WebElement getButton() {
+					public WebElement getClick_submit_Button() {
 						return Button;
 					}
-					
+//============================================================================================					
 					
 
 		

@@ -21,10 +21,11 @@ public class extent_reports_generator {
 		
 		extent=new ExtentReports();
 		extent.attachReporter(report);
-		extent.setSystemInfo("Laptop-Dell", "Freedo");
+		extent.setSystemInfo("System Name", "Project Name");
+		extent.setSystemInfo("Laptop-Lenovo", "Freedo Web Application");
 		extent.setSystemInfo("QA", "Prathmesh Mahure");
 		extent.setSystemInfo("Operating system", "Windows 11");
-		extent.setSystemInfo("BrowserName", path);
+		extent.setSystemInfo("BrowserName", "Chrome");
 		return extent;
 	}
 
