@@ -25,9 +25,9 @@ public class appium {
 	        //dcap.setCapability("appPackage", "com.hero.customerapp");
 	        //dcap.setCapability("appActivity", "com.hero.customerapp.views.activity.splash.SplashActivity");
 	    
-	    URL url= new URL("http://127.0.0.1:4723/");
+//	    URL url= new URL("http://127.0.0.1:4723/");
 	    
-	    AppiumDriver ad= new AppiumDriver(url, dcap);
+//	    AppiumDriver ad= new AppiumDriver(url, dcap);
 	}
 
 }
