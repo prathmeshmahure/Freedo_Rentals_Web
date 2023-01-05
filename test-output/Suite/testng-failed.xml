@@ -4,8 +4,8 @@
   <listeners>
     <listener class-name="com.utility.listner"/>
   </listeners>
-  <test thread-count="5" name="firefox(failed)">
-    <parameter name="browser_name" value="firefox"/>
+  <test thread-count="5" name="chrome(failed)">
+    <parameter name="browser_name" value="chrome"/>
     <classes>
       <class name="Freedo_domain.TC_0001">
         <methods>
@@ -16,5 +16,5 @@
         </methods>
       </class> <!-- Freedo_domain.TC_0001 -->
     </classes>
-  </test> <!-- firefox(failed) -->
+  </test> <!-- chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

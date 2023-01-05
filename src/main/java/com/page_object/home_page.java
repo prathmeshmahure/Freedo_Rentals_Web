@@ -7,13 +7,11 @@ import org.openqa.selenium.support.How;
 
 public class home_page {
 public WebDriver driver;
-//=====================================================================================================
+//==================================== Manual booking area=================================================================
 	
 	@FindBy(xpath="//p[text()='Manual Booking']")			//Click_Manual_Booking
 	private WebElement Click_Manual_Booking;
-	
-	@FindBy(xpath="//p[text()='User Management']")			//Click_User_Management
-	private WebElement Click_User_Management;
+
 //=====================================================================================================	
 	
 	
@@ -52,10 +50,14 @@ public WebDriver driver;
 
 	@FindBy(xpath="//button[@title='Create Booking']")
 	private WebElement Click_Create_Booking;
+//===================================== User manaement area ==============================================================
+	
+	@FindBy(xpath="//p[text()='User Management']")			//Click_User_Management
+	private WebElement Click_User_Management;
+	
+	@FindBy(xpath="//input[@placeholder='Search Users']")	//Click_UM_Search_user
+	private WebElement Click_UM_Search_user;
 
-//	@FindBy(xpath="")
-//	private WebElement Click;
-//
 //	@FindBy(xpath="")
 //	private WebElement Click;
 //
@@ -86,13 +88,9 @@ public WebDriver driver;
 					public WebDriver getDriver() {
 						return driver;
 					}
-//==============================================================================================================					
+//==================================== manual booking ==========================================================================					
 					public WebElement getClick_Manual_Booking() {
 						return Click_Manual_Booking;
-					}
-					
-					public WebElement getClick_User_Management() {
-						return Click_User_Management;
 					}
 //============================================================================================			
 					public WebElement getClick_Mobile_Number() {
@@ -142,10 +140,14 @@ public WebDriver driver;
 					public WebElement getClick_Create_Booking() {
 						return Click_Create_Booking;
 					}
-			
-//					public WebElement getPass() {
-//						return Pass;
-//					}
+//============================================================================================================================
+										
+					public WebElement getClick_User_Management() {
+						return Click_User_Management;
+					}
+					public WebElement getClick_UM_Search_user() {
+						return Click_UM_Search_user;
+					}
 //			
 //					public WebElement getPass() {
 //						return Pass;

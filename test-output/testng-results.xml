@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="0" skipped="1">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-05T10:50:37 IST" name="Suite" finished-at="2023-01-05T10:51:09 IST" duration-ms="32367">
+  <suite started-at="2023-01-05T16:23:04 IST" name="Suite" finished-at="2023-01-05T16:23:19 IST" duration-ms="15060">
     <groups>
     </groups>
-    <test started-at="2023-01-05T10:50:37 IST" name="chrome" finished-at="2023-01-05T10:50:51 IST" duration-ms="14738">
+    <test started-at="2023-01-05T16:23:04 IST" name="chrome" finished-at="2023-01-05T16:23:19 IST" duration-ms="15060">
       <class name="Freedo_domain.TC_0001">
-        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:Freedo_domain.TC_0001@3ad83a66]" started-at="2023-01-05T10:50:37 IST" name="browser" finished-at="2023-01-05T10:50:49 IST" duration-ms="12227" status="PASS">
+        <test-method is-config="true" signature="BS()[pri:0, instance:Freedo_domain.TC_0001@3cce5371]" started-at="2023-01-05T16:23:03 IST" name="BS" finished-at="2023-01-05T16:23:04 IST" duration-ms="763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BS -->
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:Freedo_domain.TC_0001@3cce5371]" started-at="2023-01-05T16:23:04 IST" name="browser" finished-at="2023-01-05T16:23:10 IST" duration-ms="5531" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,173 +22,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method signature="Login_Account()[pri:0, instance:Freedo_domain.TC_0001@3ad83a66]" started-at="2023-01-05T10:50:49 IST" name="Login_Account" finished-at="2023-01-05T10:50:50 IST" duration-ms="881" status="PASS">
+        <test-method signature="Login_Account()[pri:0, instance:Freedo_domain.TC_0001@3cce5371]" started-at="2023-01-05T16:23:10 IST" name="Login_Account" finished-at="2023-01-05T16:23:11 IST" duration-ms="1142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_Account -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Freedo_domain.TC_0001@3ad83a66]" started-at="2023-01-05T10:50:51 IST" name="teardown" finished-at="2023-01-05T10:50:51 IST" duration-ms="193" status="PASS">
+        <test-method signature="verify_manual_bike_booking()[pri:0, instance:Freedo_domain.TC_0001@3cce5371]" started-at="2023-01-05T16:23:12 IST" name="verify_manual_bike_booking" finished-at="2023-01-05T16:23:19 IST" duration-ms="6945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_manual_bike_booking -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Freedo_domain.TC_0001@3cce5371]" started-at="2023-01-05T16:23:19 IST" name="teardown" finished-at="2023-01-05T16:23:19 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Freedo_domain.TC_0001 -->
     </test> <!-- chrome -->
-    <test started-at="2023-01-05T10:50:52 IST" name="edge" finished-at="2023-01-05T10:51:06 IST" duration-ms="14279">
-      <class name="Freedo_domain.TC_0001">
-        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:Freedo_domain.TC_0001@210ab13f]" started-at="2023-01-05T10:50:52 IST" name="browser" finished-at="2023-01-05T10:51:03 IST" duration-ms="11574" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser -->
-        <test-method signature="Login_Account()[pri:0, instance:Freedo_domain.TC_0001@210ab13f]" started-at="2023-01-05T10:51:03 IST" name="Login_Account" finished-at="2023-01-05T10:51:04 IST" duration-ms="1075" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login_Account -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Freedo_domain.TC_0001@210ab13f]" started-at="2023-01-05T10:51:06 IST" name="teardown" finished-at="2023-01-05T10:51:06 IST" duration-ms="234" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- Freedo_domain.TC_0001 -->
-    </test> <!-- edge -->
-    <test started-at="2023-01-05T10:51:06 IST" name="firefox" finished-at="2023-01-05T10:51:09 IST" duration-ms="2694">
-      <class name="Freedo_domain.TC_0001">
-        <test-method is-config="true" signature="BS()[pri:0, instance:Freedo_domain.TC_0001@29d80d2b]" started-at="2023-01-05T10:50:36 IST" name="BS" finished-at="2023-01-05T10:50:37 IST" duration-ms="780" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BS -->
-        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:Freedo_domain.TC_0001@29d80d2b]" started-at="2023-01-05T10:51:06 IST" name="browser" finished-at="2023-01-05T10:51:09 IST" duration-ms="2663" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'DESKTOP-PUSD2PD', ip: '192.168.1.13'
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'DESKTOP-PUSD2PD', ip: '192.168.1.13'
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:111)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
-at com.utility.base_class.browser(base_class.java:47)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browser -->
-        <test-method signature="Login_Account()[pri:0, instance:Freedo_domain.TC_0001@29d80d2b]" started-at="2023-01-05T10:51:09 IST" name="Login_Account" finished-at="2023-01-05T10:51:09 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'DESKTOP-PUSD2PD', ip: '192.168.1.13'
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Expected browser binary location, but unable to find binary in default location, no 'moz:firefoxOptions.binary' capability provided, and no binary flag set on the command line 
-Host info: host: 'DESKTOP-PUSD2PD', ip: '192.168.1.13'
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:111)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
-at com.utility.base_class.browser(base_class.java:47)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Login_Account -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Freedo_domain.TC_0001@29d80d2b]" started-at="2023-01-05T10:51:09 IST" name="teardown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1672896069456" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- Freedo_domain.TC_0001 -->
-    </test> <!-- firefox -->
   </suite> <!-- Suite -->
 </testng-results>
