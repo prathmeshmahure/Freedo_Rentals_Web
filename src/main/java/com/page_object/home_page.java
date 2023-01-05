@@ -58,17 +58,17 @@ public WebDriver driver;
 	@FindBy(xpath="//input[@placeholder='Search Users']")	//Click_UM_Search_user
 	private WebElement Click_UM_Search_user;
 
-//	@FindBy(xpath="")
-//	private WebElement Click;
-//
-//	@FindBy(xpath="")
-//	private WebElement Click;
-//
-//	@FindBy(xpath="")
-//	private WebElement Click;
-//
-//	@FindBy(xpath="")
-//	private WebElement Click;
+	@FindBy(xpath="//div[@id='view-action']")				//Click_view_action
+	private WebElement Click_view_action;
+
+	@FindBy(xpath="//h5[text()='Bookings']")				//Click_Bookings_button
+	private WebElement Click_Bookings_button;
+
+	@FindBy(xpath="//span[text()='Upcoming']")				//Click_Upcoming_bike_booking
+	private WebElement Click_Upcoming_bike_booking;
+
+	@FindBy(xpath="")
+	private WebElement Click;
 //
 //	@FindBy(xpath="")
 //	private WebElement Click;
@@ -148,18 +148,18 @@ public WebDriver driver;
 					public WebElement getClick_UM_Search_user() {
 						return Click_UM_Search_user;
 					}
-//			
-//					public WebElement getPass() {
-//						return Pass;
-//					}
-//			
-//					public WebElement getPass() {
-//						return Pass;
-//					}
-//			
-//					public WebElement getPass() {
-//						return Pass;
-//					}
+			
+					public WebElement getClick_view_action() {
+						return Click_view_action;
+					}
+			
+					public WebElement getClick_Bookings_button() {
+						return Click_Bookings_button;
+					}
+			
+					public WebElement getClick_Upcoming_bike_booking() {
+						return Click_Upcoming_bike_booking;
+					}
 //			
 //					public WebElement getPass() {
 //						return Pass;

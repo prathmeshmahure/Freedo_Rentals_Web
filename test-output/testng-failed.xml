@@ -9,8 +9,8 @@
     <classes>
       <class name="Freedo_domain.TC_0001">
         <methods>
+          <include name="Verify_user_Management_process"/>
           <include name="browser"/>
-          <include name="Login_Account"/>
           <include name="teardown"/>
           <include name="BS"/>
         </methods>

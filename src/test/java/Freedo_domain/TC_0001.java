@@ -45,6 +45,9 @@ public class TC_0001 extends base_class{
 	public void Verify_user_Management_process() {
 		
 		library.Custom_click(home.getClick_User_Management(), "user management");
+		library.custom_sendkeys(home.getClick_UM_Search_user(),config.getmobilenu(),"search user");
+		library.Custom_click(home.getClick_view_action(),"view button");
+		library.Custom_click(home.getClick_Bookings_button(), "Booking button");
 	}
 	
 	
