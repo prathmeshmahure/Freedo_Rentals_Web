@@ -25,7 +25,16 @@ public class config_data_provider {
 				}
 				public  String getpassword() {
 					return pro.getProperty("password");
-				}
+				}	
+				public  String getmobilenu() {
+					return pro.getProperty("mobilenu");
+				}	
+//				public  String getusername() {
+//					return pro.getProperty("username");
+//				}	
+//				public  String getusername() {
+//					return pro.getProperty("username");
+//				}
 				
 
 }
