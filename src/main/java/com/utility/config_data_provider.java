@@ -29,9 +29,9 @@ public class config_data_provider {
 				public  String getmobilenu() {
 					return pro.getProperty("mobilenu");
 				}	
-//				public  String getusername() {
-//					return pro.getProperty("username");
-//				}	
+				public  String getname() {
+					return pro.getProperty("name");
+				}	
 //				public  String getusername() {
 //					return pro.getProperty("username");
 //				}

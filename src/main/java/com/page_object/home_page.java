@@ -36,8 +36,11 @@ public WebDriver driver;
 	@FindBy(xpath="//button[@title='Search Vehicle']")		//Click_Search_Vehicle
 	private WebElement Click_Search_Vehicle;
 
-	@FindBy(xpath="(//*[text()='Select Vehicle'])[2]")		//Click_Select_Vehicle
+	@FindBy(xpath="(//*[text()='Select Vehicle'])[2]")		//Click_Select_Vehicle	
 	private WebElement Click_Select_Vehicle;
+	
+	@FindBy(xpath="(//li[@data-value])[2]")					//Click_Select_random_1st_Vehicle
+	private WebElement Click_Select_random_1st_Vehicle;
 
 	@FindBy(xpath="//li[@data-value='Glamour']")			//Click_Glamour_bike
 	private WebElement Click_Glamour_bike;
@@ -67,17 +70,19 @@ public WebDriver driver;
 	@FindBy(xpath="//span[text()='Upcoming']")				//Click_Upcoming_bike_booking
 	private WebElement Click_Upcoming_bike_booking;
 
+//================================== Booking management ========================================================
+
+	@FindBy(xpath="//p[text()='Booking Management']")		//Click_Booking_Management
+	private WebElement Click_Booking_Management;
+
 	@FindBy(xpath="")
 	private WebElement Click;
-//
-//	@FindBy(xpath="")
-//	private WebElement Click;
-//
-//	@FindBy(xpath="")
-//	private WebElement Click;
-//
-//	@FindBy(xpath="")
-//	private WebElement Click;
+
+	@FindBy(xpath="")
+	private WebElement Click;
+
+	@FindBy(xpath="")
+	private WebElement Click;
 	
 	
 	
@@ -125,6 +130,10 @@ public WebDriver driver;
 						return Click_Select_Vehicle;
 					}
 			
+					public WebElement getClick_Select_random_1st_Vehicle() {
+						return Click_Select_random_1st_Vehicle;
+					}
+			
 					public WebElement getClick_Glamour_bike() {
 						return Click_Glamour_bike;
 					}
@@ -140,7 +149,7 @@ public WebDriver driver;
 					public WebElement getClick_Create_Booking() {
 						return Click_Create_Booking;
 					}
-//============================================================================================================================
+//====================================== User management ===================================================
 										
 					public WebElement getClick_User_Management() {
 						return Click_User_Management;
@@ -160,18 +169,18 @@ public WebDriver driver;
 					public WebElement getClick_Upcoming_bike_booking() {
 						return Click_Upcoming_bike_booking;
 					}
-//			
-//					public WebElement getPass() {
-//						return Pass;
-//					}
-//			
-//					public WebElement getPass() {
-//						return Pass;
-//					}
-//			
-//					public WebElement getPass() {
-//						return Pass;
-//					}
+//================================= Booking management====================================================
+					public WebElement getClick_Booking_Management() {
+						return Click_Booking_Management;
+					}
+			
+					public WebElement getPass() {
+						return Pass;
+					}
+			
+					public WebElement getPass() {
+						return Pass;
+					}
 //			
 //					public WebElement getPass() {
 //						return Pass;

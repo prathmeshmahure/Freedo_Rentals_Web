@@ -12,6 +12,7 @@ import com.utility.library;
 public class TC_0001 extends base_class{
 	public static login_page login;
 	public static home_page home;
+	
 	@Test
 	public void Login_Account()  {
 		login = PageFactory.initElements(driver, login_page.class);
@@ -21,7 +22,7 @@ public class TC_0001 extends base_class{
 		library.Custom_click(login.getClick_submit_Button(), "Submit button");	
 	}
 //========================================================================================================
-	@Test
+	@Test(dependsOnMethods="Login_Account")
 	public void verify_manual_bike_booking() throws Exception {
 		home = PageFactory.initElements(driver,home_page.class);
 		
@@ -35,16 +36,18 @@ public class TC_0001 extends base_class{
 		library.Custom_click(home.getClick_select_city_Noida(), "City selected");
 		library.Custom_click(home.getClick_Search_Vehicle(), "search vehicle");
 		library.Custom_click(home.getClick_Select_Vehicle(),"select vehicle");
-		library.Custom_click(home.getClick_Glamour_bike(),"bike selected");
+		library.Custom_click(home.getClick_Select_random_1st_Vehicle(),"random bike selected");
 		library.Custom_click(home.getClick_Select_Location(), "select location");
 		library.Custom_click(home.getClick_Noida_Uttar_Pradesh(), "location selected");
 		library.Custom_click(home.getClick_Create_Booking(),"create booking");
 	}
 //=========================================================================================================	
-	@Test
-	public void Verify_user_Management_process() {
+	@Test(dependsOnMethods="verify_manual_bike_booking")
+	public void Verify_user_Management_process() throws Exception {
+		home = PageFactory.initElements(driver,home_page.class);
+		Thread.sleep(3000);
+		library.Custom_click(home.getClick_Booking_Management(), "booking management");
 		
-		library.Custom_click(home.getClick_User_Management(), "user management");
 		library.custom_sendkeys(home.getClick_UM_Search_user(),config.getmobilenu(),"search user");
 		library.Custom_click(home.getClick_view_action(),"view button");
 		library.Custom_click(home.getClick_Bookings_button(), "Booking button");
