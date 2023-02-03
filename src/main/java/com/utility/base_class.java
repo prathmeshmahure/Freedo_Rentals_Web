@@ -2,6 +2,8 @@ package com.utility;
 
 import java.time.Duration;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -21,6 +23,7 @@ public class base_class {
 	public static WebDriver driver;
 	public static config_data_provider config;
 	public static excel_data_provider excel;
+	public static Logger log;
 	
 	@BeforeSuite
 	public void  BS() throws Exception {
@@ -50,6 +53,7 @@ public class base_class {
 			driver.get(config.getstageurl());
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			 log = LogManager.getLogger("Freedo_Rentals_Web");
 			
 		}
 	@AfterTest

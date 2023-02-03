@@ -75,14 +75,14 @@ public WebDriver driver;
 	@FindBy(xpath="//p[text()='Booking Management']")		//Click_Booking_Management
 	private WebElement Click_Booking_Management;
 
-	@FindBy(xpath="")
-	private WebElement Click;
-
-	@FindBy(xpath="")
-	private WebElement Click;
-
-	@FindBy(xpath="")
-	private WebElement Click;
+//	@FindBy(xpath="")
+//	private WebElement Click;
+//
+//	@FindBy(xpath="")
+//	private WebElement Click;
+//
+//	@FindBy(xpath="")
+//	private WebElement Click;
 	
 	
 	
@@ -174,13 +174,13 @@ public WebDriver driver;
 						return Click_Booking_Management;
 					}
 			
-					public WebElement getPass() {
-						return Pass;
-					}
-			
-					public WebElement getPass() {
-						return Pass;
-					}
+//					public WebElement getPass() {
+//						return Pass;
+//					}
+//			
+//					public WebElement getPass() {
+//						return Pass;
+//					}
 //			
 //					public WebElement getPass() {
 //						return Pass;
