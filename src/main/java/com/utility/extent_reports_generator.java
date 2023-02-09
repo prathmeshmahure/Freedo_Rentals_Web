@@ -24,7 +24,7 @@ public class extent_reports_generator {
 		extent.setSystemInfo("System Name", "Project Name");
 		extent.setSystemInfo("Laptop-Lenovo", "Freedo Web Application");
 		extent.setSystemInfo("QA", "Prathmesh Mahure");
-		extent.setSystemInfo("Operating system", "Windows 11");
+		extent.setSystemInfo("Operating system", "Windows 10");
 		extent.setSystemInfo("BrowserName", "Chrome");
 		return extent;
 	}

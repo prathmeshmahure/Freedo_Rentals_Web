@@ -9,7 +9,7 @@
 		  <test thread-count="5" name="chrome">
 			<parameter name="browser_name" value="chrome"></parameter>	 
 		    <classes>
-		      <class name="Freedo_domain.test_class"/>  
+		      <class name="Freedo_domain.web_admin_1"/>  
 		    </classes>
 		  </test> <!-- Test -->
 		  

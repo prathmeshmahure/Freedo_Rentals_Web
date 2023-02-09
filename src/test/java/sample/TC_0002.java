@@ -1,4 +1,4 @@
-package Freedo_domain;
+package sample;
 
 import org.testng.annotations.Test;
 
