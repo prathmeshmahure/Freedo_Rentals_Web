@@ -1,1 +1,56 @@
-[INFO ] 2023-02-09 14:51:04.252 [main] Freedo_Rentals_Web - TC_001_verify_valid_launch_of_web_application Starts
+[INFO ] 2023-02-10 16:48:41.555 [main] Freedo_Rentals_Web - =========== TC_001_verify_valid_launch_of_web_application Starts
+[INFO ] 2023-02-10 16:48:41.581 [main] Freedo_Rentals_Web -   Action performed Using valid admin url = https://adminuat.freedo.rentals/
+[INFO ] 2023-02-10 16:48:41.598 [main] Freedo_Rentals_Web - =========== TC_002_verify_invalid_launch_of_web_application Starts
+[INFO ] 2023-02-10 16:48:41.599 [main] Freedo_Rentals_Web -   Action performed Using invalid admin url = https://uat.freedo.rentals/
+[INFO ] 2023-02-10 16:48:45.750 [main] Freedo_Rentals_Web - =========== TC_003_verify__invalid_Login_functionality Starts
+[INFO ] 2023-02-10 16:48:46.725 [main] Freedo_Rentals_Web -   Successfully send Value Username
+[INFO ] 2023-02-10 16:48:46.973 [main] Freedo_Rentals_Web -   Successfully send Value Invalid password
+[INFO ] 2023-02-10 16:48:47.081 [main] Freedo_Rentals_Web -   Successfully Click Submit Button
+[INFO ] 2023-02-10 16:48:47.547 [main] Freedo_Rentals_Web -   Successfully Click Close popup
+[INFO ] 2023-02-10 16:48:47.550 [main] Freedo_Rentals_Web - =========== TC_005_verify_valid_Login_funcationality Starts
+[INFO ] 2023-02-10 16:48:48.535 [main] Freedo_Rentals_Web -   Successfully send Value Username
+[INFO ] 2023-02-10 16:48:48.702 [main] Freedo_Rentals_Web -   Successfully send Value password
+[INFO ] 2023-02-10 16:48:48.787 [main] Freedo_Rentals_Web -   Successfully Click Submit Button
+[INFO ] 2023-02-10 16:48:49.937 [main] Freedo_Rentals_Web - =========== TC_006_verify_content_Home_page_of_Admin Starts
+[INFO ] 2023-02-10 16:48:53.384 [main] Freedo_Rentals_Web -   Element is visible Dashboard
+[INFO ] 2023-02-10 16:48:53.943 [main] Freedo_Rentals_Web -   Element is visible Right side page
+[INFO ] 2023-02-10 16:48:55.297 [main] Freedo_Rentals_Web -   Element is visible Statics
+[INFO ] 2023-02-10 16:48:55.828 [main] Freedo_Rentals_Web -   Element is visible Right side page
+[INFO ] 2023-02-10 16:48:57.112 [main] Freedo_Rentals_Web -   Element is visible Role management
+[INFO ] 2023-02-10 16:48:57.654 [main] Freedo_Rentals_Web -   Element is visible Right side page
+[INFO ] 2023-02-10 16:48:58.994 [main] Freedo_Rentals_Web -   Element is visible Warehouse management
+[INFO ] 2023-02-10 16:48:59.542 [main] Freedo_Rentals_Web -   Element is visible Right side page
+[INFO ] 2023-02-10 16:49:00.828 [main] Freedo_Rentals_Web -   Element is visible User Management
+[INFO ] 2023-02-10 16:49:01.371 [main] Freedo_Rentals_Web -   Element is visible Right side page
+[INFO ] 2023-02-10 16:49:02.580 [main] Freedo_Rentals_Web -   Element is visible Inventory
+[INFO ] 2023-02-10 16:49:03.117 [main] Freedo_Rentals_Web -   Element is visible Right side page
+[INFO ] 2023-02-10 16:49:04.387 [main] Freedo_Rentals_Web -   Element is visible Vehicle Management
+[INFO ] 2023-02-10 16:49:04.935 [main] Freedo_Rentals_Web -   Element is visible Right side page
+[INFO ] 2023-02-10 16:49:06.174 [main] Freedo_Rentals_Web -   Element is visible Rental plan
+[INFO ] 2023-02-10 16:49:07.060 [main] Freedo_Rentals_Web -   Element is visible Right side page
+[INFO ] 2023-02-10 16:49:08.199 [main] Freedo_Rentals_Web -   Element is visible Package management
+[INFO ] 2023-02-10 16:49:08.728 [main] Freedo_Rentals_Web -   Element is visible Right side page
+[INFO ] 2023-02-10 16:49:10.025 [main] Freedo_Rentals_Web -   Element is visible Booking Management
+[INFO ] 2023-02-10 16:49:10.971 [main] Freedo_Rentals_Web -   Element is visible Right side page
+[INFO ] 2023-02-10 16:49:12.191 [main] Freedo_Rentals_Web -   Element is visible Location management
+[INFO ] 2023-02-10 16:49:12.729 [main] Freedo_Rentals_Web -   Element is visible Right side page
+[INFO ] 2023-02-10 16:49:13.934 [main] Freedo_Rentals_Web -   Element is visible Feedback management
+[INFO ] 2023-02-10 16:49:14.468 [main] Freedo_Rentals_Web -   Element is visible Right side page
+[INFO ] 2023-02-10 16:49:15.784 [main] Freedo_Rentals_Web -   Element is visible Manual Booking
+[INFO ] 2023-02-10 16:49:16.318 [main] Freedo_Rentals_Web -   Element is visible Right side page
+[INFO ] 2023-02-10 16:49:17.523 [main] Freedo_Rentals_Web -   Element is visible Promotions
+[INFO ] 2023-02-10 16:49:18.066 [main] Freedo_Rentals_Web -   Element is visible Right side page
+[INFO ] 2023-02-10 16:49:19.300 [main] Freedo_Rentals_Web -   Element is visible Slot pause
+[INFO ] 2023-02-10 16:49:19.838 [main] Freedo_Rentals_Web -   Element is visible Right side page
+[INFO ] 2023-02-10 16:49:21.139 [main] Freedo_Rentals_Web -   Element is visible Payment Management
+[INFO ] 2023-02-10 16:49:22.047 [main] Freedo_Rentals_Web -   Element is visible Right side page
+[ERROR] 2023-02-10 16:49:26.339 [main] Freedo_Rentals_Web - ==Unable to Element visible Reports
+[INFO ] 2023-02-10 16:49:26.528 [main] Freedo_Rentals_Web -   Successfully Click User report
+[INFO ] 2023-02-10 16:49:27.077 [main] Freedo_Rentals_Web -   Element is visible Right side page
+[INFO ] 2023-02-10 16:49:28.266 [main] Freedo_Rentals_Web -   Element is visible Master management
+[INFO ] 2023-02-10 16:49:28.437 [main] Freedo_Rentals_Web -   Successfully Click City
+[INFO ] 2023-02-10 16:49:28.973 [main] Freedo_Rentals_Web -   Element is visible Right side page
+[INFO ] 2023-02-10 16:49:30.377 [main] Freedo_Rentals_Web -   Element is visible Business management
+[INFO ] 2023-02-10 16:49:30.917 [main] Freedo_Rentals_Web -   Element is visible Right side page
+[INFO ] 2023-02-10 16:49:32.536 [main] Freedo_Rentals_Web -   Element is visible Setting
+[INFO ] 2023-02-10 16:49:33.069 [main] Freedo_Rentals_Web -   Element is visible Right side page

@@ -1,6 +1,7 @@
 package com.utility;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -57,20 +58,20 @@ public class base_class {
 		
 			driver.get(config.getstageurl());
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 			 log = LogManager.getLogger("Freedo_Rentals_Web");
 			
 		}
 	@AfterTest
 	public void teardown() {
-//		driver.close();
+		driver.close();
 //		driver.quit();
 	}
 	
 /////////////////////////////////////////// Explicit Wait //////////////////////////////////////////////////////////////  	
     public static void Explicit_wait_for_APK(WebElement element) {
     	
-    	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
+    	WebDriverWait wait=new WebDriverWait(driver,5);
     	wait.until(ExpectedConditions.visibilityOf(element));
     }
     

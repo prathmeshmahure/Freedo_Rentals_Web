@@ -32,9 +32,12 @@ public class config_data_provider {
 				public  String getname() {
 					return pro.getProperty("name");
 				}	
-//				public  String getusername() {
-//					return pro.getProperty("username");
-//				}
+				public  String getinvalidurl() {
+					return pro.getProperty("invalidurl");
+				}	
+				public  String getinvalidusername() {
+					return pro.getProperty("invalidusername");
+				}
 				
 
 }

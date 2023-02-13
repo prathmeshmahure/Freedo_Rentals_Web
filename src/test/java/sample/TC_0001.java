@@ -27,7 +27,7 @@ public class TC_0001 extends base_class{
 		home = PageFactory.initElements(driver,home_page.class);
 		
 		Thread.sleep(3000);
-		library.Custom_click(home.getClick_Manual_Booking(), "manual booking");
+		library.Custom_click(home.getManual_Booking(), "manual booking");
 		library.custom_sendkeys(home.getClick_Mobile_Number(), config.getmobilenu(), "enter number");
 		library.Custom_click(home.getClick_Search_User(), "search user");
 		library.Custom_click(home.getClick_Select_Package(), "select package");
@@ -46,7 +46,7 @@ public class TC_0001 extends base_class{
 	public void Verify_user_Management_process() throws Exception {
 		home = PageFactory.initElements(driver,home_page.class);
 		Thread.sleep(3000);
-		library.Custom_click(home.getClick_Booking_Management(), "booking management");
+		library.Custom_click(home.getBooking_Management(), "booking management");
 		
 		library.custom_sendkeys(home.getClick_UM_Search_user(),config.getmobilenu(),"search user");
 		library.Custom_click(home.getClick_view_action(),"view button");

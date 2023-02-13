@@ -1,29 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="6" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-09T14:50:59 IST" name="Default suite" finished-at="2023-02-09T14:51:04 IST" duration-ms="4625">
+  <suite started-at="2023-02-10T16:48:37 IST" name="Suite" finished-at="2023-02-10T16:49:33 IST" duration-ms="55602">
     <groups>
     </groups>
-    <test started-at="2023-02-09T14:50:59 IST" name="Default test" finished-at="2023-02-09T14:51:04 IST" duration-ms="4625">
+    <test started-at="2023-02-10T16:48:37 IST" name="chrome" finished-at="2023-02-10T16:49:33 IST" duration-ms="55602">
       <class name="Freedo_domain.web_admin_1">
-        <test-method is-config="true" signature="BS()[pri:0, instance:Freedo_domain.web_admin_1@399f45b1]" started-at="2023-02-09T14:50:58 IST" name="BS" finished-at="2023-02-09T14:50:59 IST" duration-ms="1246" status="PASS">
+        <test-method is-config="true" signature="BS()[pri:0, instance:Freedo_domain.web_admin_1@4082ba93]" started-at="2023-02-10T16:48:36 IST" name="BS" finished-at="2023-02-10T16:48:37 IST" duration-ms="1149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BS -->
-        <test-method is-config="true" signature="browser()[pri:0, instance:Freedo_domain.web_admin_1@399f45b1]" started-at="2023-02-09T14:50:59 IST" name="browser" finished-at="2023-02-09T14:51:04 IST" duration-ms="4533" status="PASS">
+        <test-method is-config="true" signature="browser(java.lang.String)[pri:0, instance:Freedo_domain.web_admin_1@4082ba93]" started-at="2023-02-10T16:48:37 IST" name="browser" finished-at="2023-02-10T16:48:41 IST" duration-ms="3899" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method signature="TC_001_verify_valid_launch_of_web_application()[pri:0, instance:Freedo_domain.web_admin_1@399f45b1]" started-at="2023-02-09T14:51:04 IST" name="TC_001_verify_valid_launch_of_web_application" finished-at="2023-02-09T14:51:04 IST" duration-ms="45" status="PASS">
+        <test-method signature="TC_001_verify_valid_launch_of_web_application()[pri:0, instance:Freedo_domain.web_admin_1@4082ba93]" started-at="2023-02-10T16:48:41 IST" name="TC_001_verify_valid_launch_of_web_application" finished-at="2023-02-10T16:48:41 IST" duration-ms="56" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_001_verify_valid_launch_of_web_application -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Freedo_domain.web_admin_1@399f45b1]" started-at="2023-02-09T14:51:04 IST" name="teardown" finished-at="2023-02-09T14:51:04 IST" duration-ms="0" status="PASS">
+        <test-method signature="TC_002_verify_invalid_launch_of_web_application()[pri:0, instance:Freedo_domain.web_admin_1@4082ba93]" started-at="2023-02-10T16:48:41 IST" name="TC_002_verify_invalid_launch_of_web_application" finished-at="2023-02-10T16:48:45 IST" duration-ms="4151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_002_verify_invalid_launch_of_web_application -->
+        <test-method signature="TC_003_verify_invalid_Login_functionality()[pri:0, instance:Freedo_domain.web_admin_1@4082ba93]" started-at="2023-02-10T16:48:45 IST" name="TC_003_verify_invalid_Login_functionality" finished-at="2023-02-10T16:48:47 IST" duration-ms="1798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_003_verify_invalid_Login_functionality -->
+        <test-method signature="TC_005_verify_valid_Login_funcationality()[pri:0, instance:Freedo_domain.web_admin_1@4082ba93]" started-at="2023-02-10T16:48:47 IST" name="TC_005_verify_valid_Login_funcationality" finished-at="2023-02-10T16:48:49 IST" duration-ms="2383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_005_verify_valid_Login_funcationality -->
+        <test-method signature="TC_006_verify_content_Home_page_of_Admin()[pri:0, instance:Freedo_domain.web_admin_1@4082ba93]" started-at="2023-02-10T16:48:49 IST" name="TC_006_verify_content_Home_page_of_Admin" finished-at="2023-02-10T16:49:33 IST" duration-ms="43136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_006_verify_content_Home_page_of_Admin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Freedo_domain.web_admin_1@4082ba93]" started-at="2023-02-10T16:49:33 IST" name="teardown" finished-at="2023-02-10T16:49:33 IST" duration-ms="131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Freedo_domain.web_admin_1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- chrome -->
+  </suite> <!-- Suite -->
 </testng-results>

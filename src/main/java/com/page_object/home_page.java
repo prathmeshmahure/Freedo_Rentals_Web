@@ -7,14 +7,110 @@ import org.openqa.selenium.support.How;
 
 public class home_page {
 public WebDriver driver;
+
+//==================================== home page dashboard component ===================================
+	@FindBy(xpath="//p[text()='Dashboard']")			
+	private WebElement Dashboard;
+	
+	@FindBy(xpath="//div[text()='Dashboard Management']")			
+	private WebElement txt_Dashboard_Management;	
+//======================================================================================================
+	
+	@FindBy(xpath="//p[text()='Statistics']")			
+	private WebElement Statistics;
+	
+	@FindBy(xpath="//div[text()='Statistics']")			
+	private WebElement txt_Statistics;	
+//======================================================================================================
+	
+	@FindBy(xpath="//p[text()='Role Management']")			
+	private WebElement Role_Management;
+	
+	@FindBy(xpath="//div[text()='Roles']")			
+	private WebElement txt_Roles;	
+//======================================================================================================
+	
+	@FindBy(xpath="//p[text()='Warehouse Management']")			
+	private WebElement Warehouse_Management;
+	
+	@FindBy(xpath="//div[text()='Warehouse Management']")			
+	private WebElement txt_Warehouse_Management;	
+//========================================== User Management ============================================================
+	
+	@FindBy(xpath="//p[text()='User Management']")			
+	private WebElement User_Management;
+	
+	@FindBy(xpath="//div[text()='Users']")			
+	private WebElement txt_Users;
+	
+	@FindBy(xpath="//input[@placeholder='Search Users']")	//Click_UM_Search_user
+	private WebElement Click_UM_Search_user;
+
+	@FindBy(xpath="//div[@id='view-action']")				//Click_view_action
+	private WebElement Click_view_action;
+
+	@FindBy(xpath="//h5[text()='Bookings']")				//Click_Bookings_button
+	private WebElement Click_Bookings_button;
+
+	@FindBy(xpath="//span[text()='Upcoming']")				//Click_Upcoming_bike_booking
+	private WebElement Click_Upcoming_bike_booking;
+//======================================================================================================
+	
+	@FindBy(xpath="//p[text()='Inventory']")			
+	private WebElement Inventory;
+	
+	@FindBy(xpath="//div[text()='Vehicle Inventory Management']")			
+	private WebElement txt_Vehicle_Inventory_Management;	
+//======================================================================================================
+	
+	@FindBy(xpath="//p[text()='Vehicle Management']")			
+	private WebElement Vehicle_Management;
+	
+	@FindBy(xpath="//div[text()='Vehicle Management']")			
+	private WebElement txt_Vehicle_Management;	
+//======================================================================================================
+	
+	@FindBy(xpath="//p[text()='Rental Plans']")			
+	private WebElement Rental_Plans;
+	
+	@FindBy(xpath="//div[text()='Rental Plans']")			
+	private WebElement txt_Rental_Plans;	
+//======================================================================================================
+	
+	@FindBy(xpath="//p[text()='Package Management']")			
+	private WebElement Package_Management;
+	
+	@FindBy(xpath="//div[text()='Packages']")			
+	private WebElement txt_Packages;	
+//================================== Booking management ========================================================
+
+	@FindBy(xpath="//p[text()='Booking Management']")		//Click_Booking_Management
+	private WebElement Booking_Management;
+	
+	@FindBy(xpath="//div[text()='Bookings Management']")			
+	private WebElement txt_Bookings_Management;	
+//======================================================================================================
+
+	@FindBy(xpath="//p[text()='Location Management']")
+	private WebElement Location_Management;
+	
+	@FindBy(xpath="//div[text()='Location Management']")			
+	private WebElement txt_Location_Management;	
+//======================================================================================================
+	
+	@FindBy(xpath="//p[text()='Feedback Management']")
+	private WebElement Feedback_Management;
+	
+	@FindBy(xpath="//div[text()='Feedback Management']")			
+	private WebElement txt_Feedback_Management;	
 //==================================== Manual booking area=================================================================
 	
 	@FindBy(xpath="//p[text()='Manual Booking']")			//Click_Manual_Booking
-	private WebElement Click_Manual_Booking;
-
-//=====================================================================================================	
+	private WebElement Manual_Booking;	
 	
-	
+	@FindBy(xpath="//div[text()='New Booking']")			
+	private WebElement txt_New_Booking;	
+		
 	@FindBy(xpath="//input[@placeholder='Mobile Number']")	//Click_Mobile_Number
 	private WebElement Click_Mobile_Number;
 
@@ -38,7 +134,7 @@ public WebDriver driver;
 
 	@FindBy(xpath="(//*[text()='Select Vehicle'])[2]")		//Click_Select_Vehicle	
 	private WebElement Click_Select_Vehicle;
-	
+		
 	@FindBy(xpath="(//li[@data-value])[2]")					//Click_Select_random_1st_Vehicle
 	private WebElement Click_Select_random_1st_Vehicle;
 
@@ -53,36 +149,71 @@ public WebDriver driver;
 
 	@FindBy(xpath="//button[@title='Create Booking']")
 	private WebElement Click_Create_Booking;
-//===================================== User manaement area ==============================================================
+//=========================================================================================================	
+	@FindBy(xpath="//p[text()='Promotions']")
+	private WebElement Promotions;
 	
-	@FindBy(xpath="//p[text()='User Management']")			//Click_User_Management
-	private WebElement Click_User_Management;
+	@FindBy(xpath="//div[text()='Promotions']")			
+	private WebElement txt_Promotions;	
+//======================================================================================================
 	
-	@FindBy(xpath="//input[@placeholder='Search Users']")	//Click_UM_Search_user
-	private WebElement Click_UM_Search_user;
-
-	@FindBy(xpath="//div[@id='view-action']")				//Click_view_action
-	private WebElement Click_view_action;
-
-	@FindBy(xpath="//h5[text()='Bookings']")				//Click_Bookings_button
-	private WebElement Click_Bookings_button;
-
-	@FindBy(xpath="//span[text()='Upcoming']")				//Click_Upcoming_bike_booking
-	private WebElement Click_Upcoming_bike_booking;
-
-//================================== Booking management ========================================================
-
-	@FindBy(xpath="//p[text()='Booking Management']")		//Click_Booking_Management
-	private WebElement Click_Booking_Management;
-
-//	@FindBy(xpath="")
+	@FindBy(xpath="//p[text()='Slot Pause']")			
+	private WebElement Slot_Pause;
+	
+	@FindBy(xpath="//div[text()='Slot Pause']")			
+	private WebElement txt_Slot_Pause;	
+//======================================================================================================
+	
+	@FindBy(xpath="//p[text()='Payment Management']")			
+	private WebElement Payment_Management;
+	
+	@FindBy(xpath="//div[text()='Payment Management']")			
+	private WebElement txt_Payment_Management;	
+//======================================================================================================
+	
+	@FindBy(xpath="//p[text()='Reports']")			
+	private WebElement Reports;
+	
+	@FindBy(xpath="//p[text()='User Reports']")			
+	private WebElement Click_User_Reports;	
+	
+	@FindBy(xpath="//div[text()='User Reports']")			
+	private WebElement txt_User_Reports;	
+//======================================================================================================
+	
+	@FindBy(xpath="//p[text()='Master Management']")			
+	private WebElement Master_Management;
+	
+	@FindBy(xpath="//div[text()='City Management']")			
+	private WebElement txt_City_Management;	
+	
+	@FindBy(xpath="//p[text()='City']")			
+	private WebElement Click_City;	
+//======================================================================================================
+	
+	@FindBy(xpath="//p[text()='Bussiness Management']")			
+	private WebElement Bussiness_Management;
+	
+	@FindBy(xpath="//div[text()='Business Management']")			
+	private WebElement txt_Business_Management;	
+//======================================================================================================
+	
+	@FindBy(xpath="//p[text()='Settings']")			
+	private WebElement Settings;
+	
+	@FindBy(xpath="//div[text()='Update Secondary Email And Mobile Number']")			
+	private WebElement txt_Update_Secondary_Email_And_Mobile_Number;	
+//======================================================================================================
+	
+//	@FindBy(xpath="")			
 //	private WebElement Click;
-//
-//	@FindBy(xpath="")
+//	
+//	@FindBy(xpath="")			
 //	private WebElement Click;
-//
-//	@FindBy(xpath="")
+//	
+//	@FindBy(xpath="")			
 //	private WebElement Click;
+
 	
 	
 	
@@ -93,11 +224,112 @@ public WebDriver driver;
 					public WebDriver getDriver() {
 						return driver;
 					}
-//==================================== manual booking ==========================================================================					
-					public WebElement getClick_Manual_Booking() {
-						return Click_Manual_Booking;
+//============================== home page dashboard component ===================================================
+					public WebElement getDashboard() {
+						return Dashboard;
 					}
-//============================================================================================			
+					public WebElement gettxt_Dashboard_Management() {
+						return txt_Dashboard_Management;
+					}
+//=======================================================================================================
+					public WebElement getStatistics() {
+						return Statistics;
+					}
+					public WebElement gettxt_Statistics() {
+						return txt_Statistics;
+					}
+//=======================================================================================================
+					public WebElement getRole_Management() {
+						return Role_Management;
+					}
+					public WebElement gettxt_Roles() {
+						return txt_Roles;
+					}
+//=======================================================================================================
+					public WebElement getWarehouse_Management() {
+						return Warehouse_Management;
+					}
+					public WebElement gettxt_Warehouse_Management() {
+						return txt_Warehouse_Management;
+					}
+//=======================================================================================================
+					public WebElement getUser_Management() {
+						return User_Management;
+					}
+					public WebElement gettxt_Users() {
+						return txt_Users;
+					}
+					public WebElement getClick_UM_Search_user() {
+						return Click_UM_Search_user;
+					}
+			
+					public WebElement getClick_view_action() {
+						return Click_view_action;
+					}
+			
+					public WebElement getClick_Bookings_button() {
+						return Click_Bookings_button;
+					}
+			
+					public WebElement getClick_Upcoming_bike_booking() {
+						return Click_Upcoming_bike_booking;
+					}
+//=======================================================================================================
+					public WebElement getInventory() {
+						return Inventory;
+					}
+					public WebElement gettxt_Vehicle_Inventory_Management() {
+						return txt_Vehicle_Inventory_Management;
+					}
+//=======================================================================================================
+					public WebElement getVehicle_Management() {
+						return Vehicle_Management;
+					}
+					public WebElement gettxt_Vehicle_Management() {
+						return txt_Vehicle_Management;
+					}
+//=======================================================================================================
+					public WebElement getRental_Plans() {
+						return Rental_Plans;
+					}
+					public WebElement gettxt_Rental_Plans() {
+						return txt_Rental_Plans;
+					}
+//=======================================================================================================
+					public WebElement getPackage_Management() {
+						return Package_Management;
+					}
+					public WebElement gettxt_Packages() {
+						return txt_Packages;
+					}
+//=======================================================================================================
+					public WebElement getLocation_Management() {
+						return Location_Management;
+					}
+					public WebElement gettxt_Location_Management() {
+						return txt_Location_Management;
+					}
+//================================= Booking management====================================================
+					public WebElement getBooking_Management() {
+						return Booking_Management;
+					}
+					public WebElement gettxt_Bookings_Management() {
+						return txt_Bookings_Management;
+					}
+//=======================================================================================================
+					public WebElement getFeedback_Management() {
+						return Feedback_Management;
+					}
+					public WebElement gettxt_Feedback_Management() {
+						return txt_Feedback_Management;
+					}
+//==================================== manual booking ====================================================					
+					public WebElement getManual_Booking() {
+						return Manual_Booking;
+					}
+					public WebElement gettxt_New_Booking() {
+						return txt_New_Booking;
+					}		
 					public WebElement getClick_Mobile_Number() {
 						return Click_Mobile_Number;
 					}
@@ -149,31 +381,90 @@ public WebDriver driver;
 					public WebElement getClick_Create_Booking() {
 						return Click_Create_Booking;
 					}
-//====================================== User management ===================================================
-										
-					public WebElement getClick_User_Management() {
-						return Click_User_Management;
+//=========================================================================================================
+					public WebElement getPromotions() {
+						return Promotions;
 					}
-					public WebElement getClick_UM_Search_user() {
-						return Click_UM_Search_user;
+					public WebElement gettxt_Promotions() {
+						return txt_Promotions;
 					}
-			
-					public WebElement getClick_view_action() {
-						return Click_view_action;
+//=======================================================================================================
+					public WebElement getSlot_Pause() {
+						return Slot_Pause;
 					}
-			
-					public WebElement getClick_Bookings_button() {
-						return Click_Bookings_button;
+					public WebElement gettxt_Slot_Pause() {
+						return txt_Slot_Pause;
 					}
-			
-					public WebElement getClick_Upcoming_bike_booking() {
-						return Click_Upcoming_bike_booking;
+//=======================================================================================================
+					public WebElement getPayment_Management() {
+						return Payment_Management;
 					}
-//================================= Booking management====================================================
-					public WebElement getClick_Booking_Management() {
-						return Click_Booking_Management;
+					public WebElement gettxt_Payment_Management() {
+						return txt_Payment_Management;
 					}
-			
+//=======================================================================================================
+					public WebElement getReports() {
+						return Reports;
+					}
+					public WebElement getClick_User_Reports() {
+						return Click_User_Reports;
+					}
+					public WebElement gettxt_User_Reports() {
+						return txt_User_Reports;
+					}
+//=======================================================================================================
+					public WebElement getMaster_Management() {
+						return Master_Management;
+					}
+					public WebElement gettxt_City_Management() {
+						return txt_City_Management;
+					}
+					public WebElement getClick_City() {
+						return Click_City;
+					}
+//=======================================================================================================
+					public WebElement getBussiness_Management() {
+						return Bussiness_Management;
+					}
+					public WebElement gettxt_Business_Management() {
+						return txt_Business_Management;
+					}
+//=======================================================================================================
+					public WebElement getSettings() {
+						return Settings;
+					}
+					public WebElement gettxt_Update_Secondary_Email_And_Mobile_Number() {
+						return txt_Update_Secondary_Email_And_Mobile_Number;
+					}
+//=======================================================================================================
+//					public WebElement get() {
+//						return Click;
+//					}
+//					public WebElement get() {
+//						return Click;
+//					}
+//					public WebElement get() {
+//						return Click;
+//					}
+//					public WebElement get() {
+//						return Click;
+//					}
+//					public WebElement get() {
+//						return Click;
+//					}
+//					public WebElement get() {
+//						return Click;
+//					}
+//					public WebElement get() {
+//						return Click;
+//					}
+//					public WebElement get() {
+//						return Click;
+//					}
+//					public WebElement get() {
+//						return Click;
+//					}
+
 //					public WebElement getPass() {
 //						return Pass;
 //					}

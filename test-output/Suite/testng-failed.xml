@@ -7,14 +7,14 @@
   <test thread-count="5" name="chrome(failed)">
     <parameter name="browser_name" value="chrome"/>
     <classes>
-      <class name="Freedo_domain.test_class">
+      <class name="Freedo_domain.web_admin_1">
         <methods>
-          <include name="test1"/>
           <include name="browser"/>
+          <include name="TC_003_verify_invalid_Login_functionality"/>
           <include name="teardown"/>
           <include name="BS"/>
         </methods>
-      </class> <!-- Freedo_domain.test_class -->
+      </class> <!-- Freedo_domain.web_admin_1 -->
     </classes>
   </test> <!-- chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->
