@@ -44,14 +44,14 @@ public class library extends base_class{
 								}
 		}
 //////////////////////////////////////////////////////////////////////////////////////////////////////////	
-		public static void msg(String fieldname) {
+		public static void msg(String fieldname,String fieldname1) {
 			try {
-						test.log(Status.PASS, "Action performed=="+ fieldname);
-						log.info("  Action performed "+fieldname);
+						test.log(Status.PASS,""+fieldname+" "+ fieldname1);
+						log.info(fieldname+""+fieldname1);
 				}
 			catch(Exception e) {
-					test.log(Status.FAIL, fieldname+"==Unable Action performed =="+e);
-					log.error("==Unable Action performed "+fieldname);
+					test.log(Status.FAIL, fieldname1+"==Unable Action performed =="+e);
+					log.error(fieldname+""+fieldname1);
 								}
 		}
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////		

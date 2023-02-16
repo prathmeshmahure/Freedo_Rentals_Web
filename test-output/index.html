@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Freedo_domain.web_admin_1" class="method navigator-link" hash-for-method="TC_007_verify_content_of_Dashboard">TC_007_verify_content_of_Dashboard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -127,6 +141,11 @@
                         <a href="#" panel-name="suite-Suite" title="Freedo_domain.web_admin_1" class="method navigator-link" hash-for-method="TC_006_verify_content_Home_page_of_Admin">TC_006_verify_content_Home_page_of_Admin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Freedo_domain.web_admin_1" class="method navigator-link" hash-for-method="TC_008_verify_valid_Vehicle_statistics_count">TC_008_verify_valid_Vehicle_statistics_count</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -139,6 +158,47 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Freedo_domain.web_admin_1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_007_verify_content_of_Dashboard">
+                  </a> <!-- TC_007_verify_content_of_Dashboard -->
+                  <span class="method-name">TC_007_verify_content_of_Dashboard</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos;Total Vehicles&apos;]//following-sibling::p&quot;}
+  (Session info: chrome=110.0.5481.77)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;PRATHMESH&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\PM\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:52599}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 281ee50682581d6ecb5976fc7d258ccf
+*** Element info: {Using=xpath, value=//p[text()=&apos;Total Vehicles&apos;]//following-sibling::p}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getText(Unknown Source)
+	at Freedo_domain.web_admin_1.TC_007_verify_content_of_Dashboard(web_admin_1.java:152)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -178,6 +238,13 @@
                   <a name="TC_006_verify_content_Home_page_of_Admin">
                   </a> <!-- TC_006_verify_content_Home_page_of_Admin -->
                   <span class="method-name">TC_006_verify_content_Home_page_of_Admin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_008_verify_valid_Vehicle_statistics_count">
+                  </a> <!-- TC_008_verify_valid_Vehicle_statistics_count -->
+                  <span class="method-name">TC_008_verify_valid_Vehicle_statistics_count</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -238,32 +305,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC_006_verify_content_Home_page_of_Admin')
 data.setCell(0, 2, 'Freedo_domain.web_admin_1')
-data.setCell(0, 3, 43136);
+data.setCell(0, 3, 48667);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_002_verify_invalid_launch_of_web_application')
+data.setCell(1, 1, 'TC_007_verify_content_of_Dashboard')
 data.setCell(1, 2, 'Freedo_domain.web_admin_1')
-data.setCell(1, 3, 4151);
+data.setCell(1, 3, 13188);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC_005_verify_valid_Login_funcationality')
+data.setCell(2, 1, 'TC_008_verify_valid_Vehicle_statistics_count')
 data.setCell(2, 2, 'Freedo_domain.web_admin_1')
-data.setCell(2, 3, 2383);
+data.setCell(2, 3, 11300);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC_003_verify_invalid_Login_functionality')
+data.setCell(3, 1, 'TC_002_verify_invalid_launch_of_web_application')
 data.setCell(3, 2, 'Freedo_domain.web_admin_1')
-data.setCell(3, 3, 1798);
+data.setCell(3, 3, 4989);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC_001_verify_valid_launch_of_web_application')
+data.setCell(4, 1, 'TC_005_verify_valid_Login_funcationality')
 data.setCell(4, 2, 'Freedo_domain.web_admin_1')
-data.setCell(4, 3, 56);
+data.setCell(4, 3, 1979);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC_003_verify_invalid_Login_functionality')
+data.setCell(5, 2, 'Freedo_domain.web_admin_1')
+data.setCell(5, 3, 1809);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC_001_verify_valid_launch_of_web_application')
+data.setCell(6, 2, 'Freedo_domain.web_admin_1')
+data.setCell(6, 3, 53);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -303,31 +378,41 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">browser(chrome)</span>
-                <span class="method-start">1153 ms</span>
+                <span class="method-start">1167 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">TC_001_verify_valid_launch_of_web_application</span>
-                <span class="method-start">5070 ms</span>
+                <span class="method-start">5035 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_002_verify_invalid_launch_of_web_application</span>
-                <span class="method-start">5130 ms</span>
+                <span class="method-start">5093 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_003_verify_invalid_Login_functionality</span>
-                <span class="method-start">9283 ms</span>
+                <span class="method-start">10085 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_005_verify_valid_Login_funcationality</span>
-                <span class="method-start">11083 ms</span>
+                <span class="method-start">11896 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_006_verify_content_Home_page_of_Admin</span>
-                <span class="method-start">13468 ms</span>
+                <span class="method-start">13877 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_007_verify_content_of_Dashboard</span>
+                <span class="method-start">62555 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_008_verify_valid_Vehicle_statistics_count</span>
+                <span class="method-start">75953 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">56620 ms</span>
+                <span class="method-start">87256 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

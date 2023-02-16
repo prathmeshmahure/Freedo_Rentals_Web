@@ -1,7 +1,11 @@
 package sample;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.page_object.home_page;
@@ -25,33 +29,16 @@ public class TC_0001 extends base_class{
 	@Test(dependsOnMethods="Login_Account")
 	public void verify_manual_bike_booking() throws Exception {
 		home = PageFactory.initElements(driver,home_page.class);
-		
 		Thread.sleep(3000);
-		library.Custom_click(home.getManual_Booking(), "manual booking");
-		library.custom_sendkeys(home.getClick_Mobile_Number(), config.getmobilenu(), "enter number");
-		library.Custom_click(home.getClick_Search_User(), "search user");
-		library.Custom_click(home.getClick_Select_Package(), "select package");
-		library.Custom_click(home.getClick_1_days_package(), "package selected");
-		library.Custom_click(home.getClick_Select_City(), "select city");
-		library.Custom_click(home.getClick_select_city_Noida(), "City selected");
-		library.Custom_click(home.getClick_Search_Vehicle(), "search vehicle");
-		library.Custom_click(home.getClick_Select_Vehicle(),"select vehicle");
-		library.Custom_click(home.getClick_Select_random_1st_Vehicle(),"random bike selected");
-		library.Custom_click(home.getClick_Select_Location(), "select location");
-		library.Custom_click(home.getClick_Noida_Uttar_Pradesh(), "location selected");
-		library.Custom_click(home.getClick_Create_Booking(),"create booking");
-	}
+		String date2=driver.findElement(By.xpath("(//input[@placeholder=\"dd-mm-yyyy\"])[1]")).getAttribute("value");
+		System.out.println(date2);
+		Date date = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+		String formattedDate = sdf.format(date);
+		System.out.println(formattedDate);
+		Assert.assertEquals(date2, formattedDate);
+	}	
 //=========================================================================================================	
-	@Test(dependsOnMethods="verify_manual_bike_booking")
-	public void Verify_user_Management_process() throws Exception {
-		home = PageFactory.initElements(driver,home_page.class);
-		Thread.sleep(3000);
-		library.Custom_click(home.getBooking_Management(), "booking management");
-		
-		library.custom_sendkeys(home.getClick_UM_Search_user(),config.getmobilenu(),"search user");
-		library.Custom_click(home.getClick_view_action(),"view button");
-		library.Custom_click(home.getClick_Bookings_button(), "Booking button");
-	}
 	
 	
 	

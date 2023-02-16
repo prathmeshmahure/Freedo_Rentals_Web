@@ -13,7 +13,50 @@ public WebDriver driver;
 	private WebElement Dashboard;
 	
 	@FindBy(xpath="//div[text()='Dashboard Management']")			
-	private WebElement txt_Dashboard_Management;	
+	private WebElement txt_Dashboard_Management;
+	//=================================== Vehicle statics============
+	@FindBy(xpath="//p[text()='Total Vehicles']//following-sibling::p")			//total vehicle
+	private WebElement Ds_vs_txt_Total_Vehicles;
+	
+	@FindBy(xpath="//p[text()='Available Vehicles']//following-sibling::p")			
+	private WebElement Ds_vs_txt_Available_Vehicles;
+	
+	@FindBy(xpath="//p[text()='Booked Vehicles']//following-sibling::p")			
+	private WebElement Ds_vs_txt_Booked_Vehicles;
+	
+	@FindBy(xpath="//p[text()='InService Vehicles']//following-sibling::p")			
+	private WebElement Ds_vs_txt_InService_Vehicles;
+	//=================================== user statics============
+	@FindBy(xpath="//p[text()='Registered Users']//following-sibling::p")			
+	private WebElement Ds_us_txt_Registered_Users;
+	
+	@FindBy(xpath="//p[text()='Active Users']//following-sibling::p")			
+	private WebElement Ds_us_txt_Active_Users;
+	
+	@FindBy(xpath="//p[text()='Pending KYC']//following-sibling::p")			
+	private WebElement DS_us_txt_Pending_KYC;
+	//=================================== Booking statics============
+	@FindBy(xpath="//p[text()='Revenue Collected']//following-sibling::p")			
+	private WebElement DS_bs_txt_Revenue_Collected;
+	
+	@FindBy(xpath="//p[text()='Total Bookings']//following-sibling::p")			
+	private WebElement DS_bs_txt_Total_Bookings;
+	
+	@FindBy(xpath="//p[text()='Completed Bookings']//following-sibling::p")			
+	private WebElement Ds_bs_txt_Completed_Bookings;
+	
+	@FindBy(xpath="(//input[@placeholder='dd-mm-yyyy'])[1]")			
+	private WebElement Ds_date1;
+	
+	@FindBy(xpath="(//input[@placeholder='dd-mm-yyyy'])[2]")			
+	private WebElement Ds_date2;
+	
+	@FindBy(xpath="(//input[@placeholder='dd-mm-yyyy'])[3]")			
+	private WebElement Ds_date3;
+	
+	@FindBy(xpath="(//button[@tabindex='0'])[3]")			
+	private WebElement Ds_click_date2;
+	
 //======================================================================================================
 	
 	@FindBy(xpath="//p[text()='Statistics']")			
@@ -230,7 +273,53 @@ public WebDriver driver;
 					}
 					public WebElement gettxt_Dashboard_Management() {
 						return txt_Dashboard_Management;
+					}//=================Vehicle statics ================
+					public WebElement getDs_vs_txt_Total_Vehicles() {
+					return Ds_vs_txt_Total_Vehicles;
 					}
+					public WebElement getDs_vs_txt_Available_Vehicles() {
+					return Ds_vs_txt_Available_Vehicles;
+					}
+					public WebElement getDs_vs_txt_Booked_Vehicles() {
+					return Ds_vs_txt_Booked_Vehicles;
+					}
+					public WebElement getDs_vs_txt_InService_Vehicles() {
+					return Ds_vs_txt_InService_Vehicles;
+					}//=================user statics ================
+					public WebElement getDs_us_txt_Registered_Users() {
+					return Ds_us_txt_Registered_Users;
+					}
+					public WebElement getDs_us_txt_Active_Users() {
+					return Ds_us_txt_Active_Users;
+					}
+					public WebElement getDS_us_txt_Pending_KYC() {
+					return DS_us_txt_Pending_KYC;
+					}//=================Booking statics ================
+					public WebElement getDS_bs_txt_Revenue_Collected() {
+					return DS_bs_txt_Revenue_Collected;
+					}
+					public WebElement getDS_bs_txt_Total_Bookings() {
+					return DS_bs_txt_Total_Bookings;
+					}
+					public WebElement getDs_bs_txt_Completed_Bookings() {
+					return Ds_bs_txt_Completed_Bookings;
+					}
+					public WebElement getDs_date1() {
+					return Ds_date1;
+					}
+					public WebElement getDs_date2() {
+					return Ds_date2;
+					}
+					public WebElement getDs_date3() {
+					return Ds_date3;
+					}
+					public WebElement getDs_click_date2() {
+					return Ds_click_date2;
+					}
+	/*				public WebElement get() {
+					return Click;
+					}
+					*/
 //=======================================================================================================
 					public WebElement getStatistics() {
 						return Statistics;

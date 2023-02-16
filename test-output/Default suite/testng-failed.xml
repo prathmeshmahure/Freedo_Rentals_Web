@@ -5,8 +5,12 @@
     <classes>
       <class name="Freedo_domain.web_admin_1">
         <methods>
+          <include name="TC_008_verify_valid_Vehicle_statistics_count"/>
           <include name="TC_001_verify_valid_launch_of_web_application"/>
           <include name="browser"/>
+          <include name="TC_002_verify_invalid_launch_of_web_application"/>
+          <include name="TC_003_verify_invalid_Login_functionality"/>
+          <include name="TC_005_verify_valid_Login_funcationality"/>
           <include name="teardown"/>
           <include name="BS"/>
         </methods>

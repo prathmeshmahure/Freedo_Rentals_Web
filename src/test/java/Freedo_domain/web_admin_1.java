@@ -3,21 +3,30 @@ package Freedo_domain;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.page_object.home_page;
 import com.page_object.login_page;
 import com.utility.base_class;
 import com.utility.library;
-
+@Listeners(com.utility.listner.class)
 public class web_admin_1 extends base_class {
 	
 	public static login_page login;
 	public static home_page home;
+	public static ExtentTest test;
 	
 //===================================================================================================================	
 	@Test
@@ -25,7 +34,7 @@ public class web_admin_1 extends base_class {
 		log.info("=========== TC_001_verify_valid_launch_of_web_application Starts");
 		login = PageFactory.initElements(driver, login_page.class);
 		
-		library.msg("Using valid admin url = "+config.getstageurl());
+		library.msg("Using valid admin url = ",config.getstageurl());
 		String title=driver.getTitle();
 		Assert.assertEquals(title, "Hero Rentals");
 	}
@@ -34,7 +43,7 @@ public class web_admin_1 extends base_class {
 	public void TC_002_verify_invalid_launch_of_web_application()  {
 		log.info("=========== TC_002_verify_invalid_launch_of_web_application Starts");
 
-		library.msg("Using invalid admin url = "+config.getliveurl());
+		library.msg("Using invalid admin url = ",config.getliveurl());
 		driver.navigate().to(config.getliveurl());
 		driver.navigate().back();	
 	}
@@ -80,7 +89,7 @@ public class web_admin_1 extends base_class {
 		Assert.assertTrue(login.getpopup_login_successfully().isDisplayed());
 	}
 //====================================================================================================================	
-	@Test
+	@Test()
 	public void TC_006_verify_content_Home_page_of_Admin() throws Exception {
 		log.info("=========== TC_006_verify_content_Home_page_of_Admin Starts");
 		home = PageFactory.initElements(driver, home_page.class);
@@ -118,12 +127,7 @@ public class web_admin_1 extends base_class {
 		library.visible(home.gettxt_Slot_Pause(), "Right side page");
 		library.visible_and_click(home.getPayment_Management(), "Payment Management");
 		library.visible(home.gettxt_Payment_Management(), "Right side page");
-		
-		boolean s=home.getReports().isDisplayed();
-		boolean a=home.getReports().isEnabled();
-		System.out.println(s +""+ a);
-		
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		library.visible_and_click(home.getReports(), "Reports");
 		library.Custom_click(home.getClick_User_Reports(), "User report");
 		library.visible(home.gettxt_User_Reports(), "Right side page");
@@ -134,15 +138,119 @@ public class web_admin_1 extends base_class {
 		library.visible(home.gettxt_Business_Management(), "Right side page");
 		library.visible_and_click(home.getSettings(), "Setting");
 		library.visible(home.gettxt_Update_Secondary_Email_And_Mobile_Number(), "Right side page");
-		
-		
-		
-		
-		
-		
 	}
-	
-	
+//=======================================================================================================================
+	@Test()
+	public void TC_007_verify_content_of_Dashboard () throws Exception {
+		log.info("=========== TC_007_verify_content_of_Dashboard Starts");
+		home = PageFactory.initElements(driver, home_page.class);
+		Thread.sleep(2000);
+		
+		library.Custom_click(home.getDashboard(), "Dashboard");
+		//Vehicle statics
+		library.visible(home.getDs_vs_txt_Total_Vehicles(), "Total Vehicle");
+		library.msg("Total Vehicle count =",""+ home.getDs_vs_txt_Total_Vehicles().getText());
+		library.visible(home.getDs_vs_txt_Available_Vehicles(), "Available Vehicle");
+		library.msg("Available Vehicle count =",""+ home.getDs_vs_txt_Available_Vehicles().getText());
+		library.visible(home.getDs_vs_txt_Booked_Vehicles(), "Booked vehicles");
+		library.msg("Booked vehicles count =",""+ home.getDs_vs_txt_Booked_Vehicles().getText());
+		library.visible(home.getDs_vs_txt_InService_Vehicles(), "Inservice vehilce");
+		library.msg("Inservice vehilce count =",""+ home.getDs_vs_txt_InService_Vehicles().getText());
+		//User statics
+		library.visible(home.getDs_us_txt_Registered_Users(), "Register User");
+		library.msg("Register User count = ", home.getDs_us_txt_Registered_Users().getText());		
+		library.visible(home.getDs_us_txt_Active_Users(), "Active User");
+		library.msg("Register User count = ", home.getDs_us_txt_Active_Users().getText());		
+		library.visible(home.getDS_us_txt_Pending_KYC(), "Pending KYC");
+		library.msg("Pending KYC count = ", home.getDS_us_txt_Pending_KYC().getText());
+		//Booking statics
+		library.visible(home.getDS_bs_txt_Revenue_Collected(), "Revenue collected");
+		library.msg("Revenue collected count = ", home.getDS_bs_txt_Revenue_Collected().getText());		
+		library.visible(home.getDS_bs_txt_Total_Bookings(), "Total bookings");
+		library.msg("Total bookings count = ", home.getDS_bs_txt_Total_Bookings().getText());		
+		library.visible(home.getDs_bs_txt_Completed_Bookings(), "Completed booking");
+		library.msg("Completed booking count = ", home.getDs_bs_txt_Completed_Bookings().getText());	
+	}
+//==================================================================================================================
+	@SuppressWarnings("deprecation")
+	@Test
+	public void TC_008_verify_valid_Vehicle_statistics_count() throws Exception {
+		log.info("=========== TC_008_verify_valid_Vehicle_statistics_count Starts");
+		home = PageFactory.initElements(driver, home_page.class);
+		
+		Thread.sleep(2000);	
+		library.Custom_click(home.getDashboard(), "Dashboard");
+		Date date = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+		String currentdate = sdf.format(date);
+		String Actualdate=home.getDs_date1().getAttribute("value");
+			if(currentdate.equals(Actualdate)) {
+				library.msg("Current date ="+currentdate, " Actual date ="+Actualdate+"Date1");
+				log.info("date 1 =current and actual date is match");
+			}else {
+				log.error("date 1 =current and actual date is not match");
+				test.log(Status.FAIL, "=current and actual date is not match = date1");
+			}
+		String Actualdate2=home.getDs_date2().getAttribute("value");
+			if(currentdate.equals(Actualdate2)) {
+				library.msg("Current date ="+currentdate, " Actual date ="+Actualdate2+"Date2");
+				log.info("date 2 =current and actual date is match");
+			}else {
+				log.error("date 2 =current and actual date is not match");
+				test.log(Status.FAIL, "=current and actual date is not match = date2");
+			}
+		String Actualdate3=home.getDs_date3().getAttribute("value");
+			if(currentdate.equals(Actualdate3)) {
+				library.msg("Current date ="+currentdate, " Actual date ="+Actualdate3+"Date3");
+				log.info("date 3 =current and actual date is match");
+			}else {
+				log.error("date 3 =current and actual date is not match");
+				test.log(Status.FAIL, "=current and actual date is not match = date2");
+			}
+		///============ date select ========
+			library.Custom_click(home.getDs_click_date2(), "calender");
+			
+			Date d=new Date();
+			int  currentdate1=d.getDate();
+			int date12=currentdate1+2;			
+			List<WebElement> lastday=driver.findElements(By.xpath("//div[@role][4]/parent::div/parent::div/parent::div//following-sibling::div//button"));
+			int totaldays=lastday.size();
+			int i=date12;
+			int nextdate=i-totaldays;
+				if(i<=totaldays) {
+					WebElement dateselect=driver.findElement(By.xpath("(//button[normalize-space()="+i+"])[1]"));
+					library.Custom_click(dateselect, "Select date");
+				}else {
+					driver.findElement(By.xpath("//button[@title='Next month']")).click();
+					WebElement dateselect=driver.findElement(By.xpath("(//button[normalize-space()="+nextdate+"])[1]"));
+					library.Custom_click(dateselect, "Select date");
+				}
+		//======== selected date =============
+			Thread.sleep(2000);	
+			library.visible(home.getDs_vs_txt_Total_Vehicles(), "Total Vehicle");
+			library.msg("Total Vehicle count =",""+ home.getDs_vs_txt_Total_Vehicles().getText());
+			library.visible(home.getDs_vs_txt_Available_Vehicles(), "Available Vehicle");
+			library.msg("Available Vehicle count =",""+ home.getDs_vs_txt_Available_Vehicles().getText());
+			library.visible(home.getDs_vs_txt_Booked_Vehicles(), "Booked vehicles");
+			library.msg("Booked vehicles count =",""+ home.getDs_vs_txt_Booked_Vehicles().getText());
+			library.visible(home.getDs_vs_txt_InService_Vehicles(), "Inservice vehilce");
+			library.msg("Inservice vehilce count =",""+ home.getDs_vs_txt_InService_Vehicles().getText());
+			//User statics
+			library.visible(home.getDs_us_txt_Registered_Users(), "Register User");
+			library.msg("Register User count = ", home.getDs_us_txt_Registered_Users().getText());		
+			library.visible(home.getDs_us_txt_Active_Users(), "Active User");
+			library.msg("Register User count = ", home.getDs_us_txt_Active_Users().getText());		
+			library.visible(home.getDS_us_txt_Pending_KYC(), "Pending KYC");
+			library.msg("Pending KYC count = ", home.getDS_us_txt_Pending_KYC().getText());
+			//Booking statics
+			library.visible(home.getDS_bs_txt_Revenue_Collected(), "Revenue collected");
+			library.msg("Revenue collected count = ", home.getDS_bs_txt_Revenue_Collected().getText());		
+			library.visible(home.getDS_bs_txt_Total_Bookings(), "Total bookings");
+			library.msg("Total bookings count = ", home.getDS_bs_txt_Total_Bookings().getText());		
+			library.visible(home.getDs_bs_txt_Completed_Bookings(), "Completed booking");
+			library.msg("Completed booking count = ", home.getDs_bs_txt_Completed_Bookings().getText());			
+	}
+//=============================================================================================================================
 	
 	
 	
