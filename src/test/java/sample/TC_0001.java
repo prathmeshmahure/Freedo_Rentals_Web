@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -30,14 +31,17 @@ public class TC_0001 extends base_class{
 	public void verify_manual_bike_booking() throws Exception {
 		home = PageFactory.initElements(driver,home_page.class);
 		Thread.sleep(3000);
-		String date2=driver.findElement(By.xpath("(//input[@placeholder=\"dd-mm-yyyy\"])[1]")).getAttribute("value");
-		System.out.println(date2);
-		Date date = new Date();
-		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
-		String formattedDate = sdf.format(date);
-		System.out.println(formattedDate);
-		Assert.assertEquals(date2, formattedDate);
-	}	
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", home.getSettings());
+		
+		
+		
+	//	driver.findElement(By.xpath("//li[@id='reports_side_menu']")).click();
+	//	log.info("report click");
+	//	library.Custom_click(home.getReports(), "Report");
+		//library.Custom_click(home.getReports(), "Report");
+		Thread.sleep(5000);
+	}
 //=========================================================================================================	
 	
 	

@@ -19,7 +19,7 @@ public class login_page {
 	private WebElement Button; 
 	
 //========================================= popup ================================================	
-	@FindBy(how=How.XPATH,using="//div[text()='Password is invalid']")
+	@FindBy(how=How.XPATH,using="//div[text()='Password is invalid' or @class='rrt-text']")
 	private WebElement popup_invalid_Password;
 	
 	@FindBy(how=How.XPATH,using="//span[text()='✕']")

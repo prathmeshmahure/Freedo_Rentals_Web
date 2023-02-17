@@ -48,23 +48,21 @@ public class web_admin_1 extends base_class {
 		driver.navigate().back();	
 	}
 //===================================================================================================================
+	@SuppressWarnings("unlikely-arg-type")
 	@Test
 	public void TC_003_verify_invalid_Login_functionality() throws Exception {
 		log.info("=========== TC_003_verify__invalid_Login_functionality Starts");
-		
-		Robot r = new Robot();
-		for(int i=0; i<4; i++) {
-			r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
-		}
 		
 		driver.navigate().refresh();
 		library.custom_sendkeys(login.getusername(), config.getinvalidusername(), "Username");
 		library.custom_sendkeys(login.getPassword(), config.getinvalidusername()+"11", "Invalid password");
 		library.Custom_click(login.getClick_submit_Button(), "Submit Button");
+		
 		Assert.assertTrue(login.getpopup_invalid_Password().isDisplayed());
 		library.Custom_click(login.getpopup_close(), "Close popup");
 	}
 //=====================================================================================================================
+	@SuppressWarnings("unlikely-arg-type")
 	@Test(enabled=false)
 	public void TC_004_verify_max_invalid_Login_attempt() {
 		log.info("=========== TC_004_verify_max_invalid_Login_attempt Starts");
@@ -75,12 +73,22 @@ public class web_admin_1 extends base_class {
 		library.Custom_click(login.getClick_submit_Button(), "Submit Button");
 		library.Custom_click(login.getpopup_close(), "Close popup");
 		library.Custom_click(login.getClick_submit_Button(), "Submit Button");
-		Assert.assertTrue(login.getpopup_error().isDisplayed());
+			if(login.getpopup_error().equals("You have reached max number of attempts! Please try after sometime")) {
+				Assert.assertTrue(login.getpopup_error().isDisplayed());
+				test.log(Status.PASS, "=Popup is match");
+			}else {
+			Assert.assertTrue(login.getpopup_error().isDisplayed());
+			test.log(Status.FAIL, "=Popup is not match");
+			}
 	}
 //===================================================================================================================
 	@Test 
-	public void TC_005_verify_valid_Login_funcationality(){
+	public void TC_005_verify_valid_Login_funcationality() throws Exception{
 		log.info("=========== TC_005_verify_valid_Login_funcationality Starts");
+		Robot r = new Robot();
+		for(int i=0; i<5; i++) {
+			r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
+		}
 		
 		driver.navigate().refresh();
 		library.custom_sendkeys(login.getusername(), config.getusername(), "Username");
@@ -94,7 +102,8 @@ public class web_admin_1 extends base_class {
 		log.info("=========== TC_006_verify_content_Home_page_of_Admin Starts");
 		home = PageFactory.initElements(driver, home_page.class);
 		
-		Thread.sleep(2000);
+		driver.navigate().refresh();
+		Thread.sleep(2000);		
 		library.visible_and_click(home.getDashboard(), "Dashboard");
 		library.visible(home.gettxt_Dashboard_Management(), "Right side page");
 		library.visible_and_click(home.getStatistics(), "Statics");
@@ -127,10 +136,13 @@ public class web_admin_1 extends base_class {
 		library.visible(home.gettxt_Slot_Pause(), "Right side page");
 		library.visible_and_click(home.getPayment_Management(), "Payment Management");
 		library.visible(home.gettxt_Payment_Management(), "Right side page");
-		Thread.sleep(5000);
+		
+		driver.findElement(By.xpath("//li[@id='reports_side_menu']")).click();
 		library.visible_and_click(home.getReports(), "Reports");
 		library.Custom_click(home.getClick_User_Reports(), "User report");
 		library.visible(home.gettxt_User_Reports(), "Right side page");
+		
+		driver.findElement(By.xpath("//li[@id='master-management_side_menu']")).click();
 		library.visible_and_click(home.getMaster_Management(), "Master management");
 		library.Custom_click(home.getClick_City(), "City");
 		library.visible(home.gettxt_City_Management(), "Right side page");

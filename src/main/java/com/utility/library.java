@@ -58,7 +58,8 @@ public class library extends base_class{
 		public static void visible_and_click(WebElement element,String fieldname) {
 			try {
 					if(element.isDisplayed() || element.isEnabled()==true) {
-						Thread.sleep(1000);
+					//	Thread.sleep(1200);
+						library.Explicit_wait_for_APK(element);
 						element.click();
 						test.log(Status.PASS, "Element is visible =="+ fieldname);
 						log.info("  Element is visible "+fieldname);

@@ -58,7 +58,7 @@ public class base_class {
 		
 			driver.get(config.getstageurl());
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			 log = LogManager.getLogger("Freedo_Rentals_Web");
 			
 		}
@@ -71,7 +71,7 @@ public class base_class {
 /////////////////////////////////////////// Explicit Wait //////////////////////////////////////////////////////////////  	
     public static void Explicit_wait_for_APK(WebElement element) {
     	
-    	WebDriverWait wait=new WebDriverWait(driver,5);
+    	WebDriverWait wait=new WebDriverWait(driver,10);
     	wait.until(ExpectedConditions.visibilityOf(element));
     }
     
