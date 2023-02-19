@@ -247,6 +247,12 @@ public class web_admin_1 extends base_class {
 			library.msg("Booked vehicles count =",""+ home.getDs_vs_txt_Booked_Vehicles().getText());
 			library.visible(home.getDs_vs_txt_InService_Vehicles(), "Inservice vehilce");
 			library.msg("Inservice vehilce count =",""+ home.getDs_vs_txt_InService_Vehicles().getText());
+	}
+//==================================================================================================================
+			@Test
+			public void TC_009_verify_valid_User_Statistics_count() {
+			
+			
 			//User statics
 			library.visible(home.getDs_us_txt_Registered_Users(), "Register User");
 			library.msg("Register User count = ", home.getDs_us_txt_Registered_Users().getText());		
@@ -254,6 +260,10 @@ public class web_admin_1 extends base_class {
 			library.msg("Register User count = ", home.getDs_us_txt_Active_Users().getText());		
 			library.visible(home.getDS_us_txt_Pending_KYC(), "Pending KYC");
 			library.msg("Pending KYC count = ", home.getDS_us_txt_Pending_KYC().getText());
+			}
+//===================================================================================================================
+			@Test 
+			public void TC_010_verify_valid_Booking_Statistics_count() {
 			//Booking statics
 			library.visible(home.getDS_bs_txt_Revenue_Collected(), "Revenue collected");
 			library.msg("Revenue collected count = ", home.getDS_bs_txt_Revenue_Collected().getText());		
@@ -263,7 +273,10 @@ public class web_admin_1 extends base_class {
 			library.msg("Completed booking count = ", home.getDs_bs_txt_Completed_Bookings().getText());			
 	}
 //=============================================================================================================================
-	
+			@Test
+			public void TC_011_verify_valid_Booking_list_as_per_booking_tabs() {
+				
+			}
 	
 	
 	
