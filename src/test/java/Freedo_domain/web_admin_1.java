@@ -251,7 +251,7 @@ public class web_admin_1 extends base_class {
 //==================================================================================================================
 			@Test
 			public void TC_009_verify_valid_User_Statistics_count() {
-			
+				log.info("=========== TC_009_verify_valid_User_Statistics_count Starts");
 			
 			//User statics
 			library.visible(home.getDs_us_txt_Registered_Users(), "Register User");
@@ -264,6 +264,7 @@ public class web_admin_1 extends base_class {
 //===================================================================================================================
 			@Test 
 			public void TC_010_verify_valid_Booking_Statistics_count() {
+				log.info("=========== TC_010_verify_valid_Booking_Statistics_count Starts");
 			//Booking statics
 			library.visible(home.getDS_bs_txt_Revenue_Collected(), "Revenue collected");
 			library.msg("Revenue collected count = ", home.getDS_bs_txt_Revenue_Collected().getText());		
@@ -271,13 +272,29 @@ public class web_admin_1 extends base_class {
 			library.msg("Total bookings count = ", home.getDS_bs_txt_Total_Bookings().getText());		
 			library.visible(home.getDs_bs_txt_Completed_Bookings(), "Completed booking");
 			library.msg("Completed booking count = ", home.getDs_bs_txt_Completed_Bookings().getText());			
-	}
+			}
 //=============================================================================================================================
 			@Test
 			public void TC_011_verify_valid_Booking_list_as_per_booking_tabs() {
+				log.info("=========== TC_010_verify_valid_Booking_Statistics_count Starts");
 				
+			library.visible(home.getDS_click_New_Bookings_Received(), "New Bookings Received");
+			library.visible(home.getDs_click_Scheduled_Bookings(), "Scheduled Bookings");
+			library.visible(home.getDs_click_Near_To_Return_Bookings(), "Near to return bookings");
+			library.visible(home.getDs_click_Not_Returned(), "Not returned");
+			library.visible(home.getDs_click_Return_Requests_Received(), "Returns Request Received");
+			
+			library.visible(home.getDs_txt_User_Name(), "User name");
+			library.visible(home.getDs_txt_Mobile_Number(), "Mobile number");
+			library.visible(home.getDs_txt_Model_Name(), "Model Name");
+			library.visible(home.getDs_txt_Vehicle(), "Vehicle");
+			library.visible(home.getDs_txt_Booking_from_date(), "Booking from date");
+			library.visible(home.getDs_txt_Booking_to_date(), "Booking to date");
+			library.visible(home.getDs_txt_Payment_Type(), "Payment type");
+			library.visible(home.getDs_txt_COD(), "COD");
+			library.visible(home.getDs_txt_Action(), "Action");			
 			}
-	
+//===============================================================================================================================
 	
 	
 	

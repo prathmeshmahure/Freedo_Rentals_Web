@@ -56,6 +56,61 @@ public WebDriver driver;
 	
 	@FindBy(xpath="(//button[@tabindex='0'])[3]")			
 	private WebElement Ds_click_date2;
+	//=============== table data===================================
+	@FindBy(xpath="//h5[text()='New Bookings Received']")			
+	private WebElement DS_click_New_Bookings_Received;
+	
+	@FindBy(xpath="//h5[text()='Scheduled Bookings']")			
+	private WebElement Ds_click_Scheduled_Bookings;
+	
+	@FindBy(xpath="//h5[text()='Near To Return Bookings']")			
+	private WebElement Ds_click_Near_To_Return_Bookings;
+	
+	@FindBy(xpath="//h5[text()='Not Returned']")			
+	private WebElement Ds_click_Not_Returned;
+	
+	@FindBy(xpath="//h5[text()='Return Requests Received']")			
+	private WebElement Ds_click_Return_Requests_Received;
+	
+	@FindBy(xpath="//p[text()='User Name']")			
+	private WebElement Ds_txt_User_Name;
+	
+	@FindBy(xpath="//p[text()='Mobile Number']")			
+	private WebElement Ds_txt_Mobile_Number;
+
+	
+	@FindBy(xpath="//p[text()='Model Name']")			
+	private WebElement Ds_txt_Model_Name;
+	
+	@FindBy(xpath="//p[text()='Vehicle']")			
+	private WebElement Ds_txt_Vehicle;
+	
+	@FindBy(xpath="//p[text()='From']")			
+	private WebElement Ds_txt_Booking_from_date;
+	
+	@FindBy(xpath="//p[text()='To']")			
+	private WebElement Ds_txt_Booking_to_date;
+	
+	@FindBy(xpath="//p[text()='Payment Type']")			
+	private WebElement Ds_txt_Payment_Type;
+	
+	@FindBy(xpath="//p[text()='COD']")			
+	private WebElement Ds_txt_COD;
+	
+	@FindBy(xpath="//p[text()='Action']")			
+	private WebElement Ds_txt_Action;
+	
+/*	@FindBy(xpath="")			
+	private WebElement click;
+	
+	@FindBy(xpath="")			
+	private WebElement click;
+	
+	@FindBy(xpath="")			
+	private WebElement click;
+	
+	@FindBy(xpath="")			
+	private WebElement click;*/
 	
 //======================================================================================================
 	
@@ -315,11 +370,52 @@ public WebDriver driver;
 					}
 					public WebElement getDs_click_date2() {
 					return Ds_click_date2;
+					}//====================== table data ================
+					public WebElement getDS_click_New_Bookings_Received() {
+					return DS_click_New_Bookings_Received;
 					}
-	/*				public WebElement get() {
+					public WebElement getDs_click_Scheduled_Bookings() {
+					return Ds_click_Scheduled_Bookings;
+					}
+					public WebElement getDs_click_Near_To_Return_Bookings() {
+					return Ds_click_Near_To_Return_Bookings;
+					}
+					public WebElement getDs_click_Not_Returned() {
+					return Ds_click_Not_Returned;
+					}
+					public WebElement getDs_click_Return_Requests_Received() {
+					return Ds_click_Return_Requests_Received;
+					}
+					public WebElement getDs_txt_User_Name() {
+					return Ds_txt_User_Name;
+					}
+					public WebElement getDs_txt_Mobile_Number() {
+					return Ds_txt_Mobile_Number;
+					}
+					public WebElement getDs_txt_Model_Name() {
+					return Ds_txt_Model_Name;
+					}
+					public WebElement getDs_txt_Vehicle() {
+					return Ds_txt_Vehicle;
+					}
+					public WebElement getDs_txt_Booking_from_date() {
+					return Ds_txt_Booking_from_date;
+					}
+					public WebElement getDs_txt_Booking_to_date() {
+					return Ds_txt_Booking_to_date;
+					}
+					public WebElement getDs_txt_Payment_Type() {
+					return Ds_txt_Payment_Type;
+					}
+					public WebElement getDs_txt_COD() {
+					return Ds_txt_COD;
+					}
+					public WebElement getDs_txt_Action() {
+					return Ds_txt_Action;
+					}
+/*					public WebElement get() {
 					return Click;
-					}
-					*/
+					}*/
 //=======================================================================================================
 					public WebElement getStatistics() {
 						return Statistics;

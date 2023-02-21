@@ -1,108 +1,18 @@
-[INFO ] 2023-02-17 15:09:22.608 [main] Freedo_Rentals_Web - =========== TC_001_verify_valid_launch_of_web_application Starts
-[INFO ] 2023-02-17 15:09:22.649 [main] Freedo_Rentals_Web - Using valid admin url = https://adminuat.freedo.rentals/
-[INFO ] 2023-02-17 15:09:22.669 [main] Freedo_Rentals_Web - =========== TC_002_verify_invalid_launch_of_web_application Starts
-[INFO ] 2023-02-17 15:09:22.669 [main] Freedo_Rentals_Web - Using invalid admin url = https://uat.freedo.rentals/
-[INFO ] 2023-02-17 15:09:32.298 [main] Freedo_Rentals_Web - =========== TC_003_verify__invalid_Login_functionality Starts
-[INFO ] 2023-02-17 15:09:33.419 [main] Freedo_Rentals_Web -   Successfully send Value Username
-[INFO ] 2023-02-17 15:09:33.652 [main] Freedo_Rentals_Web -   Successfully send Value Invalid password
-[INFO ] 2023-02-17 15:09:33.800 [main] Freedo_Rentals_Web -   Successfully Click Submit Button
-[INFO ] 2023-02-17 15:09:34.293 [main] Freedo_Rentals_Web -   Successfully Click Close popup
-[INFO ] 2023-02-17 15:09:34.297 [main] Freedo_Rentals_Web - =========== TC_005_verify_valid_Login_funcationality Starts
-[INFO ] 2023-02-17 15:09:35.386 [main] Freedo_Rentals_Web -   Successfully send Value Username
-[INFO ] 2023-02-17 15:09:35.543 [main] Freedo_Rentals_Web -   Successfully send Value password
-[INFO ] 2023-02-17 15:09:35.638 [main] Freedo_Rentals_Web -   Successfully Click Submit Button
-[INFO ] 2023-02-17 15:09:36.928 [main] Freedo_Rentals_Web - =========== TC_006_verify_content_Home_page_of_Admin Starts
-[INFO ] 2023-02-17 15:09:39.754 [main] Freedo_Rentals_Web -   Element is visible Dashboard
-[INFO ] 2023-02-17 15:09:40.288 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:40.612 [main] Freedo_Rentals_Web -   Element is visible Statics
-[INFO ] 2023-02-17 15:09:41.146 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:41.669 [main] Freedo_Rentals_Web -   Element is visible Role management
-[INFO ] 2023-02-17 15:09:42.225 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:42.527 [main] Freedo_Rentals_Web -   Element is visible Warehouse management
-[INFO ] 2023-02-17 15:09:43.084 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:43.809 [main] Freedo_Rentals_Web -   Element is visible User Management
-[INFO ] 2023-02-17 15:09:44.358 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:44.656 [main] Freedo_Rentals_Web -   Element is visible Inventory
-[INFO ] 2023-02-17 15:09:45.197 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:45.571 [main] Freedo_Rentals_Web -   Element is visible Vehicle Management
-[INFO ] 2023-02-17 15:09:46.123 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:46.474 [main] Freedo_Rentals_Web -   Element is visible Rental plan
-[INFO ] 2023-02-17 15:09:47.132 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:47.344 [main] Freedo_Rentals_Web -   Element is visible Package management
-[INFO ] 2023-02-17 15:09:47.878 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:48.372 [main] Freedo_Rentals_Web -   Element is visible Booking Management
-[INFO ] 2023-02-17 15:09:49.701 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:49.988 [main] Freedo_Rentals_Web -   Element is visible Location management
-[INFO ] 2023-02-17 15:09:50.530 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:50.786 [main] Freedo_Rentals_Web -   Element is visible Feedback management
-[INFO ] 2023-02-17 15:09:51.331 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:51.597 [main] Freedo_Rentals_Web -   Element is visible Manual Booking
-[INFO ] 2023-02-17 15:09:52.130 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:52.330 [main] Freedo_Rentals_Web -   Element is visible Promotions
-[INFO ] 2023-02-17 15:09:52.885 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:53.151 [main] Freedo_Rentals_Web -   Element is visible Slot pause
-[INFO ] 2023-02-17 15:09:53.691 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:54.055 [main] Freedo_Rentals_Web -   Element is visible Payment Management
-[INFO ] 2023-02-17 15:09:55.414 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:55.679 [main] Freedo_Rentals_Web -   Element is visible Reports
-[INFO ] 2023-02-17 15:09:55.935 [main] Freedo_Rentals_Web -   Successfully Click User report
-[INFO ] 2023-02-17 15:09:56.488 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:56.731 [main] Freedo_Rentals_Web -   Element is visible Master management
-[INFO ] 2023-02-17 15:09:56.926 [main] Freedo_Rentals_Web -   Successfully Click City
-[INFO ] 2023-02-17 15:09:57.473 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:57.704 [main] Freedo_Rentals_Web -   Element is visible Business management
-[INFO ] 2023-02-17 15:09:58.245 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:58.761 [main] Freedo_Rentals_Web -   Element is visible Setting
-[INFO ] 2023-02-17 15:09:59.298 [main] Freedo_Rentals_Web -   Element is visible Right side page
-[INFO ] 2023-02-17 15:09:59.306 [main] Freedo_Rentals_Web - =========== TC_007_verify_content_of_Dashboard Starts
-[INFO ] 2023-02-17 15:10:01.786 [main] Freedo_Rentals_Web -   Successfully Click Dashboard
-[INFO ] 2023-02-17 15:10:02.366 [main] Freedo_Rentals_Web -   Element is visible Total Vehicle
-[INFO ] 2023-02-17 15:10:02.392 [main] Freedo_Rentals_Web - Total Vehicle count =304
-[INFO ] 2023-02-17 15:10:02.923 [main] Freedo_Rentals_Web -   Element is visible Available Vehicle
-[INFO ] 2023-02-17 15:10:02.948 [main] Freedo_Rentals_Web - Available Vehicle count =256
-[INFO ] 2023-02-17 15:10:03.482 [main] Freedo_Rentals_Web -   Element is visible Booked vehicles
-[INFO ] 2023-02-17 15:10:03.505 [main] Freedo_Rentals_Web - Booked vehicles count =17
-[INFO ] 2023-02-17 15:10:04.036 [main] Freedo_Rentals_Web -   Element is visible Inservice vehilce
-[INFO ] 2023-02-17 15:10:04.063 [main] Freedo_Rentals_Web - Inservice vehilce count =19
-[INFO ] 2023-02-17 15:10:04.593 [main] Freedo_Rentals_Web -   Element is visible Register User
-[INFO ] 2023-02-17 15:10:04.622 [main] Freedo_Rentals_Web - Register User count = 565
-[INFO ] 2023-02-17 15:10:05.151 [main] Freedo_Rentals_Web -   Element is visible Active User
-[INFO ] 2023-02-17 15:10:05.177 [main] Freedo_Rentals_Web - Register User count = 517
-[INFO ] 2023-02-17 15:10:05.711 [main] Freedo_Rentals_Web -   Element is visible Pending KYC
-[INFO ] 2023-02-17 15:10:05.739 [main] Freedo_Rentals_Web - Pending KYC count = 292
-[INFO ] 2023-02-17 15:10:06.275 [main] Freedo_Rentals_Web -   Element is visible Revenue collected
-[INFO ] 2023-02-17 15:10:06.301 [main] Freedo_Rentals_Web - Revenue collected count = ₹0
-[INFO ] 2023-02-17 15:10:06.836 [main] Freedo_Rentals_Web -   Element is visible Total bookings
-[INFO ] 2023-02-17 15:10:06.861 [main] Freedo_Rentals_Web - Total bookings count = 874
-[INFO ] 2023-02-17 15:10:07.394 [main] Freedo_Rentals_Web -   Element is visible Completed booking
-[INFO ] 2023-02-17 15:10:07.450 [main] Freedo_Rentals_Web - Completed booking count = 851
-[INFO ] 2023-02-17 15:10:07.457 [main] Freedo_Rentals_Web - =========== TC_008_verify_valid_Vehicle_statistics_count Starts
-[INFO ] 2023-02-17 15:10:09.647 [main] Freedo_Rentals_Web -   Successfully Click Dashboard
-[INFO ] 2023-02-17 15:10:09.675 [main] Freedo_Rentals_Web - Current date =17-02-2023 Actual date =17-02-2023Date1
-[INFO ] 2023-02-17 15:10:09.675 [main] Freedo_Rentals_Web - date 1 =current and actual date is match
-[INFO ] 2023-02-17 15:10:09.699 [main] Freedo_Rentals_Web - Current date =17-02-2023 Actual date =17-02-2023Date2
-[INFO ] 2023-02-17 15:10:09.699 [main] Freedo_Rentals_Web - date 2 =current and actual date is match
-[INFO ] 2023-02-17 15:10:09.723 [main] Freedo_Rentals_Web - Current date =17-02-2023 Actual date =17-02-2023Date3
-[INFO ] 2023-02-17 15:10:09.723 [main] Freedo_Rentals_Web - date 3 =current and actual date is match
-[INFO ] 2023-02-17 15:10:09.886 [main] Freedo_Rentals_Web -   Successfully Click calender
-[INFO ] 2023-02-17 15:10:10.196 [main] Freedo_Rentals_Web -   Successfully Click Select date
-[INFO ] 2023-02-17 15:10:12.737 [main] Freedo_Rentals_Web -   Element is visible Total Vehicle
-[INFO ] 2023-02-17 15:10:12.780 [main] Freedo_Rentals_Web - Total Vehicle count =304
-[INFO ] 2023-02-17 15:10:13.307 [main] Freedo_Rentals_Web -   Element is visible Available Vehicle
-[INFO ] 2023-02-17 15:10:13.355 [main] Freedo_Rentals_Web - Available Vehicle count =256
-[INFO ] 2023-02-17 15:10:13.879 [main] Freedo_Rentals_Web -   Element is visible Booked vehicles
-[INFO ] 2023-02-17 15:10:13.911 [main] Freedo_Rentals_Web - Booked vehicles count =17
-[INFO ] 2023-02-17 15:10:14.454 [main] Freedo_Rentals_Web -   Element is visible Inservice vehilce
-[INFO ] 2023-02-17 15:10:14.488 [main] Freedo_Rentals_Web - Inservice vehilce count =19
-[INFO ] 2023-02-17 15:10:15.026 [main] Freedo_Rentals_Web -   Element is visible Register User
-[INFO ] 2023-02-17 15:10:15.058 [main] Freedo_Rentals_Web - Register User count = 565
-[INFO ] 2023-02-17 15:10:15.602 [main] Freedo_Rentals_Web -   Element is visible Active User
-[INFO ] 2023-02-17 15:10:15.631 [main] Freedo_Rentals_Web - Register User count = 517
-[INFO ] 2023-02-17 15:10:16.185 [main] Freedo_Rentals_Web -   Element is visible Pending KYC
-[INFO ] 2023-02-17 15:10:16.215 [main] Freedo_Rentals_Web - Pending KYC count = 292
-[INFO ] 2023-02-17 15:10:16.761 [main] Freedo_Rentals_Web -   Element is visible Revenue collected
-[INFO ] 2023-02-17 15:10:16.791 [main] Freedo_Rentals_Web - Revenue collected count = ₹0
-[INFO ] 2023-02-17 15:10:17.332 [main] Freedo_Rentals_Web -   Element is visible Total bookings
-[INFO ] 2023-02-17 15:10:17.405 [main] Freedo_Rentals_Web - Total bookings count = 874
-[INFO ] 2023-02-17 15:10:17.971 [main] Freedo_Rentals_Web -   Element is visible Completed booking
-[INFO ] 2023-02-17 15:10:18.012 [main] Freedo_Rentals_Web - Completed booking count = 851
+[INFO ] 2023-02-22 01:03:48.354 [main] Freedo_Rentals_Web -   Successfully send Value Username
+[INFO ] 2023-02-22 01:03:48.516 [main] Freedo_Rentals_Web -   Successfully send Value Password
+[INFO ] 2023-02-22 01:03:48.706 [main] Freedo_Rentals_Web -   Successfully Click Submit button
+[INFO ] 2023-02-22 01:03:48.719 [main] Freedo_Rentals_Web - =========== TC_010_verify_valid_Booking_Statistics_count Starts
+[ERROR] 2023-02-22 01:03:58.810 [main] Freedo_Rentals_Web - ==Unable to Element visible New Bookings Received
+[ERROR] 2023-02-22 01:04:08.871 [main] Freedo_Rentals_Web - ==Unable to Element visible Scheduled Bookings
+[ERROR] 2023-02-22 01:04:18.891 [main] Freedo_Rentals_Web - ==Unable to Element visible Near to return bookings
+[ERROR] 2023-02-22 01:04:28.946 [main] Freedo_Rentals_Web - ==Unable to Element visible Not returned
+[ERROR] 2023-02-22 01:04:35.660 [main] Freedo_Rentals_Web - ==Unable to Element visible Returns Request Received
+[ERROR] 2023-02-22 01:04:35.667 [main] Freedo_Rentals_Web - ==Unable to Element visible User name
+[ERROR] 2023-02-22 01:04:35.677 [main] Freedo_Rentals_Web - ==Unable to Element visible Mobile number
+[ERROR] 2023-02-22 01:04:35.687 [main] Freedo_Rentals_Web - ==Unable to Element visible Model Name
+[ERROR] 2023-02-22 01:04:35.699 [main] Freedo_Rentals_Web - ==Unable to Element visible Vehicle
+[ERROR] 2023-02-22 01:04:35.706 [main] Freedo_Rentals_Web - ==Unable to Element visible Booking from date
+[ERROR] 2023-02-22 01:04:35.716 [main] Freedo_Rentals_Web - ==Unable to Element visible Booking to date
+[ERROR] 2023-02-22 01:04:35.721 [main] Freedo_Rentals_Web - ==Unable to Element visible Payment type
+[ERROR] 2023-02-22 01:04:35.727 [main] Freedo_Rentals_Web - ==Unable to Element visible COD
+[ERROR] 2023-02-22 01:04:35.736 [main] Freedo_Rentals_Web - ==Unable to Element visible Action

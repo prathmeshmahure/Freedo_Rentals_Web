@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Freedo</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Feb 17, 2023 03:09:14 PM</span></a>
+<a href="#"><span class="badge badge-primary">Feb 22, 2023 01:03:40 am</span></a>
 </li>
 </ul>
 </div>
@@ -67,6 +67,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,9 +80,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Freedo_domain.web_admin_1 == TC_001_verify_valid_launch_of_web_application</p>
+            <p class="name">sample.TC_0001 == Login_Account</p>
             <p class="text-sm">
-              <span>3:09:22 PM</span> / <span>00:00:00:082</span>
+              <span>1:03:47 am</span> / <span>00:00:00:936</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -89,10 +90,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Freedo_domain.web_admin_1 == TC_001_verify_valid_launch_of_web_application</h5>
-<span class='badge badge-success'>02.17.2023 3:09:22 PM</span>
-<span class='badge badge-danger'>02.17.2023 3:09:22 PM</span>
-<span class='badge badge-default'>00:00:00:082</span>
+<h5 class="test-status text-pass">sample.TC_0001 == Login_Account</h5>
+<span class='badge badge-success'>02.22.2023 1:03:47 am</span>
+<span class='badge badge-danger'>02.22.2023 1:03:48 am</span>
+<span class='badge badge-default'>00:00:00:936</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -104,14 +105,28 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:22 PM</td>
+        <td>1:03:48 am</td>
         <td>
-          Using valid admin url =  https://adminuat.freedo.rentals/
+          Username==Value Successfully send==admin
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:22 PM</td>
+        <td>1:03:48 am</td>
+        <td>
+          Password==Value Successfully send==admin
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:03:48 am</td>
+        <td>
+          Successfully click==Submit button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:03:48 am</td>
         <td>
           Test Case Pass
         </td>
@@ -121,25 +136,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="fail" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Freedo_domain.web_admin_1 == TC_002_verify_invalid_launch_of_web_application</p>
+            <p class="name">sample.TC_0001 == TC_011_verify_valid_Booking_list_as_per_booking_tabs</p>
             <p class="text-sm">
-              <span>3:09:22 PM</span> / <span>00:00:09:626</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>1:03:48 am</span> / <span>00:00:47:018</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Freedo_domain.web_admin_1 == TC_002_verify_invalid_launch_of_web_application</h5>
-<span class='badge badge-success'>02.17.2023 3:09:22 PM</span>
-<span class='badge badge-danger'>02.17.2023 3:09:32 PM</span>
-<span class='badge badge-default'>00:00:09:626</span>
+<h5 class="test-status text-fail">sample.TC_0001 == TC_011_verify_valid_Booking_list_as_per_booking_tabs</h5>
+<span class='badge badge-success'>02.22.2023 1:03:48 am</span>
+<span class='badge badge-danger'>02.22.2023 1:04:35 am</span>
+<span class='badge badge-default'>00:00:47:018</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -150,887 +165,214 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:22 PM</td>
-        <td>
-          Using invalid admin url =  https://uat.freedo.rentals/
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:32 PM</td>
-        <td>
-          Test Case Pass
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="3"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Freedo_domain.web_admin_1 == TC_003_verify_invalid_Login_functionality</p>
-            <p class="text-sm">
-              <span>3:09:32 PM</span> / <span>00:00:01:997</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Freedo_domain.web_admin_1 == TC_003_verify_invalid_Login_functionality</h5>
-<span class='badge badge-success'>02.17.2023 3:09:32 PM</span>
-<span class='badge badge-danger'>02.17.2023 3:09:34 PM</span>
-<span class='badge badge-default'>00:00:01:997</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:33 PM</td>
-        <td>
-          Username==Value Successfully send==Automation1
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:33 PM</td>
-        <td>
-          Invalid password==Value Successfully send==Automation111
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:33 PM</td>
-        <td>
-          Successfully click==Submit Button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:34 PM</td>
-        <td>
-          Successfully click==Close popup
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:34 PM</td>
-        <td>
-          Test Case Pass
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="4"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Freedo_domain.web_admin_1 == TC_005_verify_valid_Login_funcationality</p>
-            <p class="text-sm">
-              <span>3:09:34 PM</span> / <span>00:00:02:628</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Freedo_domain.web_admin_1 == TC_005_verify_valid_Login_funcationality</h5>
-<span class='badge badge-success'>02.17.2023 3:09:34 PM</span>
-<span class='badge badge-danger'>02.17.2023 3:09:36 PM</span>
-<span class='badge badge-default'>00:00:02:628</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:35 PM</td>
-        <td>
-          Username==Value Successfully send==admin
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:35 PM</td>
-        <td>
-          password==Value Successfully send==admin
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:35 PM</td>
-        <td>
-          Successfully click==Submit Button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:36 PM</td>
-        <td>
-          Test Case Pass
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="5"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Freedo_domain.web_admin_1 == TC_006_verify_content_Home_page_of_Admin</p>
-            <p class="text-sm">
-              <span>3:09:36 PM</span> / <span>00:00:22:373</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Freedo_domain.web_admin_1 == TC_006_verify_content_Home_page_of_Admin</h5>
-<span class='badge badge-success'>02.17.2023 3:09:36 PM</span>
-<span class='badge badge-danger'>02.17.2023 3:09:59 PM</span>
-<span class='badge badge-default'>00:00:22:373</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:39 PM</td>
-        <td>
-          Element is visible ==Dashboard
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:40 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:40 PM</td>
-        <td>
-          Element is visible ==Statics
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:41 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:41 PM</td>
-        <td>
-          Element is visible ==Role management
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:42 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:42 PM</td>
-        <td>
-          Element is visible ==Warehouse management
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:43 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:43 PM</td>
-        <td>
-          Element is visible ==User Management
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:44 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:44 PM</td>
-        <td>
-          Element is visible ==Inventory
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:45 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:45 PM</td>
-        <td>
-          Element is visible ==Vehicle Management
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:46 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:46 PM</td>
-        <td>
-          Element is visible ==Rental plan
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:47 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:47 PM</td>
-        <td>
-          Element is visible ==Package management
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:47 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:48 PM</td>
-        <td>
-          Element is visible ==Booking Management
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:49 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:49 PM</td>
-        <td>
-          Element is visible ==Location management
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:50 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:50 PM</td>
-        <td>
-          Element is visible ==Feedback management
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:51 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:51 PM</td>
-        <td>
-          Element is visible ==Manual Booking
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:52 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:52 PM</td>
-        <td>
-          Element is visible ==Promotions
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:52 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:53 PM</td>
-        <td>
-          Element is visible ==Slot pause
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:53 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:54 PM</td>
-        <td>
-          Element is visible ==Payment Management
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:55 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:55 PM</td>
-        <td>
-          Element is visible ==Reports
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:55 PM</td>
-        <td>
-          Successfully click==User report
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:56 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:56 PM</td>
-        <td>
-          Element is visible ==Master management
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:56 PM</td>
-        <td>
-          Successfully click==City
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:57 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:57 PM</td>
-        <td>
-          Element is visible ==Business management
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:58 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:58 PM</td>
-        <td>
-          Element is visible ==Setting
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:59 PM</td>
-        <td>
-          Element is visible ==Right side page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:09:59 PM</td>
-        <td>
-          Test Case Pass
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="6"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Freedo_domain.web_admin_1 == TC_007_verify_content_of_Dashboard</p>
-            <p class="text-sm">
-              <span>3:09:59 PM</span> / <span>00:00:08:149</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Freedo_domain.web_admin_1 == TC_007_verify_content_of_Dashboard</h5>
-<span class='badge badge-success'>02.17.2023 3:09:59 PM</span>
-<span class='badge badge-danger'>02.17.2023 3:10:07 PM</span>
-<span class='badge badge-default'>00:00:08:149</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:01 PM</td>
-        <td>
-          Successfully click==Dashboard
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:02 PM</td>
-        <td>
-          Element is visible ==Total Vehicle
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:02 PM</td>
-        <td>
-          Total Vehicle count = 304
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:02 PM</td>
-        <td>
-          Element is visible ==Available Vehicle
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:02 PM</td>
-        <td>
-          Available Vehicle count = 256
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:03 PM</td>
-        <td>
-          Element is visible ==Booked vehicles
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:03 PM</td>
-        <td>
-          Booked vehicles count = 17
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:04 PM</td>
-        <td>
-          Element is visible ==Inservice vehilce
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:04 PM</td>
-        <td>
-          Inservice vehilce count = 19
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:04 PM</td>
-        <td>
-          Element is visible ==Register User
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:04 PM</td>
-        <td>
-          Register User count =  565
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:05 PM</td>
-        <td>
-          Element is visible ==Active User
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:05 PM</td>
-        <td>
-          Register User count =  517
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:05 PM</td>
-        <td>
-          Element is visible ==Pending KYC
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:05 PM</td>
-        <td>
-          Pending KYC count =  292
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:06 PM</td>
-        <td>
-          Element is visible ==Revenue collected
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:06 PM</td>
-        <td>
-          Revenue collected count =  ₹0
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:06 PM</td>
-        <td>
-          Element is visible ==Total bookings
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:06 PM</td>
-        <td>
-          Total bookings count =  874
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:07 PM</td>
-        <td>
-          Element is visible ==Completed booking
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:07 PM</td>
-        <td>
-          Completed booking count =  851
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:07 PM</td>
-        <td>
-          Test Case Pass
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="7"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Freedo_domain.web_admin_1 == TC_008_verify_valid_Vehicle_statistics_count</p>
-            <p class="text-sm">
-              <span>3:10:07 PM</span> / <span>00:00:10:558</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Freedo_domain.web_admin_1 == TC_008_verify_valid_Vehicle_statistics_count</h5>
-<span class='badge badge-success'>02.17.2023 3:10:07 PM</span>
-<span class='badge badge-danger'>02.17.2023 3:10:18 PM</span>
-<span class='badge badge-default'>00:00:10:558</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:09 PM</td>
-        <td>
-          Successfully click==Dashboard
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:09 PM</td>
-        <td>
-          Current date =17-02-2023  Actual date =17-02-2023Date1
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:09 PM</td>
-        <td>
-          Current date =17-02-2023  Actual date =17-02-2023Date2
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:09 PM</td>
-        <td>
-          Current date =17-02-2023  Actual date =17-02-2023Date3
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:09 PM</td>
-        <td>
-          Successfully click==calender
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:10 PM</td>
-        <td>
-          Successfully click==Select date
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:12 PM</td>
-        <td>
-          Element is visible ==Total Vehicle
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:12 PM</td>
-        <td>
-          Total Vehicle count = 304
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:13 PM</td>
-        <td>
-          Element is visible ==Available Vehicle
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:13 PM</td>
-        <td>
-          Available Vehicle count = 256
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:13 PM</td>
-        <td>
-          Element is visible ==Booked vehicles
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:13 PM</td>
-        <td>
-          Booked vehicles count = 17
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:14 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:03:58 am</td>
         <td>
-          Element is visible ==Inservice vehilce
+          New Bookings Received==Unable To Element visible ==org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h5[text()='New Bookings Received']"}
+  (Session info: chrome=110.0.5481.104)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LMKUKFJ', ip: '192.168.100.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\QA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bfcb676552a73f10d3fc45fdd99df56
+*** Element info: {Using=xpath, value=//h5[text()='New Bookings Received']}
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:14 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:04:08 am</td>
         <td>
-          Inservice vehilce count = 19
+          Scheduled Bookings==Unable To Element visible ==org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h5[text()='Scheduled Bookings']"}
+  (Session info: chrome=110.0.5481.104)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LMKUKFJ', ip: '192.168.100.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\QA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bfcb676552a73f10d3fc45fdd99df56
+*** Element info: {Using=xpath, value=//h5[text()='Scheduled Bookings']}
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:15 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:04:18 am</td>
         <td>
-          Element is visible ==Register User
+          Near to return bookings==Unable To Element visible ==org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h5[text()='Near To Return Bookings']"}
+  (Session info: chrome=110.0.5481.104)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LMKUKFJ', ip: '192.168.100.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\QA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bfcb676552a73f10d3fc45fdd99df56
+*** Element info: {Using=xpath, value=//h5[text()='Near To Return Bookings']}
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:15 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:04:28 am</td>
         <td>
-          Register User count =  565
+          Not returned==Unable To Element visible ==org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h5[text()='Not Returned']"}
+  (Session info: chrome=110.0.5481.104)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LMKUKFJ', ip: '192.168.100.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\QA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bfcb676552a73f10d3fc45fdd99df56
+*** Element info: {Using=xpath, value=//h5[text()='Not Returned']}
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:15 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:04:35 am</td>
         <td>
-          Element is visible ==Active User
+          Returns Request Received==Unable To Element visible ==org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//h5[text()='Return Requests Received']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LMKUKFJ', ip: '192.168.100.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: RemoteWebDriver
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:15 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:04:35 am</td>
         <td>
-          Register User count =  517
+          User name==Unable To Element visible ==org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LMKUKFJ', ip: '192.168.100.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\QA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bfcb676552a73f10d3fc45fdd99df56
+*** Element info: {Using=xpath, value=//p[text()='User Name']}
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:16 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:04:35 am</td>
         <td>
-          Element is visible ==Pending KYC
+          Mobile number==Unable To Element visible ==org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LMKUKFJ', ip: '192.168.100.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\QA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bfcb676552a73f10d3fc45fdd99df56
+*** Element info: {Using=xpath, value=//p[text()='Mobile Number']}
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:16 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:04:35 am</td>
         <td>
-          Pending KYC count =  292
+          Model Name==Unable To Element visible ==org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LMKUKFJ', ip: '192.168.100.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\QA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bfcb676552a73f10d3fc45fdd99df56
+*** Element info: {Using=xpath, value=//p[text()='Model Name']}
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:16 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:04:35 am</td>
         <td>
-          Element is visible ==Revenue collected
+          Vehicle==Unable To Element visible ==org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LMKUKFJ', ip: '192.168.100.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\QA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bfcb676552a73f10d3fc45fdd99df56
+*** Element info: {Using=xpath, value=//p[text()='Vehicle']}
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:16 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:04:35 am</td>
         <td>
-          Revenue collected count =  ₹0
+          Booking from date==Unable To Element visible ==org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LMKUKFJ', ip: '192.168.100.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\QA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bfcb676552a73f10d3fc45fdd99df56
+*** Element info: {Using=xpath, value=//p[text()='From']}
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:17 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:04:35 am</td>
         <td>
-          Element is visible ==Total bookings
+          Booking to date==Unable To Element visible ==org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LMKUKFJ', ip: '192.168.100.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\QA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bfcb676552a73f10d3fc45fdd99df56
+*** Element info: {Using=xpath, value=//p[text()='To']}
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:17 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:04:35 am</td>
         <td>
-          Total bookings count =  874
+          Payment type==Unable To Element visible ==org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LMKUKFJ', ip: '192.168.100.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\QA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bfcb676552a73f10d3fc45fdd99df56
+*** Element info: {Using=xpath, value=//p[text()='Payment Type']}
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:17 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:04:35 am</td>
         <td>
-          Element is visible ==Completed booking
+          COD==Unable To Element visible ==org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LMKUKFJ', ip: '192.168.100.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\QA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bfcb676552a73f10d3fc45fdd99df56
+*** Element info: {Using=xpath, value=//p[text()='COD']}
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:18 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:04:35 am</td>
         <td>
-          Completed booking count =  851
+          Action==Unable To Element visible ==org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=110.0.5481.104)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-LMKUKFJ', ip: '192.168.100.56', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\QA\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63030}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3bfcb676552a73f10d3fc45fdd99df56
+*** Element info: {Using=xpath, value=//p[text()='Action']}
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:10:18 PM</td>
+        <td>1:04:35 am</td>
         <td>
           Test Case Pass
         </td>
@@ -1054,25 +396,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Feb 17, 2023 03:09:14 PM</h3>
+<h3>Feb 22, 2023 01:03:40 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Feb 17, 2023 03:10:18 PM</h3>
+<h3>Feb 22, 2023 01:04:35 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>7</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -1088,12 +430,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>7</b> tests passed
+<div><small data-tooltip='50%'>
+<b>1</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='50%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -1111,9 +453,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>105</b> events passed</small></div>
+<div><small data-tooltip='26%'><b>5</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
+<small data-tooltip='73%'><b>14</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -1130,7 +472,7 @@
 </div></div>
 <script>
 var timeline = {
-"Freedo_domain.web_admin_1 == TC_001_verify_valid_launch_of_web_application":0.082,"Freedo_domain.web_admin_1 == TC_002_verify_invalid_launch_of_web_application":9.626,"Freedo_domain.web_admin_1 == TC_003_verify_invalid_Login_functionality":1.997,"Freedo_domain.web_admin_1 == TC_005_verify_valid_Login_funcationality":2.628,"Freedo_domain.web_admin_1 == TC_006_verify_content_Home_page_of_Admin":22.373,"Freedo_domain.web_admin_1 == TC_007_verify_content_of_Dashboard":8.149,"Freedo_domain.web_admin_1 == TC_008_verify_valid_Vehicle_statistics_count":10.558
+"sample.TC_0001 == Login_Account":0.936,"sample.TC_0001 == TC_011_verify_valid_Booking_list_as_per_booking_tabs":47.018
 };
 </script>
 <div class="row">
@@ -1169,8 +511,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 7,
-failParent: 0,
+passParent: 1,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -1186,8 +528,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 105,
-failEvents: 0,
+passEvents: 5,
+failEvents: 14,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0
