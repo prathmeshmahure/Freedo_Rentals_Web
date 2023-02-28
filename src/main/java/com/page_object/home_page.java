@@ -99,18 +99,27 @@ public WebDriver driver;
 	
 	@FindBy(xpath="//p[text()='Action']")			
 	private WebElement Ds_txt_Action;
+	/// inside table data  //////////////////////////
 	
-/*	@FindBy(xpath="")			
-	private WebElement click;
+	@FindBy(xpath="//text[text()='Prathmesh']//parent::div//parent::td//following-sibling::td//div[@id='view-action']")			
+	private WebElement DS_click_view_action;
 	
-	@FindBy(xpath="")			
-	private WebElement click;
+	@FindBy(xpath="//text[text()='Prathmesh']//parent::div//parent::td//following-sibling::td//div[@id='approve-action']")			
+	private WebElement DS_click_approve_action;
 	
-	@FindBy(xpath="")			
-	private WebElement click;
+	@FindBy(xpath="//text[text()='Prathmesh']//parent::div//parent::td//following-sibling::td//div[@id='reject-action']")			
+	private WebElement Ds_click_reject_action;
 	
-	@FindBy(xpath="")			
-	private WebElement click;*/
+	@FindBy(xpath="//text[text()='Prathmesh']//parent::div//parent::td//following-sibling::td//div[@id='view-calendar-action']")			
+	private WebElement Ds_click_calendar_action;
+	
+	@FindBy(xpath="//button[normalize-space()='Yes']")			
+	private WebElement Ds_approve_yes_button;
+	
+//	@FindBy(xpath="//p[text()='COD']")			
+//	private WebElement Ds_txt_COD;
+	
+	
 	
 //======================================================================================================
 	
@@ -187,6 +196,9 @@ public WebDriver driver;
 	
 	@FindBy(xpath="//div[text()='Bookings Management']")			
 	private WebElement txt_Bookings_Management;	
+	
+	@FindBy(xpath="//span[text()='Upcoming']")			
+	private WebElement Bm_upcoming_status;
 //======================================================================================================
 
 	@FindBy(xpath="//p[text()='Location Management']")
@@ -413,9 +425,23 @@ public WebDriver driver;
 					public WebElement getDs_txt_Action() {
 					return Ds_txt_Action;
 					}
-/*					public WebElement get() {
-					return Click;
-					}*/
+					/// inside table data ////
+					public WebElement getDS_click_view_action() {
+					return DS_click_view_action;
+					}
+					public WebElement getDS_click_approve_action() {
+					return DS_click_approve_action;
+					}
+					public WebElement getDs_click_reject_action() {
+					return Ds_click_reject_action;
+					}
+					public WebElement getDs_click_calendar_action() {
+					return Ds_click_calendar_action;
+					}
+					public WebElement getDs_approve_yes_button() {
+					return Ds_approve_yes_button;
+					}
+//=======================================================================================================
 //=======================================================================================================
 					public WebElement getStatistics() {
 						return Statistics;
@@ -424,12 +450,14 @@ public WebDriver driver;
 						return txt_Statistics;
 					}
 //=======================================================================================================
+//=======================================================================================================
 					public WebElement getRole_Management() {
 						return Role_Management;
 					}
 					public WebElement gettxt_Roles() {
 						return txt_Roles;
 					}
+//=======================================================================================================
 //=======================================================================================================
 					public WebElement getWarehouse_Management() {
 						return Warehouse_Management;
@@ -494,12 +522,16 @@ public WebDriver driver;
 					public WebElement gettxt_Location_Management() {
 						return txt_Location_Management;
 					}
+//======================================================================================================
 //================================= Booking management====================================================
 					public WebElement getBooking_Management() {
 						return Booking_Management;
 					}
 					public WebElement gettxt_Bookings_Management() {
 						return txt_Bookings_Management;
+					}
+					public WebElement getBm_upcoming_status() {
+						return Bm_upcoming_status;
 					}
 //=======================================================================================================
 					public WebElement getFeedback_Management() {

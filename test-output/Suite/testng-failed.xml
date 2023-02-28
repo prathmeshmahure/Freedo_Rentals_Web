@@ -9,7 +9,7 @@
     <classes>
       <class name="sample.TC_0001">
         <methods>
-          <include name="TC_011_verify_valid_Booking_list_as_per_booking_tabs"/>
+          <include name="TC_014_verify_admin_approve_request"/>
           <include name="browser"/>
           <include name="teardown"/>
           <include name="BS"/>

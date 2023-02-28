@@ -2,6 +2,9 @@ package com.utility;
 
 
 
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Listeners;
@@ -16,7 +19,8 @@ public class library extends base_class{
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 		public static void custom_sendkeys(WebElement element,String value,String fieldname) {
-			try {
+
+			try {	library.Explicit_wait_for_visible(element);
 					if(element.isEnabled() || element.isDisplayed()==true) {
 						element.clear();
 						element.sendKeys(value);
@@ -31,8 +35,10 @@ public class library extends base_class{
 		}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 		public static void Custom_click(WebElement element,String fieldname) {
-			try {
+			
+			try {	library.Explicit_wait_for_visible(element);
 					if(element.isDisplayed() || element.isEnabled()==true) {
+						Thread.sleep(500);
 						element.click();
 						test.log(Status.PASS, "Successfully click=="+ fieldname);
 						log.info("  Successfully Click "+fieldname);
@@ -56,10 +62,10 @@ public class library extends base_class{
 		}
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////		
 		public static void visible_and_click(WebElement element,String fieldname) {
-			try {
+			
+			try {	library.Explicit_wait_for_clickable(element);
 					if(element.isDisplayed() || element.isEnabled()==true) {
-					//	Thread.sleep(1500);
-						library.Explicit_wait_for_APK(element);
+						Thread.sleep(1500);
 						element.click();
 						test.log(Status.PASS, "Element is visible =="+ fieldname);
 						log.info("  Element is visible "+fieldname);
@@ -72,7 +78,8 @@ public class library extends base_class{
 		}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////		
 		public static void visible(WebElement element,String fieldname) {
-			try {
+			
+			try {	library.Explicit_wait_for_clickable(element);
 					if(element.isDisplayed() || element.isEnabled()==true) {
 						Thread.sleep(500);
 						test.log(Status.PASS, "Element is visible =="+ fieldname);
@@ -85,9 +92,25 @@ public class library extends base_class{
 								}
 		}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		
-		
-		
+		public static void zoomin() throws Exception {
+			Thread.sleep(2000);
+			Robot r = new Robot();
+	        for(int i=0; i<4; i++) {
+	            r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_SUBTRACT);
+	            r.keyRelease(KeyEvent.VK_SUBTRACT);r.keyRelease(KeyEvent.VK_CONTROL);
+	        }
+		}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		public static void zoomout() throws Exception {
+			Thread.sleep(2000);
+			Robot r = new Robot();
+	        for(int i=0; i<4; i++) {
+	            r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_ADD);
+	            r.keyRelease(KeyEvent.VK_ADD);r.keyRelease(KeyEvent.VK_CONTROL);
+	        }
+		}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 		
 		
 		

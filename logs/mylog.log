@@ -1,18 +1,4 @@
-[INFO ] 2023-02-22 01:03:48.354 [main] Freedo_Rentals_Web -   Successfully send Value Username
-[INFO ] 2023-02-22 01:03:48.516 [main] Freedo_Rentals_Web -   Successfully send Value Password
-[INFO ] 2023-02-22 01:03:48.706 [main] Freedo_Rentals_Web -   Successfully Click Submit button
-[INFO ] 2023-02-22 01:03:48.719 [main] Freedo_Rentals_Web - =========== TC_010_verify_valid_Booking_Statistics_count Starts
-[ERROR] 2023-02-22 01:03:58.810 [main] Freedo_Rentals_Web - ==Unable to Element visible New Bookings Received
-[ERROR] 2023-02-22 01:04:08.871 [main] Freedo_Rentals_Web - ==Unable to Element visible Scheduled Bookings
-[ERROR] 2023-02-22 01:04:18.891 [main] Freedo_Rentals_Web - ==Unable to Element visible Near to return bookings
-[ERROR] 2023-02-22 01:04:28.946 [main] Freedo_Rentals_Web - ==Unable to Element visible Not returned
-[ERROR] 2023-02-22 01:04:35.660 [main] Freedo_Rentals_Web - ==Unable to Element visible Returns Request Received
-[ERROR] 2023-02-22 01:04:35.667 [main] Freedo_Rentals_Web - ==Unable to Element visible User name
-[ERROR] 2023-02-22 01:04:35.677 [main] Freedo_Rentals_Web - ==Unable to Element visible Mobile number
-[ERROR] 2023-02-22 01:04:35.687 [main] Freedo_Rentals_Web - ==Unable to Element visible Model Name
-[ERROR] 2023-02-22 01:04:35.699 [main] Freedo_Rentals_Web - ==Unable to Element visible Vehicle
-[ERROR] 2023-02-22 01:04:35.706 [main] Freedo_Rentals_Web - ==Unable to Element visible Booking from date
-[ERROR] 2023-02-22 01:04:35.716 [main] Freedo_Rentals_Web - ==Unable to Element visible Booking to date
-[ERROR] 2023-02-22 01:04:35.721 [main] Freedo_Rentals_Web - ==Unable to Element visible Payment type
-[ERROR] 2023-02-22 01:04:35.727 [main] Freedo_Rentals_Web - ==Unable to Element visible COD
-[ERROR] 2023-02-22 01:04:35.736 [main] Freedo_Rentals_Web - ==Unable to Element visible Action
+[INFO ] 2023-02-28 17:52:36.484 [main] Freedo_Rentals_Web -   Successfully send Value Username
+[INFO ] 2023-02-28 17:52:36.677 [main] Freedo_Rentals_Web -   Successfully send Value Password
+[INFO ] 2023-02-28 17:52:37.335 [main] Freedo_Rentals_Web -   Successfully Click Submit button
+[INFO ] 2023-02-28 17:52:37.341 [main] Freedo_Rentals_Web - =========== TC_014_verify_admin_approve_request Starts

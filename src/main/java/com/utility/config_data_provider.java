@@ -37,6 +37,9 @@ public class config_data_provider {
 				}	
 				public  String getinvalidusername() {
 					return pro.getProperty("invalidusername");
+				}	
+				public  String getotp() {
+					return pro.getProperty("otp");
 				}
 				
 

@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser_name" value="chrome"/>
+  <listeners>
+    <listener class-name="com.utility.listner"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Freedo_domain.web_admin_1">
+      <class name="sample.TC_0001">
         <methods>
-          <include name="TC_001_verify_valid_launch_of_web_application"/>
+          <include name="TC_014_verify_admin_approve_request"/>
           <include name="browser"/>
           <include name="teardown"/>
           <include name="BS"/>
-          <include name="TC_011_verify_valid_Booking_list_as_per_booking_tabs"/>
-          <include name="TC_008_verify_valid_Vehicle_statistics_count"/>
-          <include name="TC_010_verify_valid_Booking_Statistics_count"/>
-          <include name="TC_006_verify_content_Home_page_of_Admin"/>
-          <include name="TC_002_verify_invalid_launch_of_web_application"/>
-          <include name="TC_003_verify_invalid_Login_functionality"/>
-          <include name="TC_005_verify_valid_Login_funcationality"/>
-          <include name="TC_009_verify_valid_User_Statistics_count"/>
-          <include name="TC_007_verify_content_of_Dashboard"/>
         </methods>
-      </class> <!-- Freedo_domain.web_admin_1 -->
+      </class> <!-- sample.TC_0001 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

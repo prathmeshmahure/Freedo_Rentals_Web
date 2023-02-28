@@ -1,5 +1,7 @@
 package sample;
 
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -8,16 +10,18 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.page_object.home_page;
 import com.page_object.login_page;
+import com.page_object.uat_url_booking;
 import com.utility.base_class;
 import com.utility.library;
 
 public class TC_0001 extends base_class{
 	public static login_page login;
+	public static uat_url_booking uat;
 	public static home_page home;
-	
 	@Test
 	public void Login_Account()  {
 		login = PageFactory.initElements(driver, login_page.class);
@@ -28,38 +32,20 @@ public class TC_0001 extends base_class{
 	}
 //========================================================================================================
 	@Test
-	public void TC_011_verify_valid_Booking_list_as_per_booking_tabs() {
-		log.info("=========== TC_010_verify_valid_Booking_Statistics_count Starts");
+	public void TC_014_verify_admin_approve_request() throws Exception {
+		log.info("=========== TC_014_verify_admin_approve_request Starts");
 		home = PageFactory.initElements(driver, home_page.class);
-	library.visible(home.getDS_click_New_Bookings_Received(), "New Bookings Received");
-	library.visible(home.getDs_click_Scheduled_Bookings(), "Scheduled Bookings");
-	library.visible(home.getDs_click_Near_To_Return_Bookings(), "Near to return bookings");
-	library.visible(home.getDs_click_Not_Returned(), "Not returned");
-	library.visible(home.getDs_click_Return_Requests_Received(), "Returns Request Received");
-	
-	library.visible(home.getDs_txt_User_Name(), "User name");
-	library.visible(home.getDs_txt_Mobile_Number(), "Mobile number");
-	library.visible(home.getDs_txt_Model_Name(), "Model Name");
-	library.visible(home.getDs_txt_Vehicle(), "Vehicle");
-	library.visible(home.getDs_txt_Booking_from_date(), "Booking from date");
-	library.visible(home.getDs_txt_Booking_to_date(), "Booking to date");
-	library.visible(home.getDs_txt_Payment_Type(), "Payment type");
-	library.visible(home.getDs_txt_COD(), "COD");
-	library.visible(home.getDs_txt_Action(), "Action");		
-	
+		SoftAssert soft = new SoftAssert();
+		
+//		library.Custom_click(home.getDS_click_approve_action(), "Approve action");
+//		library.Custom_click(home.getDs_approve_yes_button(), "Yes button");
+		soft.assertFalse(home.getDS_click_approve_action().isDisplayed(),"Approve action button check ");
+		soft.assertFalse(home.getDs_click_calendar_action().isDisplayed(),"Calendar action button check ");
+		soft.assertFalse(home.getDs_click_reject_action().isDisplayed(),"Reject action button check");
+		library.Custom_click(home.getDS_click_view_action(), "View action");
+		soft.assertTrue(home.getBm_upcoming_status().isDisplayed(),"upcoming status check");
+		
+		soft.assertAll();
+		
 	}
-//=========================================================================================================	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

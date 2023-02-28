@@ -9,16 +9,19 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.page_object.home_page;
 import com.page_object.login_page;
+import com.page_object.uat_url_booking;
 import com.utility.base_class;
 import com.utility.library;
 @Listeners(com.utility.listner.class)
@@ -27,6 +30,7 @@ public class web_admin_1 extends base_class {
 	public static login_page login;
 	public static home_page home;
 	public static ExtentTest test;
+	public static uat_url_booking uat;
 	
 //===================================================================================================================	
 	@Test
@@ -276,7 +280,7 @@ public class web_admin_1 extends base_class {
 //=============================================================================================================================
 			@Test
 			public void TC_011_verify_valid_Booking_list_as_per_booking_tabs() {
-				log.info("=========== TC_010_verify_valid_Booking_Statistics_count Starts");
+				log.info("=========== TC_011_verify_valid_Booking_Statistics_count Starts");
 				
 			library.visible(home.getDS_click_New_Bookings_Received(), "New Bookings Received");
 			library.visible(home.getDs_click_Scheduled_Bookings(), "Scheduled Bookings");
@@ -295,8 +299,93 @@ public class web_admin_1 extends base_class {
 			library.visible(home.getDs_txt_Action(), "Action");			
 			}
 //===============================================================================================================================
-	
-	
+			@Test
+			public void TC_012_verify_valid_Action_functionallity() throws Exception {
+				log.info("=========== TC_012_verify_valid_Booking_Statistics_count Starts");
+				uat = PageFactory.initElements(driver, uat_url_booking.class);
+				home = PageFactory.initElements(driver, home_page.class);
+				////// bike book start /////
+				driver.navigate().to(config.getliveurl());	
+				library.zoomin();
+				driver.navigate().refresh();
+				library.Custom_click(uat.getuat_Automation_city(), "Automation_city");
+				library.Custom_click(uat.getuat_login_button(), "Login");
+				library.custom_sendkeys(uat.getuat_username(), config.getmobilenu(), "Enter mobile number");
+				library.Custom_click(uat.getuat_user_login_button(), "login button");
+				Thread.sleep(2000);
+				library.custom_sendkeys(uat.getuat_enter_otp(), config.getotp(), "enter otp");		
+			//	library.Custom_click(uat.getuat_verify_code(), "Verify code");
+				Thread.sleep(1000);   // due to slow performance
+
+				library.Custom_click(uat.getuat_pick_up_point(), "pick-up-point");
+				library.Custom_click(uat.getuat_Automation(), "Automation");
+				Thread.sleep(2000);
+				library.Custom_click(uat.getuat_pick_up_date(), "Pick up date");
+				Thread.sleep(2000);
+				library.Custom_click(uat.getuat_calendar_nextday(), "calendar next day");
+				Thread.sleep(2000);
+				library.Custom_click(uat.getuat_click_select_button(), "Select button");
+				library.Custom_click(uat.getuat_click_Duration(), "Duration");
+				library.Custom_click(uat.getuat_click_1_days(), "1 days");
+				library.Custom_click(uat.getuat_search_button(), "Search button");
+				library.Custom_click(uat.getuat_book_first_bike(), "Select bike");
+				library.Custom_click(uat.getuat_book_vehicle_button(), "Book vehicle button");
+				Thread.sleep(2000);
+				library.Custom_click(uat.getuat_Continue_button(), "Continue button");
+				library.Custom_click(uat.getuat_Continue_button(), "Continue button");
+				library.Custom_click(uat.getuat_pay_now_button(), "pay now button");
+				String originalWindow = driver.getWindowHandle();
+				Thread.sleep(5000);
+				try {
+				driver.switchTo().frame(0);
+				System.out.println("frame found");
+				}catch(Exception e) {
+					System.out.println("frame not found");
+				}
+				library.Custom_click(uat.getuat_pay_using_netbanking(), "Pay using netbanking");
+				library.Custom_click(uat.getuat_pay_sbi(), "SBI");
+				
+				library.Custom_click(uat.getuat_pay_button(), "Pay now");
+				
+				Thread.sleep(5000);
+				for (String windowHandle : driver.getWindowHandles()) {
+				    if(!originalWindow.contentEquals(windowHandle)) {
+				        driver.switchTo().window(windowHandle);
+				        break;
+				    }
+				}
+				library.Custom_click(uat.getuat_payment_success(), "Success");
+				driver.switchTo().window(originalWindow);
+				///// bike book end  ////////////
+				driver.navigate().to(config.getstageurl());
+				Thread.sleep(3000);
+				library.Custom_click(home.getDashboard(), "Dashboard");		
+				library.visible(home.getDS_click_view_action(), "View action button");
+				library.visible(home.getDS_click_approve_action(), "Approve action");
+				library.visible(home.getDs_click_reject_action(), "Reject action");
+				library.visible(home.getDs_click_calendar_action(), "Calendar action");		
+			}
+//=========================================================================================================	
+			@Test
+			public void TC_013_verify_valid_Action_View_icon_functionallity() throws Exception {
+				log.info("=========== TC_013_verify_valid_Action_View_icon_functionallity Starts");
+				
+				library.Custom_click(home.getDS_click_view_action(), "View action");
+				driver.navigate().back();				
+				log.info("Navigate to back page");
+			}
+//=========================================================================================================
+			@Test
+			public void TC_014_verify_admin_approve_request() throws Exception {
+				log.info("=========== TC_014_verify_admin_approve_request Starts");
+				SoftAssert soft = new SoftAssert();
+				
+				library.Custom_click(home.getDS_click_approve_action(), "Approve action");
+				library.Custom_click(home.getDs_approve_yes_button(), "Yes button");
+				
+				library.Custom_click(home.getDS_click_view_action(), "View action");			
+				
+			}
 	
 	
 	
