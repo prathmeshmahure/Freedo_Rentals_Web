@@ -35,17 +35,8 @@ public class TC_0001 extends base_class{
 	public void TC_014_verify_admin_approve_request() throws Exception {
 		log.info("=========== TC_014_verify_admin_approve_request Starts");
 		home = PageFactory.initElements(driver, home_page.class);
-		SoftAssert soft = new SoftAssert();
 		
-//		library.Custom_click(home.getDS_click_approve_action(), "Approve action");
-//		library.Custom_click(home.getDs_approve_yes_button(), "Yes button");
-		soft.assertFalse(home.getDS_click_approve_action().isDisplayed(),"Approve action button check ");
-		soft.assertFalse(home.getDs_click_calendar_action().isDisplayed(),"Calendar action button check ");
-		soft.assertFalse(home.getDs_click_reject_action().isDisplayed(),"Reject action button check");
-		library.Custom_click(home.getDS_click_view_action(), "View action");
-		soft.assertTrue(home.getBm_upcoming_status().isDisplayed(),"upcoming status check");
 		
-		soft.assertAll();
 		
 	}
 }

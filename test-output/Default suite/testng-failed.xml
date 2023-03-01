@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sample.TC_0001">
+      <class name="Freedo_domain.web_admin_2">
         <methods>
+          <include name="TC_001_verify_valid_launch_of_web_application"/>
           <include name="browser"/>
-          <include name="TC_012_verify_valid_Booking_list_as_per_booking_tabs"/>
           <include name="teardown"/>
           <include name="BS"/>
         </methods>
-      </class> <!-- sample.TC_0001 -->
+      </class> <!-- Freedo_domain.web_admin_2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

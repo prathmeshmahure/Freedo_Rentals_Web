@@ -8,6 +8,7 @@ import java.awt.event.KeyEvent;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Listeners;
+import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -110,8 +111,18 @@ public class library extends base_class{
 	        }
 		}
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-		
+		public static void element_displayed(WebElement element,String fieldname1) {
+			try {
+				if(element.isDisplayed()==true) {
+						test.log(Status.FAIL," "+ fieldname1);
+						log.error(fieldname1+" is visible");					
+				}}
+			catch(Exception e) {
+					test.log(Status.PASS, fieldname1+" is not visible");
+					log.info(fieldname1+" is not visible");
+								}
+		}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////		
 		
 		
 		

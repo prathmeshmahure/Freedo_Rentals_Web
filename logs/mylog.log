@@ -1,4 +1,25 @@
-[INFO ] 2023-02-28 17:52:36.484 [main] Freedo_Rentals_Web -   Successfully send Value Username
-[INFO ] 2023-02-28 17:52:36.677 [main] Freedo_Rentals_Web -   Successfully send Value Password
-[INFO ] 2023-02-28 17:52:37.335 [main] Freedo_Rentals_Web -   Successfully Click Submit button
-[INFO ] 2023-02-28 17:52:37.341 [main] Freedo_Rentals_Web - =========== TC_014_verify_admin_approve_request Starts
+[INFO ] 2023-03-02 00:24:02.042 [main] Freedo_Rentals_Web -   Successfully send Value Username
+[INFO ] 2023-03-02 00:24:02.232 [main] Freedo_Rentals_Web -   Successfully send Value Password
+[INFO ] 2023-03-02 00:24:02.853 [main] Freedo_Rentals_Web -   Successfully Click Submit button
+[INFO ] 2023-03-02 00:24:02.857 [main] Freedo_Rentals_Web - =========== TC_014_verify_admin_approve_request Starts
+[INFO ] 2023-03-02 00:24:05.612 [main] Freedo_Rentals_Web -   Successfully Click Vehicle management
+[INFO ] 2023-03-02 00:24:06.610 [main] Freedo_Rentals_Web -   Element is visible  search by city 
+[INFO ] 2023-03-02 00:24:07.217 [main] Freedo_Rentals_Web -   Element is visible  search by location 
+[INFO ] 2023-03-02 00:24:07.807 [main] Freedo_Rentals_Web -   Element is visible  select by vehicle dropdown
+[INFO ] 2023-03-02 00:24:08.412 [main] Freedo_Rentals_Web -   Element is visible  Search_By_Vehicle_Number
+[INFO ] 2023-03-02 00:24:09.004 [main] Freedo_Rentals_Web -   Element is visible  search_by_model_dropdown
+[INFO ] 2023-03-02 00:24:09.581 [main] Freedo_Rentals_Web -   Element is visible  Vm_search_by_status_dropdown
+[INFO ] 2023-03-02 00:24:10.190 [main] Freedo_Rentals_Web -   Element is visible  location
+[INFO ] 2023-03-02 00:24:10.800 [main] Freedo_Rentals_Web -   Element is visible  Model
+[INFO ] 2023-03-02 00:24:11.408 [main] Freedo_Rentals_Web -   Element is visible  vehicle_type
+[INFO ] 2023-03-02 00:24:11.970 [main] Freedo_Rentals_Web -   Element is visible  vehicle color
+[INFO ] 2023-03-02 00:24:12.548 [main] Freedo_Rentals_Web -   Element is visible  vehicle_number
+[INFO ] 2023-03-02 00:24:13.126 [main] Freedo_Rentals_Web -   Element is visible  booking_frequency
+[INFO ] 2023-03-02 00:24:13.677 [main] Freedo_Rentals_Web -   Element is visible  service_frequency
+[INFO ] 2023-03-02 00:24:14.253 [main] Freedo_Rentals_Web -   Element is visible  status
+[INFO ] 2023-03-02 00:24:14.814 [main] Freedo_Rentals_Web -   Element is visible  action
+[INFO ] 2023-03-02 00:24:15.361 [main] Freedo_Rentals_Web -   Element is visible  Refresh_button
+[INFO ] 2023-03-02 00:24:15.970 [main] Freedo_Rentals_Web -   Element is visible  add_vehicle_button
+[INFO ] 2023-03-02 00:24:16.591 [main] Freedo_Rentals_Web -   Element is visible  block_vehicle_button
+[INFO ] 2023-03-02 00:24:17.203 [main] Freedo_Rentals_Web -   Element is visible  unblock_vehicle_button
+[INFO ] 2023-03-02 00:24:17.796 [main] Freedo_Rentals_Web -   Element is visible  csv_download_button

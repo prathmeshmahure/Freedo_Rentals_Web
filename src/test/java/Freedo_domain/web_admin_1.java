@@ -382,11 +382,17 @@ public class web_admin_1 extends base_class {
 				
 				library.Custom_click(home.getDS_click_approve_action(), "Approve action");
 				library.Custom_click(home.getDs_approve_yes_button(), "Yes button");
-				
-				library.Custom_click(home.getDS_click_view_action(), "View action");			
-				
+				Thread.sleep(3000);
+				library.element_displayed(home.getDs_click_calendar_action(), " Calendar button");
+				library.element_displayed(home.getDS_click_approve_action(), " Approve button");
+				library.element_displayed(home.getDs_click_reject_action(), " Reject button");
+				library.visible(home.getDS_click_view_action(), " View action");
+				library.Custom_click(home.getDS_click_view_action(), " View action");
+				soft.assertTrue(home.getBm_upcoming_status().isDisplayed(),"upcoming status check");
+				log.info("      Up coming status is visible");
+				soft.assertAll();
 			}
-	
+//=========================================================================================================	
 	
 	
 	

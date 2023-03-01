@@ -36,12 +36,12 @@ public class base_class {
 				
 	}
 	
-	@Parameters({"browser_name"})
+//	@Parameters({"browser_name"}) //String browser_name
 	
 	@BeforeTest
-	public void browser(String browser_name) 
+	public void browser( ) 
 		{
-			if(browser_name.equalsIgnoreCase("chrome")) {
+/*			if(browser_name.equalsIgnoreCase("chrome")) {
 				WebDriverManager.chromedriver().setup();
 				driver=new ChromeDriver();
 				}
@@ -53,9 +53,10 @@ public class base_class {
 				WebDriverManager.firefoxdriver().setup();
 				driver=new FirefoxDriver();
 			}
-			
+*/			
 		
-		
+			WebDriverManager.chromedriver().setup();
+			driver=new ChromeDriver();
 			driver.get(config.getstageurl());
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
