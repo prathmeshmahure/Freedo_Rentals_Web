@@ -181,13 +181,26 @@ public WebDriver driver;
 	private WebElement txt_Vehicle_Management;	
 	
 	@FindBy(xpath="//em[normalize-space()='Search By City']")			
-	private WebElement Vm_search_by_city_dropdown;	
+	private WebElement Vm_search_by_city_dropdown;							// dropdown
+				// dropdown data //
+				
+				@FindBy(xpath="//li[@data-value='Delhi']")			
+				private WebElement Vm_1st_drop_delhi;	
+		
 	
 	@FindBy(xpath="//em[normalize-space()='Search By Location']")			
-	private WebElement Vm_search_by_location_dropdown;	
+	private WebElement Vm_search_by_location_dropdown;						// dropdown
+				// dropdown data //
+	
+				@FindBy(xpath="//li[text()='Metro Hospital Sector 12']")			
+				private WebElement Vm_2nd_drop_Metro_Hospital_Sector_12;
 	
 	@FindBy(xpath="//em[normalize-space()='Select By Vehicle Type']")			
-	private WebElement Vm_select_by_vehicle_type_dropdown;	
+	private WebElement Vm_select_by_vehicle_type_dropdown;					// dropdown
+				// dropdown data //
+				
+				@FindBy(xpath="//li[text()='Bike']")			
+				private WebElement Vm_3rd_drop_Bike;
 	
 	@FindBy(xpath="//input[@placeholder='Search By Vehicle Number']")			
 	private WebElement Vm_Search_By_Vehicle_Number;	
@@ -245,47 +258,45 @@ public WebDriver driver;
 	
 	@FindBy(xpath="//p[text()='CSV Download']")			
 	private WebElement Vm_csv_download_button;	
+
+	
+	@FindBy(xpath="//tbody/tr[1]/td[1]/text[1]")			
+	private WebElement Vm_table_location_1stR;	
+	
+	@FindBy(xpath="//tbody/tr[1]/td[2]/text[1]")			
+	private WebElement Vm_table_model_1stR;	
+	
+	@FindBy(xpath="//tbody/tr[1]/td[3]/text[1]")			
+	private WebElement Vm_table_vehicle_type_1stR;	
+	
+	@FindBy(xpath="//tbody/tr[1]/td[4]/text[1]")			
+	private WebElement Vm_table_color_1stR;	
+	
+	@FindBy(xpath="//tbody/tr[1]/td[5]/text[1]")			
+	private WebElement Vm_table_vehicle_number_1stR;	
+	
+	@FindBy(xpath="//tbody/tr[1]/td[6]/text[1]")			
+	private WebElement Vm_table_Booking_Frequency_1stR;	
+	
+	@FindBy(xpath="//tbody/tr[1]/td[7]/text[1]")			
+	private WebElement Vm_table_Service_Frequency_1stR;	
+	
+	@FindBy(xpath="//tbody/tr[1]/td[8]/div/span")			
+	private WebElement Vm_table_Status_1stR;	
+	
+	@FindBy(xpath="//tbody/tr[1]/td[9]/div/div[1]")			
+	private WebElement Vm_table_view_action_1stR;	
+	
+	@FindBy(xpath="//tbody/tr[1]/td[9]/div/div[2]")			
+	private WebElement Vm_table_update_action_1stR;	
+	
+	@FindBy(xpath="//tbody/tr[1]/td[9]/div/div[3]")			
+	private WebElement Vm_table_delete_action_1stR;	
+	
+	@FindBy(xpath="//tbody/tr[1]/td[9]/div/div[4]")			
+	private WebElement Vm_table_view_calendar_action_1stR;	
 	
 /*	@FindBy(xpath="")			
-	private WebElement Click;	
-	
-	@FindBy(xpath="")			
-	private WebElement Click;	
-	
-	@FindBy(xpath="")			
-	private WebElement Click;	
-	
-	@FindBy(xpath="")			
-	private WebElement Click;	
-	
-	@FindBy(xpath="")			
-	private WebElement Click;	
-	
-	@FindBy(xpath="")			
-	private WebElement Click;	
-	
-	@FindBy(xpath="")			
-	private WebElement Click;	
-	
-	@FindBy(xpath="")			
-	private WebElement Click;	
-	
-	@FindBy(xpath="")			
-	private WebElement Click;	
-	
-	@FindBy(xpath="")			
-	private WebElement Click;	
-	
-	@FindBy(xpath="")			
-	private WebElement Click;	
-	
-	@FindBy(xpath="")			
-	private WebElement Click;	
-	
-	@FindBy(xpath="")			
-	private WebElement Click;	
-	
-	@FindBy(xpath="")			
 	private WebElement Click;	
 	
 	@FindBy(xpath="")			
@@ -620,10 +631,18 @@ public WebDriver driver;
 					}
 					public WebElement getVm_search_by_city_dropdown() {
 						return Vm_search_by_city_dropdown;
-					}
+					}  // drop down data  //
+							public WebElement getVm_1st_drop_delhi() {
+								return Vm_1st_drop_delhi;
+							}
+						//================================
 					public WebElement getVm_search_by_location_dropdown() {
 						return Vm_search_by_location_dropdown;
+					}// drop down data  //
+					public WebElement getVm_2nd_drop_Metro_Hospital_Sector_12() {
+						return Vm_2nd_drop_Metro_Hospital_Sector_12;
 					}
+				//================================
 					public WebElement getVm_select_by_vehicle_type_dropdown() {
 						return Vm_select_by_vehicle_type_dropdown;
 					}
@@ -684,36 +703,46 @@ public WebDriver driver;
 					public WebElement getVm_csv_download_button() {
 						return Vm_csv_download_button;
 					}
-/*					public WebElement get() {
-						return Click;
+					// table data //
+					public WebElement getVm_table_location_1stR() {
+						return Vm_table_location_1stR;
 					}
-					public WebElement get() {
-						return Click;
+					public WebElement getVm_table_model_1stR() {
+						return Vm_table_model_1stR;
 					}
-					public WebElement get() {
-						return Click;
+					public WebElement getVm_table_vehicle_type_1stR() {
+						return Vm_table_vehicle_type_1stR;
 					}
-					public WebElement get() {
-						return Click;
+					public WebElement getVm_table_color_1stR() {
+						return Vm_table_color_1stR;
 					}
-					public WebElement get() {
-						return Click;
+					public WebElement getVm_table_vehicle_number_1stR() {
+						return Vm_table_vehicle_number_1stR;
 					}
-					public WebElement get() {
-						return Click;
+					public WebElement getVm_table_Booking_Frequency_1stR() {
+						return Vm_table_Booking_Frequency_1stR;
 					}
-					public WebElement get() {
-						return Click;
+					public WebElement getVm_table_Service_Frequency_1stR() {
+						return Vm_table_Service_Frequency_1stR;
 					}
-					public WebElement get() {
-						return Click;
+					public WebElement getVm_table_Status_1stR() {
+						return Vm_table_Status_1stR;
 					}
-					public WebElement get() {
-						return Click;
+					public WebElement getVm_table_view_action_1stR() {
+						return Vm_table_view_action_1stR;
 					}
-					public WebElement get() {
-						return Click;
-					}*/
+					public WebElement getVm_table_update_action_1stR() {
+						return Vm_table_update_action_1stR;
+					}
+					public WebElement getVm_table_delete_action_1stR() {
+						return Vm_table_delete_action_1stR;
+					}
+					public WebElement getVm_table_view_calendar_action_1stR() {
+						return Vm_table_view_calendar_action_1stR;
+					}
+					public WebElement getVm_3rd_drop_Bike() {
+						return Vm_3rd_drop_Bike;
+					}
 //=======================================================================================================
 					public WebElement getRental_Plans() {
 						return Rental_Plans;
