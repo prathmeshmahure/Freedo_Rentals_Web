@@ -22,15 +22,17 @@ import com.aventstack.extentreports.Status;
 import com.page_object.home_page;
 import com.page_object.login_page;
 import com.page_object.uat_url_booking;
+import com.page_object.vehicle_management;
 import com.utility.base_class;
 import com.utility.library;
 @Listeners(com.utility.listner.class)
-public class web_admin_1 extends base_class {
+public class dashboard extends base_class {
 	
 	public static login_page login;
 	public static home_page home;
 	public static ExtentTest test;
 	public static uat_url_booking uat;
+	public static vehicle_management vm;
 	
 //===================================================================================================================	
 	@Test
@@ -105,6 +107,7 @@ public class web_admin_1 extends base_class {
 	public void TC_006_verify_content_Home_page_of_Admin() throws Exception {
 		log.info("=========== TC_006_verify_content_Home_page_of_Admin Starts");
 		home = PageFactory.initElements(driver, home_page.class);
+		vm = PageFactory.initElements(driver, vehicle_management.class);
 		
 		driver.navigate().refresh();
 		Thread.sleep(2000);		
@@ -120,8 +123,8 @@ public class web_admin_1 extends base_class {
 		library.visible(home.gettxt_Users(), "Right side page");
 		library.visible_and_click(home.getInventory(), "Inventory");
 		library.visible(home.gettxt_Vehicle_Inventory_Management(), "Right side page");
-		library.visible_and_click(home.getVehicle_Management(), "Vehicle Management");
-		library.visible(home.gettxt_Vehicle_Management(), "Right side page");
+		library.visible_and_click(vm.getVehicle_Management(), "Vehicle Management");
+		library.visible(vm.gettxt_Vehicle_Management(), "Right side page");
 		library.visible_and_click(home.getRental_Plans(), "Rental plan");
 		library.visible(home.gettxt_Rental_Plans(), "Right side page");
 		library.visible_and_click(home.getPackage_Management(), "Package management");

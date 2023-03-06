@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>chrome</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 06 00:29:53 IST 2023</td>
+<td>Started on:</td><td>Mon Mar 06 16:44:02 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>202 seconds (202322 ms)</td>
+<tr><td>Total time:</td><td>268 seconds (268702 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,57 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Freedo_domain.dashboard.TC_003_verify_invalid_Login_functionality()'><b>TC_003_verify_invalid_Login_functionality</b><br>Test class: Freedo_domain.dashboard</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at Freedo_domain.dashboard.TC_003_verify_invalid_Login_functionality(dashboard.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace952590825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace952590825'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at Freedo_domain.dashboard.TC_003_verify_invalid_Login_functionality(dashboard.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>9</td>
+<td>Freedo_domain.dashboard@7ae42ce3</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,70 +126,85 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Freedo_domain.web_admin_1.TC_001_verify_valid_launch_of_web_application()'><b>TC_001_verify_valid_launch_of_web_application</b><br>Test class: Freedo_domain.web_admin_1</td>
+<td title='Freedo_domain.vehicle_management1.TC_0074_Verify_Component_Vehicle_management()'><b>TC_0074_Verify_Component_Vehicle_management</b><br>Test class: Freedo_domain.vehicle_management1</td>
+<td></td>
+<td>15</td>
+<td>Freedo_domain.vehicle_management1@22f31dec</td></tr>
+<tr>
+<td title='Freedo_domain.dashboard.TC_001_verify_valid_launch_of_web_application()'><b>TC_001_verify_valid_launch_of_web_application</b><br>Test class: Freedo_domain.dashboard</td>
 <td></td>
 <td>0</td>
-<td>Freedo_domain.web_admin_1@64bce832</td></tr>
+<td>Freedo_domain.dashboard@7ae42ce3</td></tr>
 <tr>
-<td title='Freedo_domain.web_admin_1.TC_013_verify_valid_Action_View_icon_functionallity()'><b>TC_013_verify_valid_Action_View_icon_functionallity</b><br>Test class: Freedo_domain.web_admin_1</td>
+<td title='Freedo_domain.dashboard.TC_010_verify_valid_Booking_Statistics_count()'><b>TC_010_verify_valid_Booking_Statistics_count</b><br>Test class: Freedo_domain.dashboard</td>
 <td></td>
 <td>1</td>
-<td>Freedo_domain.web_admin_1@64bce832</td></tr>
+<td>Freedo_domain.dashboard@7ae42ce3</td></tr>
 <tr>
-<td title='Freedo_domain.web_admin_1.TC_006_verify_content_Home_page_of_Admin()'><b>TC_006_verify_content_Home_page_of_Admin</b><br>Test class: Freedo_domain.web_admin_1</td>
-<td></td>
-<td>51</td>
-<td>Freedo_domain.web_admin_1@64bce832</td></tr>
-<tr>
-<td title='Freedo_domain.web_admin_1.TC_009_verify_valid_User_Statistics_count()'><b>TC_009_verify_valid_User_Statistics_count</b><br>Test class: Freedo_domain.web_admin_1</td>
-<td></td>
-<td>1</td>
-<td>Freedo_domain.web_admin_1@64bce832</td></tr>
-<tr>
-<td title='Freedo_domain.web_admin_1.TC_010_verify_valid_Booking_Statistics_count()'><b>TC_010_verify_valid_Booking_Statistics_count</b><br>Test class: Freedo_domain.web_admin_1</td>
-<td></td>
-<td>1</td>
-<td>Freedo_domain.web_admin_1@64bce832</td></tr>
-<tr>
-<td title='Freedo_domain.web_admin_1.TC_011_verify_valid_Booking_list_as_per_booking_tabs()'><b>TC_011_verify_valid_Booking_list_as_per_booking_tabs</b><br>Test class: Freedo_domain.web_admin_1</td>
+<td title='Freedo_domain.dashboard.TC_011_verify_valid_Booking_list_as_per_booking_tabs()'><b>TC_011_verify_valid_Booking_list_as_per_booking_tabs</b><br>Test class: Freedo_domain.dashboard</td>
 <td></td>
 <td>8</td>
-<td>Freedo_domain.web_admin_1@64bce832</td></tr>
+<td>Freedo_domain.dashboard@7ae42ce3</td></tr>
 <tr>
-<td title='Freedo_domain.web_admin_1.TC_005_verify_valid_Login_funcationality()'><b>TC_005_verify_valid_Login_funcationality</b><br>Test class: Freedo_domain.web_admin_1</td>
+<td title='Freedo_domain.vehicle_management1.TC_0077_Verify_valid_vehicle_search_from_Search_by_Vehicle_Type()'><b>TC_0077_Verify_valid_vehicle_search_from_Search_by_Vehicle_Type</b><br>Test class: Freedo_domain.vehicle_management1</td>
 <td></td>
-<td>2</td>
-<td>Freedo_domain.web_admin_1@64bce832</td></tr>
+<td>10</td>
+<td>Freedo_domain.vehicle_management1@22f31dec</td></tr>
 <tr>
-<td title='Freedo_domain.web_admin_1.TC_003_verify_invalid_Login_functionality()'><b>TC_003_verify_invalid_Login_functionality</b><br>Test class: Freedo_domain.web_admin_1</td>
-<td></td>
-<td>3</td>
-<td>Freedo_domain.web_admin_1@64bce832</td></tr>
-<tr>
-<td title='Freedo_domain.web_admin_1.TC_008_verify_valid_Vehicle_statistics_count()'><b>TC_008_verify_valid_Vehicle_statistics_count</b><br>Test class: Freedo_domain.web_admin_1</td>
+<td title='Freedo_domain.dashboard.TC_008_verify_valid_Vehicle_statistics_count()'><b>TC_008_verify_valid_Vehicle_statistics_count</b><br>Test class: Freedo_domain.dashboard</td>
 <td></td>
 <td>9</td>
-<td>Freedo_domain.web_admin_1@64bce832</td></tr>
+<td>Freedo_domain.dashboard@7ae42ce3</td></tr>
 <tr>
-<td title='Freedo_domain.web_admin_1.TC_014_verify_admin_approve_request()'><b>TC_014_verify_admin_approve_request</b><br>Test class: Freedo_domain.web_admin_1</td>
+<td title='Freedo_domain.dashboard.TC_009_verify_valid_User_Statistics_count()'><b>TC_009_verify_valid_User_Statistics_count</b><br>Test class: Freedo_domain.dashboard</td>
+<td></td>
+<td>1</td>
+<td>Freedo_domain.dashboard@7ae42ce3</td></tr>
+<tr>
+<td title='Freedo_domain.dashboard.TC_006_verify_content_Home_page_of_Admin()'><b>TC_006_verify_content_Home_page_of_Admin</b><br>Test class: Freedo_domain.dashboard</td>
+<td></td>
+<td>51</td>
+<td>Freedo_domain.dashboard@7ae42ce3</td></tr>
+<tr>
+<td title='Freedo_domain.dashboard.TC_012_verify_valid_Action_functionallity()'><b>TC_012_verify_valid_Action_functionallity</b><br>Test class: Freedo_domain.dashboard</td>
+<td></td>
+<td>51</td>
+<td>Freedo_domain.dashboard@7ae42ce3</td></tr>
+<tr>
+<td title='Freedo_domain.dashboard.TC_014_verify_admin_approve_request()'><b>TC_014_verify_admin_approve_request</b><br>Test class: Freedo_domain.dashboard</td>
 <td></td>
 <td>36</td>
-<td>Freedo_domain.web_admin_1@64bce832</td></tr>
+<td>Freedo_domain.dashboard@7ae42ce3</td></tr>
 <tr>
-<td title='Freedo_domain.web_admin_1.TC_002_verify_invalid_launch_of_web_application()'><b>TC_002_verify_invalid_launch_of_web_application</b><br>Test class: Freedo_domain.web_admin_1</td>
+<td title='Freedo_domain.dashboard.TC_013_verify_valid_Action_View_icon_functionallity()'><b>TC_013_verify_valid_Action_View_icon_functionallity</b><br>Test class: Freedo_domain.dashboard</td>
 <td></td>
-<td>3</td>
-<td>Freedo_domain.web_admin_1@64bce832</td></tr>
+<td>1</td>
+<td>Freedo_domain.dashboard@7ae42ce3</td></tr>
 <tr>
-<td title='Freedo_domain.web_admin_1.TC_012_verify_valid_Action_functionallity()'><b>TC_012_verify_valid_Action_functionallity</b><br>Test class: Freedo_domain.web_admin_1</td>
+<td title='Freedo_domain.dashboard.TC_005_verify_valid_Login_funcationality()'><b>TC_005_verify_valid_Login_funcationality</b><br>Test class: Freedo_domain.dashboard</td>
 <td></td>
-<td>69</td>
-<td>Freedo_domain.web_admin_1@64bce832</td></tr>
+<td>11</td>
+<td>Freedo_domain.dashboard@7ae42ce3</td></tr>
 <tr>
-<td title='Freedo_domain.web_admin_1.TC_007_verify_content_of_Dashboard()'><b>TC_007_verify_content_of_Dashboard</b><br>Test class: Freedo_domain.web_admin_1</td>
+<td title='Freedo_domain.dashboard.TC_002_verify_invalid_launch_of_web_application()'><b>TC_002_verify_invalid_launch_of_web_application</b><br>Test class: Freedo_domain.dashboard</td>
+<td></td>
+<td>20</td>
+<td>Freedo_domain.dashboard@7ae42ce3</td></tr>
+<tr>
+<td title='Freedo_domain.vehicle_management1.TC_0076_Verify_valid_vehicle_search_from_Search_by_Location()'><b>TC_0076_Verify_valid_vehicle_search_from_Search_by_Location</b><br>Test class: Freedo_domain.vehicle_management1</td>
+<td></td>
+<td>12</td>
+<td>Freedo_domain.vehicle_management1@22f31dec</td></tr>
+<tr>
+<td title='Freedo_domain.vehicle_management1.TC_0075_Verify_valid_vehicle_search_from_Search_by_City()'><b>TC_0075_Verify_valid_vehicle_search_from_Search_by_City</b><br>Test class: Freedo_domain.vehicle_management1</td>
+<td></td>
+<td>10</td>
+<td>Freedo_domain.vehicle_management1@22f31dec</td></tr>
+<tr>
+<td title='Freedo_domain.dashboard.TC_007_verify_content_of_Dashboard()'><b>TC_007_verify_content_of_Dashboard</b><br>Test class: Freedo_domain.dashboard</td>
 <td></td>
 <td>9</td>
-<td>Freedo_domain.web_admin_1@64bce832</td></tr>
+<td>Freedo_domain.dashboard@7ae42ce3</td></tr>
 </table><p>
 </body>
 </html>

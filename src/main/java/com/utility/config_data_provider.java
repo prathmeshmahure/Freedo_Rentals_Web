@@ -40,6 +40,9 @@ public class config_data_provider {
 				}	
 				public  String getotp() {
 					return pro.getProperty("otp");
+				}	
+				public  String getbike_nu() {
+					return pro.getProperty("bike_nu");
 				}
 				
 

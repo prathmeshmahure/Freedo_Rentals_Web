@@ -15,6 +15,7 @@ import org.testng.asserts.SoftAssert;
 import com.page_object.home_page;
 import com.page_object.login_page;
 import com.page_object.uat_url_booking;
+import com.page_object.vehicle_management;
 import com.utility.base_class;
 import com.utility.library;
 
@@ -22,6 +23,7 @@ public class TC_0001 extends base_class{
 	public static login_page login;
 	public static uat_url_booking uat;
 	public static home_page home;
+	public static vehicle_management vm;
 	@Test
 	public void Login_Account()  {
 		login = PageFactory.initElements(driver, login_page.class);
@@ -32,27 +34,29 @@ public class TC_0001 extends base_class{
 	}
 //========================================================================================================
 	@Test
-	public void TC_0077_Verify_valid_vehicle_search_from_Search_by_Vehicle_Type() throws Exception {
-		log.info("=========== TC_0077_Verify_valid_vehicle_search_from_Search_by_Vehicle_Type Starts");
-		home = PageFactory.initElements(driver, home_page.class);
+	public void TC_0079_Verify_valid_vehicle_search_from_Search_by_Vehicle_Model() throws Exception {
+		log.info("=========== TC_0079_Verify_valid_vehicle_search_from_Search_by_Vehicle_Model Starts");
+		vm = PageFactory.initElements(driver, vehicle_management.class);
 		
 		Thread.sleep(2000);
-		library.Custom_click(home.getVehicle_Management(), "Vehicle management");
-		library.Custom_click(home.getVm_select_by_vehicle_type_dropdown(), "select_by_vehicle_type_dropdown");
-		library.Custom_click(home.getVm_3rd_drop_Bike(), "Bike");
-	
-		library.visible(home.getVm_table_location_1stR(), "Location is = "+home.getVm_table_location_1stR().getText());
-		library.visible(home.getVm_table_model_1stR() , "Model is = "+home.getVm_table_model_1stR().getText());		
-		library.visible(home.getVm_table_vehicle_type_1stR() , "vehicle type is = "+home.getVm_table_vehicle_type_1stR().getText());
-		library.visible(home.getVm_table_color_1stR() , "color is ="+home.getVm_table_color_1stR().getText());
-		library.visible(home.getVm_table_vehicle_number_1stR() , "Vehicle number is = "+home.getVm_table_vehicle_number_1stR().getText());		
-		library.visible(home.getVm_table_Booking_Frequency_1stR() , "booking frequency is = "+home.getVm_table_Booking_Frequency_1stR().getText());
-		library.visible(home.getVm_table_Service_Frequency_1stR() , "Service frequency is = "+home.getVm_table_Service_Frequency_1stR().getText());
-		library.visible(home.getVm_table_Status_1stR() , "Status is = "+home.getVm_table_Status_1stR().getText());
-		library.visible(home.getVm_table_view_action_1stR() , "View action ");
-		library.visible(home.getVm_table_update_action_1stR() , "Update action");		
-		library.visible(home.getVm_table_delete_action_1stR() , "delete action");
-		library.visible(home.getVm_table_view_calendar_action_1stR() , "View calendar action");
+		library.Custom_click(vm.getVehicle_Management(), "Vehicle management");
+		library.Custom_click(vm.getVm_reset_button(), "Reset button");
+		library.Custom_click(vm.getVm_search_by_model_dropdown(), "search_by_model_dropdown");
+		library.Custom_click(vm.getVm_4th_drop_HF_Deluxe(), "HF deluxe");
+		Thread.sleep(2000);
+		library.visible(vm.getVm_table_location_1stR(), "Location is = "+vm.getVm_table_location_1stR().getText());
+		library.visible(vm.getVm_table_model_1stR() , "Model is = "+vm.getVm_table_model_1stR().getText());		
+		library.visible(vm.getVm_table_vehicle_type_1stR() , "vehicle type is = "+vm.getVm_table_vehicle_type_1stR().getText());
+		library.visible(vm.getVm_table_color_1stR() , "color is = "+vm.getVm_table_color_1stR().getText());
+		library.visible(vm.getVm_table_vehicle_number_1stR() , "Vehicle number is = "+vm.getVm_table_vehicle_number_1stR().getText());		
+		library.visible(vm.getVm_table_Booking_Frequency_1stR() , "booking frequency is = "+vm.getVm_table_Booking_Frequency_1stR().getText());
+		library.visible(vm.getVm_table_Service_Frequency_1stR() , "Service frequency is = "+vm.getVm_table_Service_Frequency_1stR().getText());
+		library.visible(vm.getVm_table_Status_1stR() , "Status is = "+vm.getVm_table_Status_1stR().getText());
+		library.visible(vm.getVm_table_view_action_1stR() , "View action ");
+		library.visible(vm.getVm_table_update_action_1stR() , "Update action");		
+		library.visible(vm.getVm_table_delete_action_1stR() , "delete action");
+		library.visible(vm.getVm_table_view_calendar_action_1stR() , "View calendar action");
+		
 		
 	}
 }
