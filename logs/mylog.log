@@ -1,20 +1,9 @@
-[INFO ] 2023-03-06 17:30:28.671 [main] Freedo_Rentals_Web -   Successfully send Value Username
-[INFO ] 2023-03-06 17:30:28.806 [main] Freedo_Rentals_Web -   Successfully send Value Password
-[INFO ] 2023-03-06 17:30:29.429 [main] Freedo_Rentals_Web -   Successfully Click Submit button
-[INFO ] 2023-03-06 17:30:29.433 [main] Freedo_Rentals_Web - =========== TC_0078_Verify_valid_vehicle_search_through_Search_by_Vehicle_no Starts
-[INFO ] 2023-03-06 17:30:32.093 [main] Freedo_Rentals_Web -   Successfully Click Vehicle management
-[INFO ] 2023-03-06 17:30:32.745 [main] Freedo_Rentals_Web -   Successfully Click Reset button
-[INFO ] 2023-03-06 17:30:33.394 [main] Freedo_Rentals_Web -   Successfully Click search_by_model_dropdown
-[INFO ] 2023-03-06 17:30:34.094 [main] Freedo_Rentals_Web -   Successfully Click HF deluxe
-[INFO ] 2023-03-06 17:30:36.750 [main] Freedo_Rentals_Web -   Element is visible Location is = Huda City Centre
-[INFO ] 2023-03-06 17:30:37.405 [main] Freedo_Rentals_Web -   Element is visible Model is = HF Deluxe
-[INFO ] 2023-03-06 17:30:38.044 [main] Freedo_Rentals_Web -   Element is visible vehicle type is = Bike
-[INFO ] 2023-03-06 17:30:38.666 [main] Freedo_Rentals_Web -   Element is visible color is = Matte Shield Gold
-[INFO ] 2023-03-06 17:30:39.276 [main] Freedo_Rentals_Web -   Element is visible Vehicle number is = HR123456
-[INFO ] 2023-03-06 17:30:39.884 [main] Freedo_Rentals_Web -   Element is visible booking frequency is = 0
-[INFO ] 2023-03-06 17:30:40.492 [main] Freedo_Rentals_Web -   Element is visible Service frequency is = 7
-[INFO ] 2023-03-06 17:30:41.100 [main] Freedo_Rentals_Web -   Element is visible Status is = Available
-[INFO ] 2023-03-06 17:30:41.690 [main] Freedo_Rentals_Web -   Element is visible View action 
-[INFO ] 2023-03-06 17:30:42.246 [main] Freedo_Rentals_Web -   Element is visible Update action
-[INFO ] 2023-03-06 17:30:42.819 [main] Freedo_Rentals_Web -   Element is visible delete action
-[INFO ] 2023-03-06 17:30:43.393 [main] Freedo_Rentals_Web -   Element is visible View calendar action
+[INFO ] 2023-03-07 00:02:26.305 [main] Freedo_Rentals_Web -   Successfully send Value Username
+[INFO ] 2023-03-07 00:02:26.509 [main] Freedo_Rentals_Web -   Successfully send Value Password
+[INFO ] 2023-03-07 00:02:27.190 [main] Freedo_Rentals_Web -   Successfully Click Submit button
+[INFO ] 2023-03-07 00:02:27.198 [main] Freedo_Rentals_Web - =========== TC_0079_Verify_valid_vehicle_search_from_Search_by_Vehicle_Model Starts
+[INFO ] 2023-03-07 00:02:29.975 [main] Freedo_Rentals_Web -   Successfully Click Vehicle management
+[INFO ] 2023-03-07 00:02:30.840 [main] Freedo_Rentals_Web -   Successfully Click Reset button
+[INFO ] 2023-03-07 00:02:31.579 [main] Freedo_Rentals_Web -   Successfully Click search_by_model_dropdown
+[INFO ] 2023-03-07 00:02:32.373 [main] Freedo_Rentals_Web -   Successfully Click HF deluxe 
+[INFO ] 2023-03-07 00:02:34.421 [main] Freedo_Rentals_Web - total data 1–10 of 14

@@ -142,25 +142,7 @@ public WebDriver driver;
 	
 	@FindBy(xpath="//div[text()='Warehouse Management']")			
 	private WebElement txt_Warehouse_Management;	
-//========================================== User Management ============================================================
-	
-	@FindBy(xpath="//p[text()='User Management']")			
-	private WebElement User_Management;
-	
-	@FindBy(xpath="//div[text()='Users']")			
-	private WebElement txt_Users;
-	
-	@FindBy(xpath="//input[@placeholder='Search Users']")	//Click_UM_Search_user
-	private WebElement Click_UM_Search_user;
 
-	@FindBy(xpath="//div[@id='view-action']")				//Click_view_action
-	private WebElement Click_view_action;
-
-	@FindBy(xpath="//h5[text()='Bookings']")				//Click_Bookings_button
-	private WebElement Click_Bookings_button;
-
-	@FindBy(xpath="//span[text()='Upcoming']")				//Click_Upcoming_bike_booking
-	private WebElement Click_Upcoming_bike_booking;
 //======================================================================================================
 						 			//		Inventory 		//
 //======================================================================================================
@@ -462,28 +444,7 @@ public WebDriver driver;
 					public WebElement gettxt_Warehouse_Management() {
 						return txt_Warehouse_Management;
 					}
-//=======================================================================================================
-					public WebElement getUser_Management() {
-						return User_Management;
-					}
-					public WebElement gettxt_Users() {
-						return txt_Users;
-					}
-					public WebElement getClick_UM_Search_user() {
-						return Click_UM_Search_user;
-					}
-			
-					public WebElement getClick_view_action() {
-						return Click_view_action;
-					}
-			
-					public WebElement getClick_Bookings_button() {
-						return Click_Bookings_button;
-					}
-			
-					public WebElement getClick_Upcoming_bike_booking() {
-						return Click_Upcoming_bike_booking;
-					}
+
 //=======================================================================================================
 					public WebElement getInventory() {
 						return Inventory;

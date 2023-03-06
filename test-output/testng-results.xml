@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-06T17:30:24 IST" name="Suite" finished-at="2023-03-06T17:30:43 IST" duration-ms="18654">
+  <suite started-at="2023-03-07T00:02:19 IST" name="Suite" finished-at="2023-03-07T00:02:34 IST" duration-ms="15270">
     <groups>
     </groups>
-    <test started-at="2023-03-06T17:30:24 IST" name="Test" finished-at="2023-03-06T17:30:43 IST" duration-ms="18654">
+    <test started-at="2023-03-07T00:02:19 IST" name="Test" finished-at="2023-03-07T00:02:34 IST" duration-ms="15270">
       <class name="sample.TC_0001">
-        <test-method is-config="true" signature="BS()[pri:0, instance:sample.TC_0001@38089a5a]" started-at="2023-03-06T17:30:23 IST" name="BS" finished-at="2023-03-06T17:30:24 IST" duration-ms="823" status="PASS">
+        <test-method is-config="true" signature="BS()[pri:0, instance:sample.TC_0001@38089a5a]" started-at="2023-03-07T00:02:17 IST" name="BS" finished-at="2023-03-07T00:02:19 IST" duration-ms="1319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BS -->
-        <test-method is-config="true" signature="browser()[pri:0, instance:sample.TC_0001@38089a5a]" started-at="2023-03-06T17:30:24 IST" name="browser" finished-at="2023-03-06T17:30:28 IST" duration-ms="3307" status="PASS">
+        <test-method is-config="true" signature="browser()[pri:0, instance:sample.TC_0001@38089a5a]" started-at="2023-03-07T00:02:19 IST" name="browser" finished-at="2023-03-07T00:02:25 IST" duration-ms="6514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method signature="Login_Account()[pri:0, instance:sample.TC_0001@38089a5a]" started-at="2023-03-06T17:30:28 IST" name="Login_Account" finished-at="2023-03-06T17:30:29 IST" duration-ms="1352" status="PASS">
+        <test-method signature="Login_Account()[pri:0, instance:sample.TC_0001@38089a5a]" started-at="2023-03-07T00:02:25 IST" name="Login_Account" finished-at="2023-03-07T00:02:27 IST" duration-ms="1455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_Account -->
-        <test-method signature="TC_0078_Verify_valid_vehicle_search_through_Search_by_Vehicle_no()[pri:0, instance:sample.TC_0001@38089a5a]" started-at="2023-03-06T17:30:29 IST" name="TC_0078_Verify_valid_vehicle_search_through_Search_by_Vehicle_no" finished-at="2023-03-06T17:30:43 IST" duration-ms="13961" status="PASS">
+        <test-method signature="TC_0079_Verify_valid_vehicle_search_from_Search_by_Vehicle_Model()[pri:0, instance:sample.TC_0001@38089a5a]" started-at="2023-03-07T00:02:27 IST" name="TC_0079_Verify_valid_vehicle_search_from_Search_by_Vehicle_Model" finished-at="2023-03-07T00:02:34 IST" duration-ms="7226" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_0078_Verify_valid_vehicle_search_through_Search_by_Vehicle_no -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:sample.TC_0001@38089a5a]" started-at="2023-03-06T17:30:43 IST" name="teardown" finished-at="2023-03-06T17:30:43 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- TC_0079_Verify_valid_vehicle_search_from_Search_by_Vehicle_Model -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:sample.TC_0001@38089a5a]" started-at="2023-03-07T00:02:34 IST" name="teardown" finished-at="2023-03-07T00:02:34 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
