@@ -28,26 +28,26 @@ public class TC_0001 extends base_class{
 	@Test
 	public void Login_Account()  {
 		login = PageFactory.initElements(driver, login_page.class);
+		vm = PageFactory.initElements(driver, vehicle_management.class);
 		
 		library.custom_sendkeys(login.getusername(), config.getusername(), "Username");
 		library.custom_sendkeys(login.getPassword(), config.getpassword(), "Password");
 		library.Custom_click(login.getClick_submit_Button(), "Submit button");	
 	}
 //========================================================================================================
-	@Test
-	public void TC_0079_Verify_valid_vehicle_search_from_Search_by_Vehicle_Model() throws Exception {
-		log.info("=========== TC_0079_Verify_valid_vehicle_search_from_Search_by_Vehicle_Model Starts");
-		vm = PageFactory.initElements(driver, vehicle_management.class);
+	@Test()
+	public void TC_008_Verify_all_elements_of_the_Select_status_drop_down() throws Exception {
+		log.info("=========== TC_008_Verify_all_elements_of_the_Select_status_drop_down Starts");
 		um = PageFactory.initElements(driver, user_management.class);
 		
 		Thread.sleep(2000);
-		library.Custom_click(vm.getVehicle_Management(), "Vehicle management");
-		library.Custom_click(vm.getVm_reset_button(), "Reset button");
-		library.Custom_click(vm.getVm_search_by_model_dropdown(), "search_by_model_dropdown");
-		library.Custom_click(vm.getVm_4th_drop_HF_Deluxe(), "HF deluxe ");
-		Thread.sleep(2000);
-		String all=user_management.totalsize();
-		log.info("total data "+all);
-		
+		library.Custom_click(um.getUser_Management(), "User management");
+		library.Custom_click(um.getUm_Reset_button(), "Reset button");
+		library.Custom_click(um.getUm_Select_Status_dropdown(), "Select status drop down");
+		library.visible(um.getUm_1st_drop_All(), "All");
+		library.visible(um.getUm_1st_drop_Active(), "Active");
+		library.visible(um.getUm_1st_drop_InActive(), "InActive");
+		library.visible(um.getUm_1st_drop_Deleted(), "Deleted");
+		library.visible(um.getUm_1st_drop_Blocked(), "Blocked");
 	}
 }

@@ -1,9 +1,12 @@
-[INFO ] 2023-03-07 00:02:26.305 [main] Freedo_Rentals_Web -   Successfully send Value Username
-[INFO ] 2023-03-07 00:02:26.509 [main] Freedo_Rentals_Web -   Successfully send Value Password
-[INFO ] 2023-03-07 00:02:27.190 [main] Freedo_Rentals_Web -   Successfully Click Submit button
-[INFO ] 2023-03-07 00:02:27.198 [main] Freedo_Rentals_Web - =========== TC_0079_Verify_valid_vehicle_search_from_Search_by_Vehicle_Model Starts
-[INFO ] 2023-03-07 00:02:29.975 [main] Freedo_Rentals_Web -   Successfully Click Vehicle management
-[INFO ] 2023-03-07 00:02:30.840 [main] Freedo_Rentals_Web -   Successfully Click Reset button
-[INFO ] 2023-03-07 00:02:31.579 [main] Freedo_Rentals_Web -   Successfully Click search_by_model_dropdown
-[INFO ] 2023-03-07 00:02:32.373 [main] Freedo_Rentals_Web -   Successfully Click HF deluxe 
-[INFO ] 2023-03-07 00:02:34.421 [main] Freedo_Rentals_Web - total data 1–10 of 14
+[INFO ] 2023-03-09 15:00:13.778 [main] Freedo_Rentals_Web -   Successfully send Value Username
+[INFO ] 2023-03-09 15:00:14.056 [main] Freedo_Rentals_Web -   Successfully send Value Password
+[INFO ] 2023-03-09 15:00:14.795 [main] Freedo_Rentals_Web -   Successfully Click Submit button
+[INFO ] 2023-03-09 15:00:14.800 [main] Freedo_Rentals_Web - =========== TC_008_Verify_all_elements_of_the_Select_status_drop_down Starts
+[INFO ] 2023-03-09 15:00:17.592 [main] Freedo_Rentals_Web -   Successfully Click User management
+[INFO ] 2023-03-09 15:00:18.356 [main] Freedo_Rentals_Web -   Successfully Click Reset button
+[INFO ] 2023-03-09 15:00:19.031 [main] Freedo_Rentals_Web -   Successfully Click Select status drop down
+[INFO ] 2023-03-09 15:00:19.603 [main] Freedo_Rentals_Web -   Element is visible All
+[INFO ] 2023-03-09 15:00:20.196 [main] Freedo_Rentals_Web -   Element is visible Active
+[INFO ] 2023-03-09 15:00:20.803 [main] Freedo_Rentals_Web -   Element is visible InActive
+[INFO ] 2023-03-09 15:00:21.382 [main] Freedo_Rentals_Web -   Element is visible Deleted
+[INFO ] 2023-03-09 15:00:22.023 [main] Freedo_Rentals_Web -   Element is visible Blocked

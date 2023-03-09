@@ -80,7 +80,7 @@ public class library extends base_class{
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////		
 		public static void visible(WebElement element,String fieldname) {
 			
-			try {	library.Explicit_wait_for_clickable(element);
+			try {	library.Explicit_wait_for_visible(element);
 					if(element.isDisplayed() || element.isEnabled()==true) {
 						Thread.sleep(500);
 						test.log(Status.PASS, "Element is visible =="+ fieldname);
@@ -111,6 +111,7 @@ public class library extends base_class{
 	        }
 		}
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// use verification purpose element should not be display
 		public static void element_displayed(WebElement element,String fieldname1) {
 			try {
 				if(element.isDisplayed()==true) {

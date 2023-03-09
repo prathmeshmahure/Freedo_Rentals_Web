@@ -92,19 +92,28 @@ public class user_management {
 		@FindBy(xpath="//tbody/tr[1]/td[5]")
 		private WebElement um_table_row_Gender;
 		
-		@FindBy(xpath="//tbody/tr[1]/td[6]")
+		@FindBy(xpath="//tbody/tr[1]/td[6]/div[1]/div[1]//*[name()='svg']")
 		private WebElement um_table_row_KYC_image;
 		
 		@FindBy(xpath="//tbody/tr[1]/td[7]")
 		private WebElement um_table_row_status_active_delete;
 		
+		@FindBy(xpath="//tbody/tr[1]/td[8]/div[1]//div[@id='view-action']")
+		private WebElement um_table_row_view_action;
+		
+		@FindBy(xpath="//tbody/tr[1]/td[8]/div[1]//div[@id='update-action']")
+		private WebElement um_table_row_update_action;
+		
+		@FindBy(xpath="//tbody/tr[1]/td[8]/div[1]//div[@id='delete-action']")
+		private WebElement um_table_row_delete_action;
+		
+		@FindBy(xpath="//button[normalize-space()='Reset']")
+		private WebElement um_Reset_button;
+		
+		@FindBy(xpath="//div[normalize-space()='No Data Found']")
+		private WebElement um_table_No_Data_Found;
+		
 /*		@FindBy(xpath="")
-		private WebElement um_table_row_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
 		private WebElement um_;
 		
 		@FindBy(xpath="")
@@ -307,10 +316,9 @@ public class user_management {
 		
 		
 		
+		
 		@FindBy(xpath="//div[@id='view-action']")				//Click_view_action
 		private WebElement Click_view_action;
-
-
 
 		@FindBy(xpath="//h5[text()='Bookings']")				//Click_Bookings_button
 		private WebElement Click_Bookings_button;
@@ -319,14 +327,9 @@ public class user_management {
 		private WebElement Click_Upcoming_bike_booking;
 		
 		@FindBy(xpath="//p[@class='MuiTablePagination-displayedRows css-1chpzqh']")
-		private static WebElement um_table_totaldata_size;
+		private WebElement um_table_totaldata_size;
 		
-		public static String totalsize() {
-			String size = um_table_totaldata_size.getText();
-			String all[]=size.split(" ");
-			System.out.println(all[2]);
-			return size;
-		}
+		
 		
 //===========================================================================================
 			public user_management(WebDriver driver) 
@@ -463,11 +466,26 @@ public class user_management {
 							return um_table_row_status_active_delete;
 						}
 
-						public static WebElement getUm_table_totaldata_size() {
+						public WebElement getUm_table_totaldata_size() {
 							return um_table_totaldata_size;
 						}
 	
+						public WebElement getUm_Reset_button() {
+							return um_Reset_button;
+						}
 	
-	
+						public WebElement getUm_table_row_view_action() {
+							return um_table_row_view_action;
+						}
+						public WebElement getUm_table_row_update_action() {
+							return um_table_row_update_action;
+						}
+						public WebElement getUm_table_row_delete_action() {
+							return um_table_row_delete_action;
+						}
+						
+						public WebElement getUm_table_No_Data_Found() {
+							return um_table_No_Data_Found;
+						}
 	
 }

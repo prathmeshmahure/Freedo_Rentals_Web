@@ -43,6 +43,18 @@ public class config_data_provider {
 				}	
 				public  String getbike_nu() {
 					return pro.getProperty("bike_nu");
+				}	
+				public  String getemail() {
+					return pro.getProperty("email");//
+				}	
+				public  String getinvalid_name() {
+					return pro.getProperty("invalid_name");
+				}	
+				public  String getinvalid_email() {
+					return pro.getProperty("invalid_email");
+				}	
+				public  String getinvalid_mobile_no() {
+					return pro.getProperty("invalid_mobile_no");
 				}
 				
 
