@@ -1,12 +1,15 @@
-[INFO ] 2023-03-09 15:00:13.778 [main] Freedo_Rentals_Web -   Successfully send Value Username
-[INFO ] 2023-03-09 15:00:14.056 [main] Freedo_Rentals_Web -   Successfully send Value Password
-[INFO ] 2023-03-09 15:00:14.795 [main] Freedo_Rentals_Web -   Successfully Click Submit button
-[INFO ] 2023-03-09 15:00:14.800 [main] Freedo_Rentals_Web - =========== TC_008_Verify_all_elements_of_the_Select_status_drop_down Starts
-[INFO ] 2023-03-09 15:00:17.592 [main] Freedo_Rentals_Web -   Successfully Click User management
-[INFO ] 2023-03-09 15:00:18.356 [main] Freedo_Rentals_Web -   Successfully Click Reset button
-[INFO ] 2023-03-09 15:00:19.031 [main] Freedo_Rentals_Web -   Successfully Click Select status drop down
-[INFO ] 2023-03-09 15:00:19.603 [main] Freedo_Rentals_Web -   Element is visible All
-[INFO ] 2023-03-09 15:00:20.196 [main] Freedo_Rentals_Web -   Element is visible Active
-[INFO ] 2023-03-09 15:00:20.803 [main] Freedo_Rentals_Web -   Element is visible InActive
-[INFO ] 2023-03-09 15:00:21.382 [main] Freedo_Rentals_Web -   Element is visible Deleted
-[INFO ] 2023-03-09 15:00:22.023 [main] Freedo_Rentals_Web -   Element is visible Blocked
+[INFO ] 2023-03-10 17:21:06.323 [main] Freedo_Rentals_Web -   Successfully send Value Username
+[INFO ] 2023-03-10 17:21:06.586 [main] Freedo_Rentals_Web -   Successfully send Value Password
+[INFO ] 2023-03-10 17:21:07.245 [main] Freedo_Rentals_Web -   Successfully Click Submit button
+[INFO ] 2023-03-10 17:21:09.404 [main] Freedo_Rentals_Web - =========== TC_0014_Verify_Select_status_drop_down_All_tab_negative Starts
+[INFO ] 2023-03-10 17:21:12.248 [main] Freedo_Rentals_Web -   Successfully Click User management
+[INFO ] 2023-03-10 17:21:12.945 [main] Freedo_Rentals_Web -   Successfully Click Reset button
+[INFO ] 2023-03-10 17:21:13.590 [main] Freedo_Rentals_Web -   Successfully Click Select status drop down
+[INFO ] 2023-03-10 17:21:14.311 [main] Freedo_Rentals_Web -   Successfully Click  All 
+[INFO ] 2023-03-10 17:21:17.024 [main] Freedo_Rentals_Web -   Successfully Click click 10 user list
+[INFO ] 2023-03-10 17:21:17.648 [main] Freedo_Rentals_Web -   Successfully Click Select 100 user list
+[INFO ] 2023-03-10 17:21:19.835 [main] Freedo_Rentals_Web -   Active User = 86
+[INFO ] 2023-03-10 17:21:19.835 [main] Freedo_Rentals_Web -   Delete User = 8
+[INFO ] 2023-03-10 17:21:19.836 [main] Freedo_Rentals_Web -   Blocked User = 6
+[INFO ] 2023-03-10 17:21:19.836 [main] Freedo_Rentals_Web -   Inactive User = 0
+[INFO ] 2023-03-10 17:21:19.860 [main] Freedo_Rentals_Web -   Total user = 575

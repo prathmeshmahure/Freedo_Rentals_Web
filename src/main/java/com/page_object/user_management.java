@@ -113,13 +113,13 @@ public class user_management {
 		@FindBy(xpath="//div[normalize-space()='No Data Found']")
 		private WebElement um_table_No_Data_Found;
 		
+		@FindBy(xpath="(//div[text()='10'])[2]")
+		private WebElement um_click_10_user_list;
+		
+		@FindBy(xpath="//li[@data-value='100']")
+		private WebElement um_select_100_user_list;
+		
 /*		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
 		private WebElement um_;
 		
 		@FindBy(xpath="")
@@ -320,6 +320,8 @@ public class user_management {
 		@FindBy(xpath="//div[@id='view-action']")				//Click_view_action
 		private WebElement Click_view_action;
 
+		
+
 		@FindBy(xpath="//h5[text()='Bookings']")				//Click_Bookings_button
 		private WebElement Click_Bookings_button;
 
@@ -487,5 +489,10 @@ public class user_management {
 						public WebElement getUm_table_No_Data_Found() {
 							return um_table_No_Data_Found;
 						}
-	
+						public WebElement getUm_click_10_user_list() {
+							return um_click_10_user_list;
+						}
+						public WebElement getUm_select_100_user_list() {
+							return um_select_100_user_list;
+						}
 }

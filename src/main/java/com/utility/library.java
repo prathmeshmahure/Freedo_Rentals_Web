@@ -38,12 +38,12 @@ public class library extends base_class{
 		public static void Custom_click(WebElement element,String fieldname) {
 			
 			try {	library.Explicit_wait_for_visible(element);
-					if(element.isDisplayed() || element.isEnabled()==true) {
+	//				if(element.isDisplayed() || element.isEnabled()==true) {
 						Thread.sleep(500);
 						element.click();
 						test.log(Status.PASS, "Successfully click=="+ fieldname);
 						log.info("  Successfully Click "+fieldname);
-					}
+	//				}
 				}
 			catch(Exception e) {
 					test.log(Status.FAIL, fieldname+"==Unable To Click =="+e);

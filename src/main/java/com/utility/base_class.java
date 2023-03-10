@@ -59,7 +59,7 @@ public class base_class {
 			driver=new ChromeDriver();
 			driver.get(config.getstageurl());
 			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 			 log = LogManager.getLogger("Freedo_Rentals_Web");
 			
 		}
@@ -72,13 +72,13 @@ public class base_class {
 /////////////////////////////////////////// Explicit Wait //////////////////////////////////////////////////////////////  	
     public static void Explicit_wait_for_visible(WebElement element) {
     	
-    	WebDriverWait wait=new WebDriverWait(driver ,Duration.ofSeconds(10));
+    	WebDriverWait wait=new WebDriverWait(driver ,10);
     	wait.until(ExpectedConditions.visibilityOfAllElements(element));
     }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public static void Explicit_wait_for_clickable(WebElement element) {
     	
-    	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+    	WebDriverWait wait=new WebDriverWait(driver,10);
     	wait.until(ExpectedConditions.elementToBeClickable(element));
     }
     

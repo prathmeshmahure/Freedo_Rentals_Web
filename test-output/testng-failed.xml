@@ -10,8 +10,8 @@
       <class name="sample.TC_0001">
         <methods>
           <include name="browser"/>
+          <include name="TC_0015_Verify_Select_status_drop_down_Active_tab_negative"/>
           <include name="teardown"/>
-          <include name="TC_0079_Verify_valid_vehicle_search_from_Search_by_Vehicle_Model"/>
           <include name="BS"/>
         </methods>
       </class> <!-- sample.TC_0001 -->
