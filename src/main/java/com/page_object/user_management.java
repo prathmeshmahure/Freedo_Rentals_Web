@@ -1,5 +1,7 @@
 package com.page_object;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,7 +23,11 @@ public class user_management {
 
 		@FindBy(xpath="//em[text()='Select Status']")
 		private WebElement um_Select_Status_dropdown;			//dropdown
-			// drop down data  ///
+		
+		@FindBy(xpath="//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']")
+		private List<WebElement> um_1st_dropdown_all_common_status;
+			
+				// drop down data  ///
 				@FindBy(xpath="//li[normalize-space()='All']")
 				private WebElement um_1st_drop_All;
 				
@@ -40,7 +46,10 @@ public class user_management {
 		
 		@FindBy(xpath="//em[text()='KYC Status']")
 		private WebElement um_2nd_drop_KYC_Status;				//dropdown
-			// drop down data  ///
+		
+		@FindBy(xpath="(//*[name()='svg'][@data-icon='circle-check' or @data-icon='circle-xmark'])")
+		private List<WebElement> um_2nd_dropdown_all_common;
+		// drop down data  ///
 		
 				@FindBy(xpath="//li[normalize-space()='All']")
 				private WebElement um_2nd_drop_All;
@@ -309,10 +318,8 @@ public class user_management {
 		private WebElement um_;
 		
 		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
 		private WebElement um_;*/
+		
 		
 		
 		
@@ -495,4 +502,23 @@ public class user_management {
 						public WebElement getUm_select_100_user_list() {
 							return um_select_100_user_list;
 						}
+						public List<WebElement> getUm_2nd_dropdown_all_common() {
+							return um_2nd_dropdown_all_common;
+						}
+						public List<WebElement> getUm_1st_dropdown_all_common_status() {
+							return um_1st_dropdown_all_common_status;
+						}
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
 }

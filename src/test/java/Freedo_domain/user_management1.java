@@ -17,7 +17,7 @@ public class user_management1 extends base_class{
 	public static user_management um;
 	
 //===============================================================================================
-	@Test
+	@Test(priority=1)
 	public void TC_001_verify_user_management_tab_under_admin() throws Exception {
 		log.info("=========== TC_001_verify_user_management_tab_under_admin Starts");
 		um = PageFactory.initElements(driver, user_management.class);
@@ -43,7 +43,7 @@ public class user_management1 extends base_class{
 		library.msg("  All register user = ", all[2]);
 	}
 //==================================================================================================	
-	@Test
+	@Test(priority=2)
 	public void TC_002_verify_valid_register_user_by_name() throws Exception {
 		log.info("=========== TC_002_verify_valid_register_user_by_name Starts");
 		um = PageFactory.initElements(driver, user_management.class);
@@ -70,7 +70,7 @@ public class user_management1 extends base_class{
 		Assert.assertTrue(name.startsWith(config.getname()));
 	}
 //===================================================================================================
-	@Test
+	@Test(priority=3)
 	public void TC_003_verify_valid_register_user_by_mobile_number() throws Exception {
 		log.info("=========== TC_003_verify_valid_register_user_by_mobile_number Starts");
 		um = PageFactory.initElements(driver, user_management.class);
@@ -96,7 +96,7 @@ public class user_management1 extends base_class{
 		Assert.assertEquals(um.getUm_table_row_Mobile() .getText(), config.getmobilenu());
 	}
 //=========================================================================================================
-	@Test
+	@Test(priority=4)
 	public void TC_004_verify_valid_register_user_by_email() throws Exception {
 		log.info("=========== TC_004_verify_valid_register_user_by_email Starts");
 		um = PageFactory.initElements(driver, user_management.class);
@@ -122,7 +122,7 @@ public class user_management1 extends base_class{
 		Assert.assertEquals(um.getUm_table_row_Email().getText(), config.getemail());
 	}
 //==================================================================================================================
-	@Test()
+	@Test(priority=5)
 	public void TC_005_Verify_In_valid_register_user_search_by_user_name() throws Exception {
 		log.info("=========== TC_005_Verify_In_valid_register_user_search_by_user_name Starts");
 		um = PageFactory.initElements(driver, user_management.class);
@@ -140,7 +140,7 @@ public class user_management1 extends base_class{
 		log.info("   No data found");
 	}
 //=================================================================================================================
-	@Test()
+	@Test(priority=6)
 	public void TC_006_Verify_In_valid_register_user_search_by_user_mobile_number() throws Exception {
 		log.info("=========== TC_006_Verify_In_valid_register_user_search_by_user_mobile_number Starts");
 		um = PageFactory.initElements(driver, user_management.class);
@@ -158,7 +158,7 @@ public class user_management1 extends base_class{
 		log.info("   No data found");
 	}
 //==============================================================================================================
-	@Test()
+	@Test(priority=7)
 	public void TC_007_Verify_In_valid_register_user_search_by_user_email_id() throws Exception {
 		log.info("=========== TC_007_Verify_In_valid_register_user_search_by_user_email_id Starts");
 		um = PageFactory.initElements(driver, user_management.class);
@@ -176,7 +176,7 @@ public class user_management1 extends base_class{
 		log.info("   No data found");
 	}
 //===============================================================================================================
-	@Test()
+	@Test(priority=8)
 	public void TC_008_Verify_all_elements_of_the_Select_status_drop_down() throws Exception {
 		log.info("=========== TC_008_Verify_all_elements_of_the_Select_status_drop_down Starts");
 		um = PageFactory.initElements(driver, user_management.class);
@@ -192,7 +192,7 @@ public class user_management1 extends base_class{
 		library.Custom_click(um.getUm_1st_drop_All(), "All tab");
 	}
 //================================================================================================================
-	@Test()
+	@Test(priority=9)
 	public void TC_009_Verify_Select_status_drop_down_All_tab() throws Exception {
 		log.info("=========== TC_009_Verify_Select_status_drop_down_All_tab Starts");
 		um = PageFactory.initElements(driver, user_management.class);
@@ -204,23 +204,23 @@ public class user_management1 extends base_class{
 		library.Custom_click(um.getUm_click_10_user_list(), "click 10 user list");
 		library.Custom_click(um.getUm_select_100_user_list(), "Select 100 user list");
 		// Check user list and compare
-		List<WebElement> ele=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
+//		List<WebElement> um.getUm_1st_dropdown_all_common_status()=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
 		LinkedList<String> activelist=new LinkedList<String>();
 		LinkedList<String> deletelist=new LinkedList<String>();
 		LinkedList<String> blockedlist=new LinkedList<String>();
 		LinkedList<String> inactivelist=new LinkedList<String>();	
-		for(int i=0;i<ele.size();i++) {
-				if(ele.get(i).getText().equalsIgnoreCase("Active")) {
-					activelist.add(ele.get(i).getText());
+		for(int i=0;i<um.getUm_1st_dropdown_all_common_status().size();i++) {
+				if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Active")) {
+					activelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 				}
-				else if(ele.get(i).getText().equalsIgnoreCase("Deleted")) {
-					deletelist.add(ele.get(i).getText());
+				else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Deleted")) {
+					deletelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 				}
-				else if(ele.get(i).getText().equalsIgnoreCase("Blocked")) {
-					blockedlist.add(ele.get(i).getText());
+				else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Blocked")) {
+					blockedlist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 				}
-				else if(ele.get(i).getText().equalsIgnoreCase("Inactive")) {
-					inactivelist.add(ele.get(i).getText());
+				else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Inactive")) {
+					inactivelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 				}
 		}
 		library.msg("  Active User = ",""+activelist.size());
@@ -233,7 +233,7 @@ public class user_management1 extends base_class{
 		library.msg("  Total user = ", all[2]);
 	}
 //====================================================================================================================	
-	@Test
+	@Test(priority=10)
 	public void TC_0010_Verify_Select_status_drop_down_Active_tab() throws Exception {
 		log.info("=========== TC_0010_Verify_Select_status_drop_down_Active_tab Starts");
 		um = PageFactory.initElements(driver, user_management.class);
@@ -245,25 +245,25 @@ public class user_management1 extends base_class{
 		library.Custom_click(um.getUm_click_10_user_list(), "click 10 user list");
 		library.Custom_click(um.getUm_select_100_user_list(), "Select 100 user list");
 		// Check user list and compare
-		List<WebElement> ele=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
+//		List<WebElement> um.getUm_1st_dropdown_all_common_status()=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
 		LinkedList<String> activelist=new LinkedList<String>();
 		LinkedList<String> deletelist=new LinkedList<String>();
 		LinkedList<String> blockedlist=new LinkedList<String>();
 		LinkedList<String> inactivelist=new LinkedList<String>();	
-		for(int i=0;i<ele.size();i++) {
-				if(ele.get(i).getText().equalsIgnoreCase("Active")) {
-					activelist.add(ele.get(i).getText());
+		for(int i=0;i<um.getUm_1st_dropdown_all_common_status().size();i++) {
+				if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Active")) {
+					activelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 				}
-				else if(ele.get(i).getText().equalsIgnoreCase("Deleted")) {
-					deletelist.add(ele.get(i).getText());
+				else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Deleted")) {
+					deletelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 					Assert.assertTrue(false);
 				}
-				else if(ele.get(i).getText().equalsIgnoreCase("Blocked")) {
-					blockedlist.add(ele.get(i).getText());
+				else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Blocked")) {
+					blockedlist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 					Assert.assertTrue(false);
 				}
-				else if(ele.get(i).getText().equalsIgnoreCase("Inactive")) {
-					inactivelist.add(ele.get(i).getText());
+				else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Inactive")) {
+					inactivelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 					Assert.assertTrue(false);
 				}
 		}
@@ -277,7 +277,7 @@ public class user_management1 extends base_class{
 		library.msg("  Total user = ", all[2]);
 	}
 //================================================================================================================================
-	@Test()
+	@Test(priority=11)
 	public void TC_0011_Verify_Select_status_drop_down_InActive_tab() throws Exception {
 		log.info("=========== TC_0011_Verify_Select_status_drop_down_InActive_tab Starts");
 		um = PageFactory.initElements(driver, user_management.class);
@@ -289,26 +289,26 @@ public class user_management1 extends base_class{
 //		library.Custom_click(um.getUm_click_10_user_list(), "click 10 user list");
 //		library.Custom_click(um.getUm_select_100_user_list(), "Select 100 user list");
 		// Check user list and compare
-		List<WebElement> ele=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
+//		List<WebElement> um.getUm_1st_dropdown_all_common_status()=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
 		LinkedList<String> activelist=new LinkedList<String>();
 		LinkedList<String> deletelist=new LinkedList<String>();
 		LinkedList<String> blockedlist=new LinkedList<String>();
 		LinkedList<String> inactivelist=new LinkedList<String>();	
-		for(int i=0;i<ele.size();i++) {
-				if(ele.get(i).getText().equalsIgnoreCase("Active")) {
-					activelist.add(ele.get(i).getText());
+		for(int i=0;i<um.getUm_1st_dropdown_all_common_status().size();i++) {
+				if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Active")) {
+					activelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 					Assert.assertTrue(false);
 				}
-				else if(ele.get(i).getText().equalsIgnoreCase("Deleted")) {
-					deletelist.add(ele.get(i).getText());
+				else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Deleted")) {
+					deletelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 					Assert.assertTrue(false);
 				}
-				else if(ele.get(i).getText().equalsIgnoreCase("Blocked")) {
-					blockedlist.add(ele.get(i).getText());
+				else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Blocked")) {
+					blockedlist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 					Assert.assertTrue(false);
 				}
-				else if(ele.get(i).getText().equalsIgnoreCase("Inactive")) {
-					inactivelist.add(ele.get(i).getText());
+				else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Inactive")) {
+					inactivelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 					
 				}
 		}
@@ -322,7 +322,7 @@ public class user_management1 extends base_class{
 		library.msg("  Total user = ", all[2]);
 	}
 //========================================================================================================
-	@Test()
+	@Test(priority=12)
 	public void TC_0012_Verify_Select_status_drop_down_Deleted_tab() throws Exception {
 		log.info("=========== TC_0012_Verify_Select_status_drop_down_Deleted_tab Starts");
 		um = PageFactory.initElements(driver, user_management.class);
@@ -334,26 +334,26 @@ public class user_management1 extends base_class{
 		library.Custom_click(um.getUm_click_10_user_list(), "click 10 user list");
 		library.Custom_click(um.getUm_select_100_user_list(), "Select 100 user list");
 		// Check user list and compare
-		List<WebElement> ele=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
+//		List<WebElement> um.getUm_1st_dropdown_all_common_status()=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
 		LinkedList<String> activelist=new LinkedList<String>();
 		LinkedList<String> deletelist=new LinkedList<String>();
 		LinkedList<String> blockedlist=new LinkedList<String>();
 		LinkedList<String> inactivelist=new LinkedList<String>();	
-		for(int i=0;i<ele.size();i++) {
-				if(ele.get(i).getText().equalsIgnoreCase("Active")) {
-					activelist.add(ele.get(i).getText());
+		for(int i=0;i<um.getUm_1st_dropdown_all_common_status().size();i++) {
+				if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Active")) {
+					activelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 					Assert.assertTrue(false);
 				}
-				else if(ele.get(i).getText().equalsIgnoreCase("Deleted")) {
-					deletelist.add(ele.get(i).getText());
+				else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Deleted")) {
+					deletelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 					
 				}
-				else if(ele.get(i).getText().equalsIgnoreCase("Blocked")) {
-					blockedlist.add(ele.get(i).getText());
+				else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Blocked")) {
+					blockedlist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 					Assert.assertTrue(false);
 				}
-				else if(ele.get(i).getText().equalsIgnoreCase("Inactive")) {
-					inactivelist.add(ele.get(i).getText());
+				else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Inactive")) {
+					inactivelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 					Assert.assertTrue(false);
 				}
 		}
@@ -367,7 +367,7 @@ public class user_management1 extends base_class{
 		library.msg("  Total user = ", all[2]);
 	}
 //==========================================================================================================================
-	@Test()
+	@Test(priority=13)
 	public void TC_0013_Verify_Select_status_drop_down_Blocked_tab() throws Exception {
 		log.info("=========== TC_0013_Verify_Select_status_drop_down_Blocked_tab Starts");
 		um = PageFactory.initElements(driver, user_management.class);
@@ -379,26 +379,26 @@ public class user_management1 extends base_class{
 		library.Custom_click(um.getUm_click_10_user_list(), "click 10 user list");
 		library.Custom_click(um.getUm_select_100_user_list(), "Select 100 user list");
 		// Check user list and compare
-		List<WebElement> ele=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
+//		List<WebElement> um.getUm_1st_dropdown_all_common_status()=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
 		LinkedList<String> activelist=new LinkedList<String>();
 		LinkedList<String> deletelist=new LinkedList<String>();
 		LinkedList<String> blockedlist=new LinkedList<String>();
 		LinkedList<String> inactivelist=new LinkedList<String>();	
-		for(int i=0;i<ele.size();i++) {
-				if(ele.get(i).getText().equalsIgnoreCase("Active")) {
-					activelist.add(ele.get(i).getText());
+		for(int i=0;i<um.getUm_1st_dropdown_all_common_status().size();i++) {
+				if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Active")) {
+					activelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 					Assert.assertTrue(false);
 				}
-				else if(ele.get(i).getText().equalsIgnoreCase("Deleted")) {
-					deletelist.add(ele.get(i).getText());
+				else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Deleted")) {
+					deletelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 					Assert.assertTrue(false);
 				}
-				else if(ele.get(i).getText().equalsIgnoreCase("Blocked")) {
-					blockedlist.add(ele.get(i).getText());
+				else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Blocked")) {
+					blockedlist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 					
 				}
-				else if(ele.get(i).getText().equalsIgnoreCase("Inactive")) {
-					inactivelist.add(ele.get(i).getText());
+				else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Inactive")) {
+					inactivelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 					Assert.assertTrue(false);
 				}
 		}
@@ -412,7 +412,7 @@ public class user_management1 extends base_class{
 		library.msg("  Total user = ", all[2]);
 	}
 //===========================================================================================================================
-	@Test()//Negative Scenario
+	@Test(priority=14)//Negative Scenario
 	public void TC_0014_Verify_Select_status_drop_down_All_tab_negative() throws Exception {
 		log.info("=========== TC_0014_Verify_Select_status_drop_down_All_tab_negative Starts");
 		um = PageFactory.initElements(driver, user_management.class);
@@ -427,24 +427,24 @@ public class user_management1 extends base_class{
 						library.Custom_click(um.getUm_click_10_user_list(), "click 10 user list");
 						library.Custom_click(um.getUm_select_100_user_list(), "Select 100 user list");
 						// Check user list and compare
-						List<WebElement> ele=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
+//						List<WebElement> um.getUm_1st_dropdown_all_common_status()=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
 						LinkedList<String> activelist=new LinkedList<String>();
 						LinkedList<String> deletelist=new LinkedList<String>();
 						LinkedList<String> blockedlist=new LinkedList<String>();
 						LinkedList<String> inactivelist=new LinkedList<String>();	
-						for(int i=0;i<ele.size();i++) {
-								if(ele.get(i).getText().equalsIgnoreCase("Active")) {
-									activelist.add(ele.get(i).getText());
+						for(int i=0;i<um.getUm_1st_dropdown_all_common_status().size();i++) {
+								if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Active")) {
+									activelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 									
 								}
-								else if(ele.get(i).getText().equalsIgnoreCase("Deleted")) {
-									deletelist.add(ele.get(i).getText());
+								else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Deleted")) {
+									deletelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 								}
-								else if(ele.get(i).getText().equalsIgnoreCase("Blocked")) {
-									blockedlist.add(ele.get(i).getText());
+								else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Blocked")) {
+									blockedlist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 								}
-								else if(ele.get(i).getText().equalsIgnoreCase("Inactive")) {
-									inactivelist.add(ele.get(i).getText());
+								else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Inactive")) {
+									inactivelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 								}
 						}
 						library.msg("  Active User = ",""+activelist.size());
@@ -461,7 +461,7 @@ public class user_management1 extends base_class{
 		}	
 	}
 //=========================================================================================================================
-	@Test()//Negative Scenario
+	@Test(priority=15)//Negative Scenario
 	public void TC_0015_Verify_Select_status_drop_down_Active_tab_negative() throws Exception {
 		log.info("=========== TC_0015_Verify_Select_status_drop_down_Active_tab_negative Starts");
 		um = PageFactory.initElements(driver, user_management.class);
@@ -476,26 +476,26 @@ public class user_management1 extends base_class{
 						library.Custom_click(um.getUm_click_10_user_list(), "click 10 user list");
 						library.Custom_click(um.getUm_select_100_user_list(), "Select 100 user list");
 						// Check user list and compare
-						List<WebElement> ele=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
+//						List<WebElement> um.getUm_1st_dropdown_all_common_status()=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
 						LinkedList<String> activelist=new LinkedList<String>();
 						LinkedList<String> deletelist=new LinkedList<String>();
 						LinkedList<String> blockedlist=new LinkedList<String>();
 						LinkedList<String> inactivelist=new LinkedList<String>();	
-						for(int i=0;i<ele.size();i++) {
-								if(ele.get(i).getText().equalsIgnoreCase("Active")) {
-									activelist.add(ele.get(i).getText());
+						for(int i=0;i<um.getUm_1st_dropdown_all_common_status().size();i++) {
+								if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Active")) {
+									activelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 									
 								}
-								else if(ele.get(i).getText().equalsIgnoreCase("Deleted")) {
-									deletelist.add(ele.get(i).getText());
+								else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Deleted")) {
+									deletelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 									Assert.assertTrue(false);
 								}
-								else if(ele.get(i).getText().equalsIgnoreCase("Blocked")) {
-									blockedlist.add(ele.get(i).getText());
+								else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Blocked")) {
+									blockedlist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 									Assert.assertTrue(false);
 								}
-								else if(ele.get(i).getText().equalsIgnoreCase("Inactive")) {
-									inactivelist.add(ele.get(i).getText());
+								else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Inactive")) {
+									inactivelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 									Assert.assertTrue(false);
 								}
 						}
@@ -513,7 +513,7 @@ public class user_management1 extends base_class{
 		}	
 	}
 //========================================================================================================================
-	@Test()//Negative Scenario
+	@Test(priority=16)//Negative Scenario
 	public void TC_0016_Verify_Select_status_drop_down_InActive_tab_negative() throws Exception {
 		log.info("=========== TC_0016_Verify_Select_status_drop_down_InActive_tab_negative Starts");
 		um = PageFactory.initElements(driver, user_management.class);
@@ -528,26 +528,26 @@ public class user_management1 extends base_class{
 					//	library.Custom_click(um.getUm_click_10_user_list(), "click 10 user list");
 					//	library.Custom_click(um.getUm_select_100_user_list(), "Select 100 user list");
 						// Check user list and compare
-						List<WebElement> ele=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
+//						List<WebElement> um.getUm_1st_dropdown_all_common_status()=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
 						LinkedList<String> activelist=new LinkedList<String>();
 						LinkedList<String> deletelist=new LinkedList<String>();
 						LinkedList<String> blockedlist=new LinkedList<String>();
 						LinkedList<String> inactivelist=new LinkedList<String>();	
-						for(int i=0;i<ele.size();i++) {
-								if(ele.get(i).getText().equalsIgnoreCase("Active")) {
-									activelist.add(ele.get(i).getText());
+						for(int i=0;i<um.getUm_1st_dropdown_all_common_status().size();i++) {
+								if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Active")) {
+									activelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 									Assert.assertTrue(false);
 								}
-								else if(ele.get(i).getText().equalsIgnoreCase("Deleted")) {
-									deletelist.add(ele.get(i).getText());
+								else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Deleted")) {
+									deletelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 									Assert.assertTrue(false);
 								}
-								else if(ele.get(i).getText().equalsIgnoreCase("Blocked")) {
-									blockedlist.add(ele.get(i).getText());
+								else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Blocked")) {
+									blockedlist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 									Assert.assertTrue(false);
 								}
-								else if(ele.get(i).getText().equalsIgnoreCase("Inactive")) {
-									inactivelist.add(ele.get(i).getText());
+								else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Inactive")) {
+									inactivelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 									
 								}
 						}
@@ -566,7 +566,7 @@ public class user_management1 extends base_class{
 	}
 	
 //========================================================================================================================
-	@Test()//Negative Scenario
+	@Test(priority=17)//Negative Scenario
 	public void TC_0017_Verify_Select_status_drop_down_Deleted_tab_negative() throws Exception {
 		log.info("=========== TC_0017_Verify_Select_status_drop_down_Deleted_tab_negative Starts");
 		um = PageFactory.initElements(driver, user_management.class);
@@ -581,26 +581,26 @@ public class user_management1 extends base_class{
 						library.Custom_click(um.getUm_click_10_user_list(), "click 10 user list");
 						library.Custom_click(um.getUm_select_100_user_list(), "Select 100 user list");
 						// Check user list and compare
-						List<WebElement> ele=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
+//						List<WebElement> um.getUm_1st_dropdown_all_common_status()=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
 						LinkedList<String> activelist=new LinkedList<String>();
 						LinkedList<String> deletelist=new LinkedList<String>();
 						LinkedList<String> blockedlist=new LinkedList<String>();
 						LinkedList<String> inactivelist=new LinkedList<String>();	
-						for(int i=0;i<ele.size();i++) {
-								if(ele.get(i).getText().equalsIgnoreCase("Active")) {
-									activelist.add(ele.get(i).getText());
+						for(int i=0;i<um.getUm_1st_dropdown_all_common_status().size();i++) {
+								if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Active")) {
+									activelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 									Assert.assertTrue(false);
 								}
-								else if(ele.get(i).getText().equalsIgnoreCase("Deleted")) {
-									deletelist.add(ele.get(i).getText());
+								else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Deleted")) {
+									deletelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 									
 								}
-								else if(ele.get(i).getText().equalsIgnoreCase("Blocked")) {
-									blockedlist.add(ele.get(i).getText());
+								else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Blocked")) {
+									blockedlist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 									Assert.assertTrue(false);
 								}
-								else if(ele.get(i).getText().equalsIgnoreCase("Inactive")) {
-									inactivelist.add(ele.get(i).getText());
+								else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Inactive")) {
+									inactivelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 									Assert.assertTrue(false);
 								}
 						}
@@ -618,7 +618,7 @@ public class user_management1 extends base_class{
 		}	
 	}
 //=========================================================================================================================
-	@Test()//Negative Scenario
+	@Test(priority=18)//Negative Scenario
 	public void TC_0018_Verify_Select_status_drop_down_Blocked_tab_negative() throws Exception {
 		log.info("=========== TC_0018_Verify_Select_status_drop_down_Blocked_tab_negative Starts");
 		um = PageFactory.initElements(driver, user_management.class);
@@ -633,26 +633,26 @@ public class user_management1 extends base_class{
 						library.Custom_click(um.getUm_click_10_user_list(), "click 10 user list");
 						library.Custom_click(um.getUm_select_100_user_list(), "Select 100 user list");
 						// Check user list and compare
-						List<WebElement> ele=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
+//						List<WebElement> um.getUm_1st_dropdown_all_common_status()=driver.findElements(By.xpath("//span[@class='MuiChip-label MuiChip-labelSmall css-1pjtbja']"));
 						LinkedList<String> activelist=new LinkedList<String>();
 						LinkedList<String> deletelist=new LinkedList<String>();
 						LinkedList<String> blockedlist=new LinkedList<String>();
 						LinkedList<String> inactivelist=new LinkedList<String>();	
-						for(int i=0;i<ele.size();i++) {
-								if(ele.get(i).getText().equalsIgnoreCase("Active")) {
-									activelist.add(ele.get(i).getText());
+						for(int i=0;i<um.getUm_1st_dropdown_all_common_status().size();i++) {
+								if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Active")) {
+									activelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 									Assert.assertTrue(false);
 								}
-								else if(ele.get(i).getText().equalsIgnoreCase("Deleted")) {
-									deletelist.add(ele.get(i).getText());
+								else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Deleted")) {
+									deletelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 									Assert.assertTrue(false);
 								}
-								else if(ele.get(i).getText().equalsIgnoreCase("Blocked")) {
-									blockedlist.add(ele.get(i).getText());
+								else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Blocked")) {
+									blockedlist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 									
 								}
-								else if(ele.get(i).getText().equalsIgnoreCase("Inactive")) {
-									inactivelist.add(ele.get(i).getText());
+								else if(um.getUm_1st_dropdown_all_common_status().get(i).getText().equalsIgnoreCase("Inactive")) {
+									inactivelist.add(um.getUm_1st_dropdown_all_common_status().get(i).getText());
 									Assert.assertTrue(false);
 								}
 						}
@@ -670,8 +670,53 @@ public class user_management1 extends base_class{
 		}	
 	}
 //============================================================================================================================
-	
-	
+	@Test(priority=19)
+	public void TC_0019_Verify_all_the_elements_of_KYC_Status_drop_down() throws Exception {
+		log.info("=========== TC_0019_Verify_all_the_elements_of_KYC_Status_drop_down Starts");
+		um = PageFactory.initElements(driver, user_management.class);
+		
+		Thread.sleep(2000);
+		library.Custom_click(um.getUser_Management(), "User management");
+		library.Custom_click(um.getUm_Reset_button(), "Reset button");
+		library.Custom_click(um.getUm_2nd_drop_KYC_Status(), "Select KYC status drop down");
+		library.visible(um.getUm_2nd_drop_All(), " All ");
+		library.visible(um.getUm_2nd_drop_Verified(), "Verified");
+		library.visible(um.getUm_2nd_drop_Unverified(), "Un-Verified");
+		library.Custom_click(um.getUm_2nd_drop_All(), " All ");
+	}
+//============================================================================================================================
+	@Test(priority=20)
+	public void TC_0020_Verify_KYC_Status_drop_down_All_tab() throws Exception {
+		log.info("=========== TC_0020_Verify_KYC_Status_drop_down_All_tab Starts");
+		um = PageFactory.initElements(driver, user_management.class);
+		
+		library.Custom_click(um.getUser_Management(), "User management");
+		library.Custom_click(um.getUm_Reset_button(), "Reset button");
+		library.Custom_click(um.getUm_2nd_drop_KYC_Status(), "Select KYC status drop down");
+		library.Custom_click(um.getUm_2nd_drop_All(), " All ");
+		Thread.sleep(2000);
+		library.Custom_click(um.getUm_click_10_user_list(), "click 10 user list");
+		library.Custom_click(um.getUm_select_100_user_list(), "Select 100 user list");
+		LinkedList<String> Verified=new LinkedList<String>();
+		LinkedList<String> UnVerified=new LinkedList<String>();
+		for(int i=0;i<um.getUm_2nd_dropdown_all_common().size();i++) {
+				if(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon").equalsIgnoreCase("circle-check")) {
+					Verified.add(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon"));
+					
+				}
+				else if(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon").equalsIgnoreCase("circle-xmark")) {
+					UnVerified.add(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon"));
+					
+				}
+		}
+		library.msg("  KYC verified User = ",""+Verified.size());
+		library.msg("  KYC UnVerified User = ",""+UnVerified.size());
+		// total user
+		String size =um.getUm_table_totaldata_size().getText();
+		String all[]=size.split(" "); //////
+		library.msg("  Total user = ", all[2]);	
+	}
+//====================================================================================================================	
 	
 	
 	

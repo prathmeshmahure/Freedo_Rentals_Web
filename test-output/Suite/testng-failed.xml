@@ -10,7 +10,7 @@
       <class name="sample.TC_0001">
         <methods>
           <include name="browser"/>
-          <include name="TC_0015_Verify_Select_status_drop_down_Active_tab_negative"/>
+          <include name="TC_0019_Verify_all_the_elements_of_KYC_Status_drop_down"/>
           <include name="teardown"/>
           <include name="BS"/>
         </methods>
