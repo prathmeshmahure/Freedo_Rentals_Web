@@ -128,67 +128,67 @@ public class user_management {
 		@FindBy(xpath="//li[@data-value='100']")
 		private WebElement um_select_100_user_list;
 		
+		@FindBy(xpath="//div[@aria-label='Refresh']")
+		private WebElement um_refresh_button;
+		
+		@FindBy(xpath="//p[normalize-space()='First Name']")
+		private WebElement um_view_first_name;
+		
+		@FindBy(xpath="//p[normalize-space()='Last Name']")
+		private WebElement um_view_last_name;
+		
+		@FindBy(xpath="//p[normalize-space()='Email Id']")
+		private WebElement um_view_email_id;
+		
+		@FindBy(xpath="//p[normalize-space()='Mobile Number']")
+		private WebElement um_view_mobile_number;
+		
+		@FindBy(xpath="//p[normalize-space()='Joining Date']")
+		private WebElement um_view_joining_date;
+		
+		@FindBy(xpath="//p[normalize-space()='Gender']")
+		private WebElement um_view_gender;
+		
+		@FindBy(xpath="//p[normalize-space()='Status']")
+		private WebElement um_view_status;
+		
+		@FindBy(xpath="//p[normalize-space()='Name']")
+		private WebElement um_view_ED_name;
+		
+		@FindBy(xpath="//p[normalize-space()='Emergency Number']")
+		private WebElement um_view_ED_emergency_number;
+		
+		@FindBy(xpath="//p[normalize-space()='Relation']")
+		private WebElement um_view_ED_relation;
+		
+		@FindBy(xpath="//h5[normalize-space()='Info and Summary']")
+		private WebElement um_view_info_and_summary_button;
+		
+		@FindBy(xpath="//h5[normalize-space()='KYC Details']")
+		private WebElement um_view_kyc_details_button;
+		
+		@FindBy(xpath="//h5[normalize-space()='Bookings']")
+		private WebElement um_view_bookings_button;
+		
+		@FindBy(xpath="//p[normalize-space()='Booking Info']")
+		private WebElement um_view_booking_info;
+		
+		@FindBy(xpath="//p[text()='Total Bookings:']/following-sibling::p")
+		private WebElement um_view_BI_total_booking_txt;
+		
+		@FindBy(xpath="//p[text()='Total Payment Done:']/following-sibling::p")
+		private WebElement um_view_BI_total_payment_done_txt;
+		
+		@FindBy(xpath="//p[text()='Total KM Driven:']/following-sibling::p")
+		private WebElement um_view_B_total_km_driver_txt;
+		
+		@FindBy(xpath="//button[normalize-space()='Block']")
+		private WebElement um_view_block_button;
+		
+		@FindBy(xpath="//button[normalize-space()='Back']")
+		private WebElement um_view_back_button;
+		
 /*		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
 		private WebElement um_;
 		
 		@FindBy(xpath="")
@@ -324,11 +324,14 @@ public class user_management {
 		
 		
 		
+		
 		@FindBy(xpath="//div[@id='view-action']")				//Click_view_action
 		private WebElement Click_view_action;
 
 		
 
+		
+		
 		@FindBy(xpath="//h5[text()='Bookings']")				//Click_Bookings_button
 		private WebElement Click_Bookings_button;
 
@@ -508,9 +511,66 @@ public class user_management {
 						public List<WebElement> getUm_1st_dropdown_all_common_status() {
 							return um_1st_dropdown_all_common_status;
 						}
-						
-						
-						
+						public WebElement getUm_refresh_button() {
+							return um_refresh_button;
+						}
+						public WebElement getUm_view_first_name() {
+							return um_view_first_name;
+						}
+						public WebElement getUm_view_last_name() {
+							return um_view_last_name;
+						}
+						public WebElement getUm_view_email_id() {
+							return um_view_email_id;
+						}
+						public WebElement getUm_view_mobile_number() {
+							return um_view_mobile_number;
+						}
+						public WebElement getUm_view_joining_date() {
+							return um_view_joining_date;
+						}
+						public WebElement getUm_view_gender() {
+							return um_view_gender;
+						}
+						public WebElement getUm_view_status() {
+							return um_view_status;
+						}
+						public WebElement getUm_view_ED_name() {
+							return um_view_ED_name;
+						}
+						public WebElement getUm_view_ED_emergency_number() {
+							return um_view_ED_emergency_number;
+						}
+						public WebElement getUm_view_ED_relation() {
+							return um_view_ED_relation;
+						}
+						public WebElement getUm_view_info_and_summary_button() {
+							return um_view_info_and_summary_button;
+						}
+						public WebElement getUm_view_kyc_details_button() {
+							return um_view_kyc_details_button;
+						}
+						public WebElement getUm_view_bookings_button() {
+							return um_view_bookings_button;
+						}
+						public WebElement getUm_view_booking_info() {
+							return um_view_booking_info;
+						}
+						public WebElement getUm_view_BI_total_booking_txt() {
+							return um_view_BI_total_booking_txt;
+						}
+						public WebElement getUm_view_BI_total_payment_done_txt() {
+							return um_view_BI_total_payment_done_txt;
+						}
+						public WebElement getUm_view_B_total_km_driver_txt() {
+							return um_view_B_total_km_driver_txt;
+						}
+						public WebElement getUm_view_block_button() {
+							return um_view_block_button;
+						}
+						public WebElement getUm_view_back_button() {
+							return um_view_back_button;
+						}
 						
 						
 						

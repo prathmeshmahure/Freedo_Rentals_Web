@@ -1,111 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="25" passed="21" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-10T20:22:51 IST" name="Suite" finished-at="2023-03-10T20:26:09 IST" duration-ms="197376">
+  <suite started-at="2023-03-13T23:19:18 IST" name="Suite" finished-at="2023-03-13T23:19:41 IST" duration-ms="22684">
     <groups>
     </groups>
-    <test started-at="2023-03-10T20:22:51 IST" name="Test" finished-at="2023-03-10T20:26:09 IST" duration-ms="197376">
+    <test started-at="2023-03-13T23:19:18 IST" name="Test" finished-at="2023-03-13T23:19:41 IST" duration-ms="22684">
       <class name="sample.TC_0001">
-        <test-method is-config="true" signature="BS()[pri:0, instance:sample.TC_0001@62010f5c]" started-at="2023-03-10T20:22:50 IST" name="BS" finished-at="2023-03-10T20:22:51 IST" duration-ms="982" status="PASS">
+        <test-method is-config="true" signature="BS()[pri:0, instance:sample.TC_0001@3e6104fc]" started-at="2023-03-13T23:19:17 IST" name="BS" finished-at="2023-03-13T23:19:18 IST" duration-ms="943" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BS -->
-        <test-method is-config="true" signature="browser()[pri:0, instance:sample.TC_0001@62010f5c]" started-at="2023-03-10T20:22:51 IST" name="browser" finished-at="2023-03-10T20:22:55 IST" duration-ms="3344" status="PASS">
+        <test-method is-config="true" signature="browser()[pri:0, instance:sample.TC_0001@3e6104fc]" started-at="2023-03-13T23:19:18 IST" name="browser" finished-at="2023-03-13T23:19:22 IST" duration-ms="3857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method signature="Login_Account()[pri:0, instance:sample.TC_0001@62010f5c]" started-at="2023-03-10T20:22:55 IST" name="Login_Account" finished-at="2023-03-10T20:22:58 IST" duration-ms="3575" status="PASS">
+        <test-method signature="Login_Account()[pri:1, instance:sample.TC_0001@3e6104fc]" started-at="2023-03-13T23:19:22 IST" name="Login_Account" finished-at="2023-03-13T23:19:28 IST" duration-ms="5491" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_Account -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:sample.TC_0001@62010f5c]" started-at="2023-03-10T20:26:09 IST" name="teardown" finished-at="2023-03-10T20:26:09 IST" duration-ms="97" status="PASS">
+        <test-method signature="TC_0029_verify_the_View_icon_by_clicking_on_it_under_Action()[pri:29, instance:sample.TC_0001@3e6104fc]" started-at="2023-03-13T23:19:28 IST" name="TC_0029_verify_the_View_icon_by_clicking_on_it_under_Action" finished-at="2023-03-13T23:19:41 IST" duration-ms="13242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_0029_verify_the_View_icon_by_clicking_on_it_under_Action -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:sample.TC_0001@3e6104fc]" started-at="2023-03-13T23:19:41 IST" name="teardown" finished-at="2023-03-13T23:19:41 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- sample.TC_0001 -->
-      <class name="Freedo_domain.user_management1">
-        <test-method signature="TC_001_verify_user_management_tab_under_admin()[pri:1, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:22:58 IST" name="TC_001_verify_user_management_tab_under_admin" finished-at="2023-03-10T20:23:09 IST" duration-ms="11131" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_001_verify_user_management_tab_under_admin -->
-        <test-method signature="TC_002_verify_valid_register_user_by_name()[pri:2, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:23:09 IST" name="TC_002_verify_valid_register_user_by_name" finished-at="2023-03-10T20:23:20 IST" duration-ms="11020" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_002_verify_valid_register_user_by_name -->
-        <test-method signature="TC_003_verify_valid_register_user_by_mobile_number()[pri:3, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:23:20 IST" name="TC_003_verify_valid_register_user_by_mobile_number" finished-at="2023-03-10T20:23:31 IST" duration-ms="10468" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_003_verify_valid_register_user_by_mobile_number -->
-        <test-method signature="TC_004_verify_valid_register_user_by_email()[pri:4, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:23:31 IST" name="TC_004_verify_valid_register_user_by_email" finished-at="2023-03-10T20:23:42 IST" duration-ms="10982" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_004_verify_valid_register_user_by_email -->
-        <test-method signature="TC_005_Verify_In_valid_register_user_search_by_user_name()[pri:5, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:23:42 IST" name="TC_005_Verify_In_valid_register_user_search_by_user_name" finished-at="2023-03-10T20:23:45 IST" duration-ms="3080" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_005_Verify_In_valid_register_user_search_by_user_name -->
-        <test-method signature="TC_006_Verify_In_valid_register_user_search_by_user_mobile_number()[pri:6, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:23:45 IST" name="TC_006_Verify_In_valid_register_user_search_by_user_mobile_number" finished-at="2023-03-10T20:23:48 IST" duration-ms="3276" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_006_Verify_In_valid_register_user_search_by_user_mobile_number -->
-        <test-method signature="TC_007_Verify_In_valid_register_user_search_by_user_email_id()[pri:7, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:23:48 IST" name="TC_007_Verify_In_valid_register_user_search_by_user_email_id" finished-at="2023-03-10T20:23:52 IST" duration-ms="3517" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_007_Verify_In_valid_register_user_search_by_user_email_id -->
-        <test-method signature="TC_008_Verify_all_elements_of_the_Select_status_drop_down()[pri:8, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:23:52 IST" name="TC_008_Verify_all_elements_of_the_Select_status_drop_down" finished-at="2023-03-10T20:23:57 IST" duration-ms="5728" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_008_Verify_all_elements_of_the_Select_status_drop_down -->
-        <test-method signature="TC_009_Verify_Select_status_drop_down_All_tab()[pri:9, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:23:57 IST" name="TC_009_Verify_Select_status_drop_down_All_tab" finished-at="2023-03-10T20:24:12 IST" duration-ms="14545" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_009_Verify_Select_status_drop_down_All_tab -->
-        <test-method signature="TC_0010_Verify_Select_status_drop_down_Active_tab()[pri:10, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:24:12 IST" name="TC_0010_Verify_Select_status_drop_down_Active_tab" finished-at="2023-03-10T20:24:26 IST" duration-ms="14400" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0010_Verify_Select_status_drop_down_Active_tab -->
-        <test-method signature="TC_0011_Verify_Select_status_drop_down_InActive_tab()[pri:11, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:24:26 IST" name="TC_0011_Verify_Select_status_drop_down_InActive_tab" finished-at="2023-03-10T20:24:30 IST" duration-ms="3231" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0011_Verify_Select_status_drop_down_InActive_tab -->
-        <test-method signature="TC_0012_Verify_Select_status_drop_down_Deleted_tab()[pri:12, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:24:30 IST" name="TC_0012_Verify_Select_status_drop_down_Deleted_tab" finished-at="2023-03-10T20:24:38 IST" duration-ms="8021" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0012_Verify_Select_status_drop_down_Deleted_tab -->
-        <test-method signature="TC_0013_Verify_Select_status_drop_down_Blocked_tab()[pri:13, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:24:38 IST" name="TC_0013_Verify_Select_status_drop_down_Blocked_tab" finished-at="2023-03-10T20:24:44 IST" duration-ms="6311" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0013_Verify_Select_status_drop_down_Blocked_tab -->
-        <test-method signature="TC_0014_Verify_Select_status_drop_down_All_tab_negative()[pri:14, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:24:44 IST" name="TC_0014_Verify_Select_status_drop_down_All_tab_negative" finished-at="2023-03-10T20:25:02 IST" duration-ms="17647" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0014_Verify_Select_status_drop_down_All_tab_negative -->
-        <test-method signature="TC_0015_Verify_Select_status_drop_down_Active_tab_negative()[pri:15, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:25:02 IST" name="TC_0015_Verify_Select_status_drop_down_Active_tab_negative" finished-at="2023-03-10T20:25:19 IST" duration-ms="17458" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0015_Verify_Select_status_drop_down_Active_tab_negative -->
-        <test-method signature="TC_0016_Verify_Select_status_drop_down_InActive_tab_negative()[pri:16, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:25:19 IST" name="TC_0016_Verify_Select_status_drop_down_InActive_tab_negative" finished-at="2023-03-10T20:25:24 IST" duration-ms="5194" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0016_Verify_Select_status_drop_down_InActive_tab_negative -->
-        <test-method signature="TC_0017_Verify_Select_status_drop_down_Deleted_tab_negative()[pri:17, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:25:24 IST" name="TC_0017_Verify_Select_status_drop_down_Deleted_tab_negative" finished-at="2023-03-10T20:25:34 IST" duration-ms="9986" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0017_Verify_Select_status_drop_down_Deleted_tab_negative -->
-        <test-method signature="TC_0018_Verify_Select_status_drop_down_Blocked_tab_negative()[pri:18, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:25:34 IST" name="TC_0018_Verify_Select_status_drop_down_Blocked_tab_negative" finished-at="2023-03-10T20:25:42 IST" duration-ms="8080" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0018_Verify_Select_status_drop_down_Blocked_tab_negative -->
-        <test-method signature="TC_0019_Verify_all_the_elements_of_KYC_Status_drop_down()[pri:19, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:25:42 IST" name="TC_0019_Verify_all_the_elements_of_KYC_Status_drop_down" finished-at="2023-03-10T20:25:49 IST" duration-ms="6641" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0019_Verify_all_the_elements_of_KYC_Status_drop_down -->
-        <test-method signature="TC_0020_Verify_KYC_Status_drop_down_All_tab()[pri:20, instance:Freedo_domain.user_management1@7a67e3c6]" started-at="2023-03-10T20:25:49 IST" name="TC_0020_Verify_KYC_Status_drop_down_All_tab" finished-at="2023-03-10T20:26:09 IST" duration-ms="19555" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_0020_Verify_KYC_Status_drop_down_All_tab -->
-      </class> <!-- Freedo_domain.user_management1 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

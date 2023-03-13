@@ -717,9 +717,258 @@ public class user_management1 extends base_class{
 		library.msg("  Total user = ", all[2]);	
 	}
 //====================================================================================================================	
-	
-	
-	
+	@Test(priority=21)
+	public void TC_0021_Verify_KYC_Status_drop_down_Unverified_tab() throws Exception {
+		log.info("=========== TC_0021_Verify_KYC_Status_drop_down_Unverified_tab Starts");
+		um = PageFactory.initElements(driver, user_management.class);
+		
+		library.Custom_click(um.getUser_Management(), "User management");
+		library.Custom_click(um.getUm_Reset_button(), "Reset button");
+		library.Custom_click(um.getUm_2nd_drop_KYC_Status(), "Select KYC status drop down");
+		library.Custom_click(um.getUm_2nd_drop_Unverified(), " Unverified ");
+		Thread.sleep(2000);
+		library.Custom_click(um.getUm_click_10_user_list(), "click 10 user list");
+		library.Custom_click(um.getUm_select_100_user_list(), "Select 100 user list");
+		LinkedList<String> Verified=new LinkedList<String>();
+		LinkedList<String> UnVerified=new LinkedList<String>();
+		for(int i=0;i<um.getUm_2nd_dropdown_all_common().size();i++) {
+				if(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon").equalsIgnoreCase("circle-check")) {
+					Verified.add(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon"));
+					Assert.assertTrue(false);
+				}
+				else if(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon").equalsIgnoreCase("circle-xmark")) {
+					UnVerified.add(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon"));
+					
+				}
+		}
+		library.msg("  KYC verified User = ",""+Verified.size());
+		library.msg("  KYC UnVerified User = ",""+UnVerified.size());
+		// total user
+		String size =um.getUm_table_totaldata_size().getText();
+		String all[]=size.split(" "); //////
+		library.msg("  Total user = ", all[2]);	
+	}
+//====================================================================================================================
+	@Test(priority=22)
+	public void TC_0022_Verify_KYC_Status_drop_down_Verified_tab() throws Exception {
+		log.info("=========== TC_0022_Verify_KYC_Status_drop_down_Verified_tab Starts");
+		um = PageFactory.initElements(driver, user_management.class);
+		
+		library.Custom_click(um.getUser_Management(), "User management");
+		library.Custom_click(um.getUm_Reset_button(), "Reset button");
+		library.Custom_click(um.getUm_2nd_drop_KYC_Status(), "Select KYC status drop down");
+		library.Custom_click(um.getUm_2nd_drop_Verified(), " Verified ");
+		Thread.sleep(2000);
+		library.Custom_click(um.getUm_click_10_user_list(), "click 10 user list");
+		library.Custom_click(um.getUm_select_100_user_list(), "Select 100 user list");
+		LinkedList<String> Verified=new LinkedList<String>();
+		LinkedList<String> UnVerified=new LinkedList<String>();
+		for(int i=0;i<um.getUm_2nd_dropdown_all_common().size();i++) {
+				if(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon").equalsIgnoreCase("circle-check")) {
+					Verified.add(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon"));
+					
+				}
+				else if(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon").equalsIgnoreCase("circle-xmark")) {
+					UnVerified.add(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon"));
+					Assert.assertTrue(false);
+				}
+		}
+		library.msg("  KYC verified User = ",""+Verified.size());
+		library.msg("  KYC UnVerified User = ",""+UnVerified.size());
+		// total user
+		String size =um.getUm_table_totaldata_size().getText();
+		String all[]=size.split(" "); //////
+		library.msg("  Total user = ", all[2]);	
+	}
+//====================================================================================================================
+	@Test(priority=23)//Negative
+	public void TC_0023_Verify_KYC_Status_drop_down_All_tab_negative() throws Exception {
+		log.info("=========== TC_0023_Verify_KYC_Status_drop_down_All_tab_negative Starts");
+		um = PageFactory.initElements(driver, user_management.class);
+		
+		library.Custom_click(um.getUser_Management(), "User management");
+		library.Custom_click(um.getUm_Reset_button(), "Reset button");
+		library.Custom_click(um.getUm_2nd_drop_KYC_Status(), "Select KYC status drop down");
+		library.Custom_click(um.getUm_2nd_drop_All(), " All ");
+		Thread.sleep(2000);
+		try {
+			if(um.getUm_table_row_Name().isDisplayed() || um.getUm_table_row_Email().isDisplayed()) {
+				library.Custom_click(um.getUm_click_10_user_list(), "click 10 user list");
+				library.Custom_click(um.getUm_select_100_user_list(), "Select 100 user list");
+				LinkedList<String> Verified=new LinkedList<String>();
+				LinkedList<String> UnVerified=new LinkedList<String>();
+				for(int i=0;i<um.getUm_2nd_dropdown_all_common().size();i++) {
+						if(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon").equalsIgnoreCase("circle-check")) {
+							Verified.add(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon"));
+							
+						}
+						else if(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon").equalsIgnoreCase("circle-xmark")) {
+							UnVerified.add(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon"));
+							
+						}
+				}
+				library.msg("  KYC verified User = ",""+Verified.size());
+				library.msg("  KYC UnVerified User = ",""+UnVerified.size());
+				// total user
+				String size =um.getUm_table_totaldata_size().getText();
+				String all[]=size.split(" "); //////
+				library.msg("  Total user = ", all[2]);	
+			}//if blocked is closed
+			}catch(Exception e) {
+				library.visible(um.getUm_table_No_Data_Found(), "No data found");
+			}	
+	}
+//====================================================================================================================	
+	@Test(priority=24)//Negative
+	public void TC_0024_Verify_KYC_Status_drop_down_Unverified_tab_negative() throws Exception {
+		log.info("=========== TC_0024_Verify_KYC_Status_drop_down_Unverified_tab_negative Starts");
+		um = PageFactory.initElements(driver, user_management.class);
+		
+		library.Custom_click(um.getUser_Management(), "User management");
+		library.Custom_click(um.getUm_Reset_button(), "Reset button");
+		library.Custom_click(um.getUm_2nd_drop_KYC_Status(), "Select KYC status drop down");
+		library.Custom_click(um.getUm_2nd_drop_Unverified(), " Unverified ");
+		Thread.sleep(2000);
+		try {
+			if(um.getUm_table_row_Name().isDisplayed() || um.getUm_table_row_Email().isDisplayed()) {
+				library.Custom_click(um.getUm_click_10_user_list(), "click 10 user list");
+				library.Custom_click(um.getUm_select_100_user_list(), "Select 100 user list");
+				LinkedList<String> Verified=new LinkedList<String>();
+				LinkedList<String> UnVerified=new LinkedList<String>();
+				for(int i=0;i<um.getUm_2nd_dropdown_all_common().size();i++) {
+						if(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon").equalsIgnoreCase("circle-check")) {
+							Verified.add(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon"));
+							Assert.assertTrue(false);
+						}
+						else if(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon").equalsIgnoreCase("circle-xmark")) {
+							UnVerified.add(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon"));
+							
+						}
+				}
+				library.msg("  KYC verified User = ",""+Verified.size());
+				library.msg("  KYC UnVerified User = ",""+UnVerified.size());
+				// total user
+				String size =um.getUm_table_totaldata_size().getText();
+				String all[]=size.split(" "); //////
+				library.msg("  Total user = ", all[2]);	
+			}//if blocked is closed
+			}catch(Exception e) {
+				library.visible(um.getUm_table_No_Data_Found(), "No data found");
+			}	
+	}
+//====================================================================================================================
+	@Test(priority=25)//Negative
+	public void TC_0025_Verify_KYC_Status_drop_down_Verified_tab_negative() throws Exception {
+		log.info("=========== TC_0025_Verify_KYC_Status_drop_down_Verified_tab_negative Starts");
+		um = PageFactory.initElements(driver, user_management.class);
+		
+		library.Custom_click(um.getUser_Management(), "User management");
+		library.Custom_click(um.getUm_Reset_button(), "Reset button");
+		library.Custom_click(um.getUm_2nd_drop_KYC_Status(), "Select KYC status drop down");
+		library.Custom_click(um.getUm_2nd_drop_Verified(), " Verified ");
+		Thread.sleep(2000);
+		try {
+			if(um.getUm_table_row_Name().isDisplayed() || um.getUm_table_row_Email().isDisplayed()) {
+				library.Custom_click(um.getUm_click_10_user_list(), "click 10 user list");
+				library.Custom_click(um.getUm_select_100_user_list(), "Select 100 user list");
+				LinkedList<String> Verified=new LinkedList<String>();
+				LinkedList<String> UnVerified=new LinkedList<String>();
+				for(int i=0;i<um.getUm_2nd_dropdown_all_common().size();i++) {
+						if(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon").equalsIgnoreCase("circle-check")) {
+							Verified.add(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon"));
+							
+						}
+						else if(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon").equalsIgnoreCase("circle-xmark")) {
+							UnVerified.add(um.getUm_2nd_dropdown_all_common().get(i).getAttribute("data-icon"));
+							Assert.assertTrue(false);
+						}
+				}
+				library.msg("  KYC verified User = ",""+Verified.size());
+				library.msg("  KYC UnVerified User = ",""+UnVerified.size());
+				// total user
+				String size =um.getUm_table_totaldata_size().getText();
+				String all[]=size.split(" "); //////
+				library.msg("  Total user = ", all[2]);	
+			}//if blocked is closed
+			}catch(Exception e) {
+				library.visible(um.getUm_table_No_Data_Found(), "No data found");
+			}	
+	}
+//====================================================================================================================	
+	@Test(priority=26)
+	public void TC_0026_verify_the_Reset_button_by_clicking_on_it() throws Exception {
+		log.info("=========== TC_0026_verify_the_Reset_button_by_clicking_on_it Starts");
+		um = PageFactory.initElements(driver, user_management.class);
+		
+		library.Custom_click(um.getUser_Management(), "User management");
+		library.Custom_click(um.getUm_Reset_button(), "Reset button");
+		library.Custom_click(um.getUm_Select_Status_dropdown(), "Select select status drop down");
+		library.Custom_click(um.getUm_1st_drop_All(), " All ");
+		library.Custom_click(um.getUm_2nd_drop_KYC_Status(), "Select KYC status drop down");
+		library.Custom_click(um.getUm_2nd_drop_All(), " All ");
+		library.Custom_click(um.getUm_Reset_button(), "Reset button");
+		Assert.assertTrue(um.getUm_Select_Status_dropdown().isDisplayed());
+	}
+//====================================================================================================================	
+	@Test(priority=27)//Negative
+	public void TC_0027_verify_the_Reset_button_by_clicking_on_it_negative() throws Exception {
+		log.info("=========== TC_0027_verify_the_Reset_button_by_clicking_on_it_negative Starts");
+		um = PageFactory.initElements(driver, user_management.class);
+		
+		library.Custom_click(um.getUser_Management(), "User management");
+		library.Custom_click(um.getUm_Reset_button(), "Reset button");
+		library.custom_sendkeys(um.getClick_UM_Search_user(), config.getinvalid_name(), "Prathemsh");
+		library.Custom_click(um.getUm_Select_Status_dropdown(), "Select select status drop down");
+		library.Custom_click(um.getUm_1st_drop_All(), " All ");
+		library.Custom_click(um.getUm_2nd_drop_KYC_Status(), "Select KYC status drop down");
+		library.Custom_click(um.getUm_2nd_drop_All(), " All ");
+		library.Custom_click(um.getUm_Reset_button(), "Reset button");
+		Assert.assertTrue(um.getUm_Select_Status_dropdown().isDisplayed());
+		library.msg("1st drop down", " Is successfully reset");
+		Assert.assertTrue(um.getUm_2nd_drop_KYC_Status().isDisplayed());
+		library.msg("2nd drop down", " Is successfully reset");
+		Assert.assertTrue(um.getClick_UM_Search_user().isDisplayed());
+		library.msg("Search user", " Is successfully reset");
+	}
+//====================================================================================================================	
+	@Test(priority=28)
+	public void TC_0028_verify_the_Refresh_icon_by_clicking_on_it() throws Exception {
+		log.info("=========== TC_0028_verify_the_Refresh_icon_by_clicking_on_it Starts");
+		um = PageFactory.initElements(driver, user_management.class);
+		
+		library.Custom_click(um.getUser_Management(), "User management");
+		library.Custom_click(um.getUm_refresh_button(), "Refresh Button");
+		library.msg("All page element", "Successfull refresh");
+	}
+//====================================================================================================================	
+	@Test(priority=29)
+	public void TC_0029_verify_the_View_icon_by_clicking_on_it_under_Action() throws Exception {
+		log.info("=========== TC_0029_verify_the_View_icon_by_clicking_on_it_under_Action Starts");
+		um = PageFactory.initElements(driver, user_management.class);
+		
+		library.Custom_click(um.getUser_Management(), "User management");		
+		library.Custom_click(um.getUm_Reset_button(), "Reset Button");
+		library.custom_sendkeys(um.getClick_UM_Search_user(), config.getname(), "Prathmesh");
+		Thread.sleep(1000);
+		library.Custom_click(um.getUm_table_row_view_action(), "view action");
+		library.visible(um.getUm_view_first_name() , "First name ");
+		library.visible(um.getUm_view_last_name() , "Last name ");
+		library.visible(um.getUm_view_email_id() , "Email-id ");
+		library.visible(um.getUm_view_mobile_number() , "Mobile number ");
+		library.visible(um.getUm_view_joining_date() , "Joining date ");
+		library.visible(um.getUm_view_gender() , "Gender ");
+		library.visible(um.getUm_view_status() , "Status ");
+		library.visible(um.getUm_view_ED_name() , "Emergency name ");
+		library.visible(um.getUm_view_ED_emergency_number() , "Emergency number ");
+		library.visible(um.getUm_view_ED_relation() , "Relation ");
+		library.visible(um.getUm_view_info_and_summary_button() , "info_and_summary_button ");
+		library.visible(um.getUm_view_kyc_details_button() , "kyc_details_button ");
+		library.visible(um.getUm_view_bookings_button() , "Bookings button ");
+		library.visible(um.getUm_view_booking_info() , "booking_info ");
+		library.visible(um.getUm_view_block_button() , "Block_button ");
+		library.visible(um.getUm_view_back_button() , "Back_button ");		
+	}
+//====================================================================================================================	
 	
 	
 	
