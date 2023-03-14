@@ -1,18 +1,13 @@
-[INFO ] 2023-03-14 01:06:47.336 [main] Freedo_Rentals_Web -   Successfully send Value Username
-[INFO ] 2023-03-14 01:06:47.482 [main] Freedo_Rentals_Web -   Successfully send Value Password
-[INFO ] 2023-03-14 01:06:47.557 [main] Freedo_Rentals_Web -   Successfully Click Submit button
-[INFO ] 2023-03-14 01:06:51.647 [main] Freedo_Rentals_Web - =========== TC_001_verify_user_management_tab_under_admin Starts
-[ERROR] 2023-03-14 01:06:58.314 [main] Freedo_Rentals_Web - ==Unable to Click User management
-[ERROR] 2023-03-14 01:06:58.318 [main] Freedo_Rentals_Web - ==Unable to Click Reset button
-[ERROR] 2023-03-14 01:06:58.321 [main] Freedo_Rentals_Web - ==Unable to Element visible Search_user 
-[ERROR] 2023-03-14 01:06:58.325 [main] Freedo_Rentals_Web - ==Unable to Element visible Select_Status_dropdown 
-[ERROR] 2023-03-14 01:06:58.332 [main] Freedo_Rentals_Web - ==Unable to Element visible KYC_Status
-[ERROR] 2023-03-14 01:06:58.335 [main] Freedo_Rentals_Web - ==Unable to Element visible Reset button 
-[ERROR] 2023-03-14 01:06:58.339 [main] Freedo_Rentals_Web - ==Unable to Element visible S.No. 
-[ERROR] 2023-03-14 01:06:58.342 [main] Freedo_Rentals_Web - ==Unable to Element visible Name
-[ERROR] 2023-03-14 01:06:58.348 [main] Freedo_Rentals_Web - ==Unable to Element visible Email
-[ERROR] 2023-03-14 01:06:58.353 [main] Freedo_Rentals_Web - ==Unable to Element visible Mobile 
-[ERROR] 2023-03-14 01:06:58.357 [main] Freedo_Rentals_Web - ==Unable to Element visible Gender 
-[ERROR] 2023-03-14 01:06:58.364 [main] Freedo_Rentals_Web - ==Unable to Element visible KYC_Status 
-[ERROR] 2023-03-14 01:06:58.368 [main] Freedo_Rentals_Web - ==Unable to Element visible Status 
-[ERROR] 2023-03-14 01:06:58.371 [main] Freedo_Rentals_Web - ==Unable to Element visible Action 
+[INFO ] 2023-03-14 17:11:44.814 [main] Freedo_Rentals_Web -   Successfully send Value Username
+[INFO ] 2023-03-14 17:11:45.062 [main] Freedo_Rentals_Web -   Successfully send Value Password
+[INFO ] 2023-03-14 17:11:45.722 [main] Freedo_Rentals_Web -   Successfully Click Submit button
+[INFO ] 2023-03-14 17:11:49.996 [main] Freedo_Rentals_Web - =========== TC_0032_verify_the_Delete_icon_by_clicking_on_it_under_Action Starts
+[INFO ] 2023-03-14 17:11:50.864 [main] Freedo_Rentals_Web -   Successfully Click User management
+[INFO ] 2023-03-14 17:11:51.609 [main] Freedo_Rentals_Web -   Successfully Click Reset Button
+[INFO ] 2023-03-14 17:11:52.392 [main] Freedo_Rentals_Web -   Successfully send Value Prathmesh
+[INFO ] 2023-03-14 17:11:54.099 [main] Freedo_Rentals_Web -   Successfully Click Delete action
+[INFO ] 2023-03-14 17:11:54.826 [main] Freedo_Rentals_Web -   Successfully Click popup Yes Button 
+[INFO ] 2023-03-14 17:11:56.376 [main] Freedo_Rentals_Web -   Successfully Click Update button
+[INFO ] 2023-03-14 17:11:58.986 [main] Freedo_Rentals_Web -   Successfully Click Status
+[INFO ] 2023-03-14 17:12:00.116 [main] Freedo_Rentals_Web -   Successfully Click Active tab
+[INFO ] 2023-03-14 17:12:00.800 [main] Freedo_Rentals_Web -   Successfully Click Update button

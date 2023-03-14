@@ -131,31 +131,32 @@ public class user_management {
 		@FindBy(xpath="//div[@aria-label='Refresh']")
 		private WebElement um_refresh_button;
 		
-		@FindBy(xpath="//p[normalize-space()='First Name']")
+		/// table view , update action under
+		@FindBy(xpath="(//input[@id])[1]")
 		private WebElement um_view_first_name;
 		
-		@FindBy(xpath="//p[normalize-space()='Last Name']")
+		@FindBy(xpath="(//input[@id])[2]")
 		private WebElement um_view_last_name;
 		
-		@FindBy(xpath="//p[normalize-space()='Email Id']")
+		@FindBy(xpath="(//input[@id])[3]")
 		private WebElement um_view_email_id;
 		
-		@FindBy(xpath="//p[normalize-space()='Mobile Number']")
+		@FindBy(xpath="(//input[@id])[4]")
 		private WebElement um_view_mobile_number;
 		
-		@FindBy(xpath="//p[normalize-space()='Joining Date']")
+		@FindBy(xpath="(//input[@id])[5]")
 		private WebElement um_view_joining_date;
 		
-		@FindBy(xpath="//p[normalize-space()='Gender']")
+		@FindBy(xpath="(//input[@id])[6]")
 		private WebElement um_view_gender;
 		
-		@FindBy(xpath="//p[normalize-space()='Status']")
+		@FindBy(xpath="//div[text()='Active' or text()='InActive' or text()='Deleted' or text()='Blocked']")
 		private WebElement um_view_status;
 		
-		@FindBy(xpath="//p[normalize-space()='Name']")
+		@FindBy(xpath="(//input[@id])[7]")
 		private WebElement um_view_ED_name;
 		
-		@FindBy(xpath="//p[normalize-space()='Emergency Number']")
+		@FindBy(xpath="(//input[@id])[8]")
 		private WebElement um_view_ED_emergency_number;
 		
 		@FindBy(xpath="//p[normalize-space()='Relation']")
@@ -188,19 +189,19 @@ public class user_management {
 		@FindBy(xpath="//button[normalize-space()='Back']")
 		private WebElement um_view_back_button;
 		
+		@FindBy(xpath="//button[normalize-space()='Update']")
+		private WebElement um_updateAction_update_button;
+		
+		@FindBy(xpath="//div[@class='rrt-text']")
+		private WebElement um_update_update_successfully_popup;
+		
+		@FindBy(xpath="//button[normalize-space()='Yes']")
+		private WebElement um_delete_action_yes_button;
+		
+		@FindBy(xpath="//div[@class='toastr animated rrt-success']")
+		private WebElement um_delete_successfull_popup;
+		
 /*		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
 		private WebElement um_;
 		
 		@FindBy(xpath="")
@@ -325,11 +326,15 @@ public class user_management {
 		
 		
 		
+		
 		@FindBy(xpath="//div[@id='view-action']")				//Click_view_action
 		private WebElement Click_view_action;
 
 		
 
+		
+		
+		
 		
 		
 		@FindBy(xpath="//h5[text()='Bookings']")				//Click_Bookings_button
@@ -571,10 +576,18 @@ public class user_management {
 						public WebElement getUm_view_back_button() {
 							return um_view_back_button;
 						}
-						
-						
-						
-						
+						public WebElement getUm_updateAction_update_button() {
+							return um_updateAction_update_button;
+						}
+						public WebElement getUm_update_update_successfully_popup() {
+							return um_update_update_successfully_popup;
+						}
+						public WebElement getUm_delete_action_yes_button() {
+							return um_delete_action_yes_button;
+						}
+						public WebElement getUm_delete_successfull_popup() {
+							return um_delete_successfull_popup;
+						}
 						
 						
 						

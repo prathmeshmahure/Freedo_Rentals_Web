@@ -55,6 +55,9 @@ public class config_data_provider {
 				}	
 				public  String getinvalid_mobile_no() {
 					return pro.getProperty("invalid_mobile_no");
+				}	
+				public  String getlastname() {
+					return pro.getProperty("lastname");
 				}
 				
 

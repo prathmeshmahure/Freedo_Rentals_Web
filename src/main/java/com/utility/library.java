@@ -124,7 +124,16 @@ public class library extends base_class{
 								}
 		}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////		
-		
+		public static void Cleardata(WebElement element) throws Exception {
+			Robot r = new Robot();
+	        for(int i=0; i<4; i++) {
+	        	element.click();
+	            r.keyPress(KeyEvent.VK_CONTROL);r.keyPress(KeyEvent.VK_A);
+	            r.keyRelease(KeyEvent.VK_A);r.keyRelease(KeyEvent.VK_CONTROL);
+	            r.keyPress(KeyEvent.VK_BACK_SPACE);
+	            r.keyRelease(KeyEvent.VK_BACK_SPACE);
+	        }
+		}
 		
 		
 		

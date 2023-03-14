@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.page_object.user_management;
 import com.utility.base_class;
@@ -997,6 +998,84 @@ public class user_management1 extends base_class{
 		library.visible(um.getUm_view_back_button() , "Back_button ");		
 	}
 //====================================================================================================================	
+	@Test(priority=31)
+	public void TC_0031_verify_the_Update_Button_by_clicking_on_it_under_Action() throws Exception {
+		log.info("=========== TC_0031_verify_the_Update_Button_by_clicking_on_it_under_Action Starts");
+		um = PageFactory.initElements(driver, user_management.class);
+		SoftAssert soft=new SoftAssert();
+		
+		library.Custom_click(um.getUser_Management(), "User management");		
+		library.Custom_click(um.getUm_Reset_button(), "Reset Button");
+		library.custom_sendkeys(um.getClick_UM_Search_user(), config.getname(), "Prathmesh");
+		Thread.sleep(1000);
+		library.Custom_click(um.getUm_table_row_update_action(), "Update action");
+		Thread.sleep(2000);
+		
+		library.Cleardata(um.getUm_view_first_name());
+		library.Cleardata(um.getUm_view_last_name());
+		library.Cleardata(um.getUm_view_email_id());
+		library.Cleardata(um.getUm_view_mobile_number());
+		library.Cleardata(um.getUm_view_ED_name());
+		library.Cleardata(um.getUm_view_ED_emergency_number());
+		
+		library.custom_sendkeys(um.getUm_view_first_name() ,"a", "First name ");
+		library.custom_sendkeys(um.getUm_view_last_name() ,config.getname(),  "Last name ");
+		library.custom_sendkeys(um.getUm_view_email_id() ,config.getinvalid_email(), "Email-id ");
+		library.custom_sendkeys(um.getUm_view_mobile_number() ,"1122334455", "Mobile number ");
+		
+		library.custom_sendkeys(um.getUm_view_ED_name(),"a" , "Emergency name ");
+		library.custom_sendkeys(um.getUm_view_ED_emergency_number() ,"6677889911", "Emergency number ");
+		library.Custom_click(um.getUm_updateAction_update_button(), "Update button");
+		soft.assertTrue(um.getUm_update_update_successfully_popup().isDisplayed(),"UM Update popup");
+		library.Custom_click(um.getUm_view_back_button(), "Back button");
+		library.Custom_click(um.getUm_Reset_button(), "Reset Button");
+		library.custom_sendkeys(um.getClick_UM_Search_user(), config.getinvalid_email(), "Email id search");
+		Thread.sleep(1000);
+		soft.assertEquals("a Prathmesh", um.getUm_table_row_Name().getText(),"name");
+		soft.assertEquals(config.getinvalid_email(), um.getUm_table_row_Email().getText(),"Email");
+		soft.assertEquals("1122334455", um.getUm_table_row_Mobile().getText(),"Mobile number");
+		library.Custom_click(um.getUm_table_row_update_action(), "Update action");
+		Thread.sleep(2000);
+		soft.assertEquals("a", um.getUm_view_ED_name().getAttribute("value"),"Emergency name");
+		soft.assertEquals("6677889911", um.getUm_view_ED_emergency_number().getAttribute("value"),"Emergency mobile number");
+		library.Cleardata(um.getUm_view_first_name());
+		library.Cleardata(um.getUm_view_last_name());
+		library.Cleardata(um.getUm_view_email_id());
+		library.Cleardata(um.getUm_view_mobile_number());
+		library.Cleardata(um.getUm_view_ED_name());
+		library.Cleardata(um.getUm_view_ED_emergency_number());
+		
+		library.custom_sendkeys(um.getUm_view_first_name() ,config.getname(), "First name ");
+		library.custom_sendkeys(um.getUm_view_last_name() ,config.getlastname(),  "Last name ");
+		library.custom_sendkeys(um.getUm_view_email_id() ,config.getemail(), "Email-id ");
+		library.custom_sendkeys(um.getUm_view_mobile_number() ,config.getmobilenu(), "Mobile number ");
+		
+		library.custom_sendkeys(um.getUm_view_ED_name(),config.getname() , "Emergency name ");
+		library.custom_sendkeys(um.getUm_view_ED_emergency_number() ,"9999999999", "Emergency number ");
+		library.Custom_click(um.getUm_updateAction_update_button(), "Update button");
+		soft.assertAll();
+	}
+//====================================================================================================================	
+	@Test(priority=32)
+	public void TC_0032_verify_the_Delete_icon_by_clicking_on_it_under_Action() throws Exception {
+		log.info("=========== TC_0032_verify_the_Delete_icon_by_clicking_on_it_under_Action Starts");
+		um = PageFactory.initElements(driver, user_management.class);
+		
+		library.Custom_click(um.getUser_Management(), "User management");		
+		library.Custom_click(um.getUm_Reset_button(), "Reset Button");
+		library.custom_sendkeys(um.getClick_UM_Search_user(), config.getname(), "Prathmesh");
+		Thread.sleep(1000);
+		library.Custom_click(um.getUm_table_row_delete_action(), "Delete action");
+		library.Custom_click(um.getUm_delete_action_yes_button(), "popup Yes Button ");
+		Assert.assertTrue(um.getUm_delete_successfull_popup().isDisplayed(),"Popup alert");
+		Assert.assertEquals("Deleted", um.getUm_table_row_status_active_delete().getText(),"Check delete status is reflect or not");
+		library.Custom_click(um.getUm_table_row_update_action(), "Update button");
+		Thread.sleep(2000);
+		library.Custom_click(um.getUm_view_status(), "Status");
+		library.Custom_click(um.getUm_1st_drop_Active(), "Active tab");
+		library.Custom_click(um.getUm_updateAction_update_button(), "Update button");
+	}
+//======================================================================================================================	
 	
 	
 	

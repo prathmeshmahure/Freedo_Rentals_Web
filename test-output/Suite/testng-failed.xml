@@ -9,8 +9,8 @@
     <classes>
       <class name="sample.TC_0001">
         <methods>
-          <include name="TC_0021_Verify_KYC_Status_drop_down_Verified_tab"/>
           <include name="browser"/>
+          <include name="TC_0030_verify_the_Update_icon_by_clicking_on_it_under_Action"/>
           <include name="teardown"/>
           <include name="BS"/>
         </methods>
