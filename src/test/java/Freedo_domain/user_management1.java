@@ -969,6 +969,34 @@ public class user_management1 extends base_class{
 		library.visible(um.getUm_view_back_button() , "Back_button ");		
 	}
 //====================================================================================================================	
+	@Test(priority=30)
+	public void TC_0030_verify_the_Update_icon_by_clicking_on_it_under_Action() throws Exception {
+		log.info("=========== TC_0030_verify_the_Update_icon_by_clicking_on_it_under_Action Starts");
+		um = PageFactory.initElements(driver, user_management.class);
+		
+		library.Custom_click(um.getUser_Management(), "User management");		
+		library.Custom_click(um.getUm_Reset_button(), "Reset Button");
+		library.custom_sendkeys(um.getClick_UM_Search_user(), config.getname(), "Prathmesh");
+		Thread.sleep(1000);
+		library.Custom_click(um.getUm_table_row_update_action(), "Update action");
+		library.visible(um.getUm_view_first_name() , "First name ");
+		library.visible(um.getUm_view_last_name() , "Last name ");
+		library.visible(um.getUm_view_email_id() , "Email-id ");
+		library.visible(um.getUm_view_mobile_number() , "Mobile number ");
+		library.visible(um.getUm_view_joining_date() , "Joining date ");
+		library.visible(um.getUm_view_gender() , "Gender ");
+		library.visible(um.getUm_view_status() , "Status ");
+		library.visible(um.getUm_view_ED_name() , "Emergency name ");
+		library.visible(um.getUm_view_ED_emergency_number() , "Emergency number ");
+		library.visible(um.getUm_view_ED_relation() , "Relation ");
+		library.visible(um.getUm_view_info_and_summary_button() , "info_and_summary_button ");
+		library.visible(um.getUm_view_kyc_details_button() , "kyc_details_button ");
+		library.visible(um.getUm_view_bookings_button() , "Bookings button ");
+		library.visible(um.getUm_view_booking_info() , "booking_info ");
+		library.visible(um.getUm_view_block_button() , "Block_button ");
+		library.visible(um.getUm_view_back_button() , "Back_button ");		
+	}
+//====================================================================================================================	
 	
 	
 	

@@ -9,7 +9,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="sample.TC_0001"/>
-    	
+    	<class name="Freedo_domain.user_management1"/>
     	
      
        

@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-13T23:19:18 IST" name="Suite" finished-at="2023-03-13T23:19:41 IST" duration-ms="22684">
+  <suite started-at="2023-03-14T00:56:37 IST" name="Suite" finished-at="2023-03-14T00:56:59 IST" duration-ms="22154">
     <groups>
     </groups>
-    <test started-at="2023-03-13T23:19:18 IST" name="Test" finished-at="2023-03-13T23:19:41 IST" duration-ms="22684">
+    <test started-at="2023-03-14T00:56:37 IST" name="Test" finished-at="2023-03-14T00:56:59 IST" duration-ms="22154">
       <class name="sample.TC_0001">
-        <test-method is-config="true" signature="BS()[pri:0, instance:sample.TC_0001@3e6104fc]" started-at="2023-03-13T23:19:17 IST" name="BS" finished-at="2023-03-13T23:19:18 IST" duration-ms="943" status="PASS">
+        <test-method is-config="true" signature="BS()[pri:0, instance:sample.TC_0001@3e6104fc]" started-at="2023-03-14T00:56:36 IST" name="BS" finished-at="2023-03-14T00:56:37 IST" duration-ms="765" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BS -->
-        <test-method is-config="true" signature="browser()[pri:0, instance:sample.TC_0001@3e6104fc]" started-at="2023-03-13T23:19:18 IST" name="browser" finished-at="2023-03-13T23:19:22 IST" duration-ms="3857" status="PASS">
+        <test-method is-config="true" signature="browser()[pri:0, instance:sample.TC_0001@3e6104fc]" started-at="2023-03-14T00:56:37 IST" name="browser" finished-at="2023-03-14T00:56:40 IST" duration-ms="2857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method signature="Login_Account()[pri:1, instance:sample.TC_0001@3e6104fc]" started-at="2023-03-13T23:19:22 IST" name="Login_Account" finished-at="2023-03-13T23:19:28 IST" duration-ms="5491" status="PASS">
+        <test-method signature="Login_Account()[pri:1, instance:sample.TC_0001@3e6104fc]" started-at="2023-03-14T00:56:40 IST" name="Login_Account" finished-at="2023-03-14T00:56:45 IST" duration-ms="5389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_Account -->
-        <test-method signature="TC_0029_verify_the_View_icon_by_clicking_on_it_under_Action()[pri:29, instance:sample.TC_0001@3e6104fc]" started-at="2023-03-13T23:19:28 IST" name="TC_0029_verify_the_View_icon_by_clicking_on_it_under_Action" finished-at="2023-03-13T23:19:41 IST" duration-ms="13242" status="PASS">
+        <test-method signature="TC_0030_verify_the_Update_icon_by_clicking_on_it_under_Action()[pri:30, instance:sample.TC_0001@3e6104fc]" started-at="2023-03-14T00:56:45 IST" name="TC_0030_verify_the_Update_icon_by_clicking_on_it_under_Action" finished-at="2023-03-14T00:56:59 IST" duration-ms="13866" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_0029_verify_the_View_icon_by_clicking_on_it_under_Action -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:sample.TC_0001@3e6104fc]" started-at="2023-03-13T23:19:41 IST" name="teardown" finished-at="2023-03-13T23:19:41 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- TC_0030_verify_the_Update_icon_by_clicking_on_it_under_Action -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:sample.TC_0001@3e6104fc]" started-at="2023-03-14T00:56:59 IST" name="teardown" finished-at="2023-03-14T00:56:59 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

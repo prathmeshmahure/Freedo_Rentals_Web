@@ -1,24 +1,18 @@
-[INFO ] 2023-03-13 23:19:23.368 [main] Freedo_Rentals_Web -   Successfully send Value Username
-[INFO ] 2023-03-13 23:19:23.540 [main] Freedo_Rentals_Web -   Successfully send Value Password
-[INFO ] 2023-03-13 23:19:24.244 [main] Freedo_Rentals_Web -   Successfully Click Submit button
-[INFO ] 2023-03-13 23:19:28.328 [main] Freedo_Rentals_Web - =========== TC_0029_verify_the_View_icon_by_clicking_on_it_under_Action Starts
-[INFO ] 2023-03-13 23:19:28.991 [main] Freedo_Rentals_Web -   Successfully Click User management
-[INFO ] 2023-03-13 23:19:29.650 [main] Freedo_Rentals_Web -   Successfully Click Reset Button
-[INFO ] 2023-03-13 23:19:30.323 [main] Freedo_Rentals_Web -   Successfully send Value Prathmesh
-[INFO ] 2023-03-13 23:19:31.987 [main] Freedo_Rentals_Web -   Successfully Click view action
-[INFO ] 2023-03-13 23:19:32.536 [main] Freedo_Rentals_Web -   Element is visible First name 
-[INFO ] 2023-03-13 23:19:33.113 [main] Freedo_Rentals_Web -   Element is visible Last name 
-[INFO ] 2023-03-13 23:19:33.663 [main] Freedo_Rentals_Web -   Element is visible Email-id 
-[INFO ] 2023-03-13 23:19:34.290 [main] Freedo_Rentals_Web -   Element is visible Mobile number 
-[INFO ] 2023-03-13 23:19:34.914 [main] Freedo_Rentals_Web -   Element is visible Joining date 
-[INFO ] 2023-03-13 23:19:35.524 [main] Freedo_Rentals_Web -   Element is visible Gender 
-[INFO ] 2023-03-13 23:19:36.135 [main] Freedo_Rentals_Web -   Element is visible Status 
-[INFO ] 2023-03-13 23:19:36.747 [main] Freedo_Rentals_Web -   Element is visible Emergency name 
-[INFO ] 2023-03-13 23:19:37.385 [main] Freedo_Rentals_Web -   Element is visible Emergency number 
-[INFO ] 2023-03-13 23:19:37.975 [main] Freedo_Rentals_Web -   Element is visible Relation 
-[INFO ] 2023-03-13 23:19:38.618 [main] Freedo_Rentals_Web -   Element is visible info_and_summary_button 
-[INFO ] 2023-03-13 23:19:39.210 [main] Freedo_Rentals_Web -   Element is visible kyc_details_button 
-[INFO ] 2023-03-13 23:19:39.827 [main] Freedo_Rentals_Web -   Element is visible Bookings button 
-[INFO ] 2023-03-13 23:19:40.420 [main] Freedo_Rentals_Web -   Element is visible booking_info 
-[INFO ] 2023-03-13 23:19:40.981 [main] Freedo_Rentals_Web -   Element is visible Block_button 
-[INFO ] 2023-03-13 23:19:41.569 [main] Freedo_Rentals_Web -   Element is visible Back_button 
+[INFO ] 2023-03-14 01:06:47.336 [main] Freedo_Rentals_Web -   Successfully send Value Username
+[INFO ] 2023-03-14 01:06:47.482 [main] Freedo_Rentals_Web -   Successfully send Value Password
+[INFO ] 2023-03-14 01:06:47.557 [main] Freedo_Rentals_Web -   Successfully Click Submit button
+[INFO ] 2023-03-14 01:06:51.647 [main] Freedo_Rentals_Web - =========== TC_001_verify_user_management_tab_under_admin Starts
+[ERROR] 2023-03-14 01:06:58.314 [main] Freedo_Rentals_Web - ==Unable to Click User management
+[ERROR] 2023-03-14 01:06:58.318 [main] Freedo_Rentals_Web - ==Unable to Click Reset button
+[ERROR] 2023-03-14 01:06:58.321 [main] Freedo_Rentals_Web - ==Unable to Element visible Search_user 
+[ERROR] 2023-03-14 01:06:58.325 [main] Freedo_Rentals_Web - ==Unable to Element visible Select_Status_dropdown 
+[ERROR] 2023-03-14 01:06:58.332 [main] Freedo_Rentals_Web - ==Unable to Element visible KYC_Status
+[ERROR] 2023-03-14 01:06:58.335 [main] Freedo_Rentals_Web - ==Unable to Element visible Reset button 
+[ERROR] 2023-03-14 01:06:58.339 [main] Freedo_Rentals_Web - ==Unable to Element visible S.No. 
+[ERROR] 2023-03-14 01:06:58.342 [main] Freedo_Rentals_Web - ==Unable to Element visible Name
+[ERROR] 2023-03-14 01:06:58.348 [main] Freedo_Rentals_Web - ==Unable to Element visible Email
+[ERROR] 2023-03-14 01:06:58.353 [main] Freedo_Rentals_Web - ==Unable to Element visible Mobile 
+[ERROR] 2023-03-14 01:06:58.357 [main] Freedo_Rentals_Web - ==Unable to Element visible Gender 
+[ERROR] 2023-03-14 01:06:58.364 [main] Freedo_Rentals_Web - ==Unable to Element visible KYC_Status 
+[ERROR] 2023-03-14 01:06:58.368 [main] Freedo_Rentals_Web - ==Unable to Element visible Status 
+[ERROR] 2023-03-14 01:06:58.371 [main] Freedo_Rentals_Web - ==Unable to Element visible Action 

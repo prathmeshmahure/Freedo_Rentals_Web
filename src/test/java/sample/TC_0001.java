@@ -40,16 +40,16 @@ public class TC_0001 extends base_class{
 		Thread.sleep(2000);
 	}
 //==============================================================================================================
-	@Test(priority=29)
-	public void TC_0029_verify_the_View_icon_by_clicking_on_it_under_Action() throws Exception {
-		log.info("=========== TC_0029_verify_the_View_icon_by_clicking_on_it_under_Action Starts");
+	@Test(priority=30,enabled=false)
+	public void TC_0030_verify_the_Update_icon_by_clicking_on_it_under_Action() throws Exception {
+		log.info("=========== TC_0030_verify_the_Update_icon_by_clicking_on_it_under_Action Starts");
 		um = PageFactory.initElements(driver, user_management.class);
 		
 		library.Custom_click(um.getUser_Management(), "User management");		
 		library.Custom_click(um.getUm_Reset_button(), "Reset Button");
 		library.custom_sendkeys(um.getClick_UM_Search_user(), config.getname(), "Prathmesh");
 		Thread.sleep(1000);
-		library.Custom_click(um.getUm_table_row_view_action(), "view action");
+		library.Custom_click(um.getUm_table_row_update_action(), "Update action");
 		library.visible(um.getUm_view_first_name() , "First name ");
 		library.visible(um.getUm_view_last_name() , "Last name ");
 		library.visible(um.getUm_view_email_id() , "Email-id ");
