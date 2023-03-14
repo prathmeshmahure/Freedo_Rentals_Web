@@ -40,25 +40,32 @@ public class TC_0001 extends base_class{
 		Thread.sleep(2000);
 	}
 //==============================================================================================================
-	@Test(priority=32)
-	public void TC_0032_verify_the_Delete_icon_by_clicking_on_it_under_Action() throws Exception {
-		log.info("=========== TC_0032_verify_the_Delete_icon_by_clicking_on_it_under_Action Starts");
+	@Test(priority=36)
+	public void TC_0036_verify_the_current_booking_details_under_info_and_summary() throws Exception {
+		log.info("=========== TC_0036_verify_the_current_booking_details_under_info_and_summary Starts");
 		um = PageFactory.initElements(driver, user_management.class);
+		SoftAssert soft=new SoftAssert();
 		
 		library.Custom_click(um.getUser_Management(), "User management");		
 		library.Custom_click(um.getUm_Reset_button(), "Reset Button");
 		library.custom_sendkeys(um.getClick_UM_Search_user(), config.getname(), "Prathmesh");
 		Thread.sleep(1000);
-		library.Custom_click(um.getUm_table_row_delete_action(), "Delete action");
-		library.Custom_click(um.getUm_delete_action_yes_button(), "popup Yes Button ");
-		Assert.assertTrue(um.getUm_delete_successfull_popup().isDisplayed(),"Popup alert");
-		Assert.assertEquals("Deleted", um.getUm_table_row_status_active_delete().getText(),"Check delete status is reflect or not");
-		library.Custom_click(um.getUm_table_row_update_action(), "Update button");
+		library.Custom_click(um.getUm_table_row_view_action(), "View action");
 		Thread.sleep(2000);
-		library.Custom_click(um.getUm_view_status(), "Status");
-		library.Custom_click(um.getUm_1st_drop_Active(), "Active tab");
-		library.Custom_click(um.getUm_updateAction_update_button(), "Update button");
-		
+		library.Custom_click(um.getUm_view_info_and_summary_button(), "info_and_summary");
+		soft.assertTrue(um.getUm_view_CB_booking_data().isDisplayed(),"Booking Data");					//Assert
+		library.msg("  Booking Data = ", um.getUm_view_CB_booking_data().getText());
+		soft.assertTrue(um.getUm_view_CB_package_start_date().isDisplayed(),"Package Start Date");		//Assert
+		library.msg("  Package Start Date = ", um.getUm_view_CB_package_start_date().getText());
+		soft.assertTrue(um.getUm_view_CB_package_start_date().isDisplayed(),"Package End Date");		//Assert
+		library.msg("  Package End Date = ", um.getUm_view_CB_package_end_date().getText());	
+		soft.assertTrue(um.getUm_view_CB_package_start_date().isDisplayed(),"Vehicle");		//Assert
+		library.msg("  Vehicle = ", um.getUm_view_CB_vehicle().getText());
+		soft.assertTrue(um.getUm_view_CB_package_start_date().isDisplayed(),"Booking Id");		//Assert
+		library.msg("  Booking Id = ", um.getUm_view_CB_booking_id().getText());
+		soft.assertTrue(um.getUm_view_CB_package_start_date().isDisplayed(),"Available After ");		//Assert
+		library.msg("  Available After = ", um.getUm_view_CB_available_after().getText());
+		soft.assertAll();
 	}
 //===============================================================================================================	
 	

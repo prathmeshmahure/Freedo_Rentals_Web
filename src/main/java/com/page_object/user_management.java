@@ -171,16 +171,16 @@ public class user_management {
 		@FindBy(xpath="//h5[normalize-space()='Bookings']")
 		private WebElement um_view_bookings_button;
 		
-		@FindBy(xpath="//p[normalize-space()='Booking Info']")
+		@FindBy(xpath="//p[normalize-space()='Booking Info']") // booking info
 		private WebElement um_view_booking_info;
 		
-		@FindBy(xpath="//p[text()='Total Bookings:']/following-sibling::p")
+		@FindBy(xpath="//p[text()='Total Bookings:']/following-sibling::p")// booking info
 		private WebElement um_view_BI_total_booking_txt;
 		
-		@FindBy(xpath="//p[text()='Total Payment Done:']/following-sibling::p")
+		@FindBy(xpath="//p[text()='Total Payment Done:']/following-sibling::p")// booking info
 		private WebElement um_view_BI_total_payment_done_txt;
 		
-		@FindBy(xpath="//p[text()='Total KM Driven:']/following-sibling::p")
+		@FindBy(xpath="//p[text()='Total KM Driven:']/following-sibling::p")// booking info
 		private WebElement um_view_B_total_km_driver_txt;
 		
 		@FindBy(xpath="//button[normalize-space()='Block']")
@@ -198,34 +198,34 @@ public class user_management {
 		@FindBy(xpath="//button[normalize-space()='Yes']")
 		private WebElement um_delete_action_yes_button;
 		
+		@FindBy(xpath="//button[normalize-space()='No']")
+		private WebElement um_delete_action_No_button;
+		
 		@FindBy(xpath="//div[@class='toastr animated rrt-success']")
 		private WebElement um_delete_successfull_popup;
 		
+		@FindBy(xpath="//p[normalize-space()='Current Booking Details']")//Current Booking Details
+		private WebElement um_view_Current_Booking_Details_txt;
+		
+		@FindBy(xpath="//p[text()='Booking Data:']/following-sibling::p")//Current Booking Details
+		private WebElement um_view_CB_booking_data;
+		
+		@FindBy(xpath="//p[text()='Package Start Date:']/following-sibling::p")//Current Booking Details
+		private WebElement um_view_CB_package_start_date;
+		
+		@FindBy(xpath="//p[text()='Package End Date:']/following-sibling::p")//Current Booking Details
+		private WebElement um_view_CB_package_end_date;
+		
+		@FindBy(xpath="//p[text()='Vehicle:']/following-sibling::p")//Current Booking Details
+		private WebElement um_view_CB_vehicle;
+		
+		@FindBy(xpath="//p[text()='Booking Id:']/following-sibling::p")//Current Booking Details
+		private WebElement um_view_CB_booking_id;
+		
+		@FindBy(xpath="//p[text()='Available After:']/following-sibling::p")//Current Booking Details
+		private WebElement um_view_CB_available_after;
+		
 /*		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
-		private WebElement um_;
-		
-		@FindBy(xpath="")
 		private WebElement um_;
 		
 		@FindBy(xpath="")
@@ -332,6 +332,7 @@ public class user_management {
 
 		
 
+		
 		
 		
 		
@@ -588,7 +589,30 @@ public class user_management {
 						public WebElement getUm_delete_successfull_popup() {
 							return um_delete_successfull_popup;
 						}
-						
+						public WebElement getUm_delete_action_No_button() {
+							return um_delete_action_No_button;
+						}
+						public WebElement getUm_view_Current_Booking_Details_txt() {
+							return um_view_Current_Booking_Details_txt;
+						}
+						public WebElement getUm_view_CB_booking_data() {
+							return um_view_CB_booking_data;
+						}
+						public WebElement getUm_view_CB_package_start_date() {
+							return um_view_CB_package_start_date;
+						}
+						public WebElement getUm_view_CB_package_end_date() {
+							return um_view_CB_package_end_date;
+						}
+						public WebElement getUm_view_CB_vehicle() {
+							return um_view_CB_vehicle;
+						}
+						public WebElement getUm_view_CB_booking_id() {
+							return um_view_CB_booking_id;
+						}
+						public WebElement getUm_view_CB_available_after() {
+							return um_view_CB_available_after;
+						}
 						
 						
 						

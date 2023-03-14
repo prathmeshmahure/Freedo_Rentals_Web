@@ -1,13 +1,15 @@
-[INFO ] 2023-03-14 17:11:44.814 [main] Freedo_Rentals_Web -   Successfully send Value Username
-[INFO ] 2023-03-14 17:11:45.062 [main] Freedo_Rentals_Web -   Successfully send Value Password
-[INFO ] 2023-03-14 17:11:45.722 [main] Freedo_Rentals_Web -   Successfully Click Submit button
-[INFO ] 2023-03-14 17:11:49.996 [main] Freedo_Rentals_Web - =========== TC_0032_verify_the_Delete_icon_by_clicking_on_it_under_Action Starts
-[INFO ] 2023-03-14 17:11:50.864 [main] Freedo_Rentals_Web -   Successfully Click User management
-[INFO ] 2023-03-14 17:11:51.609 [main] Freedo_Rentals_Web -   Successfully Click Reset Button
-[INFO ] 2023-03-14 17:11:52.392 [main] Freedo_Rentals_Web -   Successfully send Value Prathmesh
-[INFO ] 2023-03-14 17:11:54.099 [main] Freedo_Rentals_Web -   Successfully Click Delete action
-[INFO ] 2023-03-14 17:11:54.826 [main] Freedo_Rentals_Web -   Successfully Click popup Yes Button 
-[INFO ] 2023-03-14 17:11:56.376 [main] Freedo_Rentals_Web -   Successfully Click Update button
-[INFO ] 2023-03-14 17:11:58.986 [main] Freedo_Rentals_Web -   Successfully Click Status
-[INFO ] 2023-03-14 17:12:00.116 [main] Freedo_Rentals_Web -   Successfully Click Active tab
-[INFO ] 2023-03-14 17:12:00.800 [main] Freedo_Rentals_Web -   Successfully Click Update button
+[INFO ] 2023-03-15 00:19:10.868 [main] Freedo_Rentals_Web -   Successfully send Value Username
+[INFO ] 2023-03-15 00:19:11.412 [main] Freedo_Rentals_Web -   Successfully send Value Password
+[INFO ] 2023-03-15 00:19:12.197 [main] Freedo_Rentals_Web -   Successfully Click Submit button
+[INFO ] 2023-03-15 00:19:16.397 [main] Freedo_Rentals_Web - =========== TC_0036_verify_the_current_booking_details_under_info_and_summary Starts
+[INFO ] 2023-03-15 00:19:17.402 [main] Freedo_Rentals_Web -   Successfully Click User management
+[INFO ] 2023-03-15 00:19:18.528 [main] Freedo_Rentals_Web -   Successfully Click Reset Button
+[INFO ] 2023-03-15 00:19:19.819 [main] Freedo_Rentals_Web -   Successfully send Value Prathmesh
+[INFO ] 2023-03-15 00:19:21.621 [main] Freedo_Rentals_Web -   Successfully Click View action
+[INFO ] 2023-03-15 00:19:24.233 [main] Freedo_Rentals_Web -   Successfully Click info_and_summary
+[INFO ] 2023-03-15 00:19:24.300 [main] Freedo_Rentals_Web -   Booking Data = 2023-01-02
+[INFO ] 2023-03-15 00:19:24.364 [main] Freedo_Rentals_Web -   Package Start Date = 2023-01-02
+[INFO ] 2023-03-15 00:19:24.426 [main] Freedo_Rentals_Web -   Package End Date = 2023-01-03
+[INFO ] 2023-03-15 00:19:24.507 [main] Freedo_Rentals_Web -   Vehicle = TWE42566
+[INFO ] 2023-03-15 00:19:24.605 [main] Freedo_Rentals_Web -   Booking Id = NO020123178811441066
+[INFO ] 2023-03-15 00:19:24.696 [main] Freedo_Rentals_Web -   Available After = N/A
